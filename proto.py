@@ -1373,6 +1373,12 @@ class Ui_MainWindow(object):
         self.pushButton.clicked.connect(self.getInfo)
 
 
+
+
+
+
+
+
 #############################################################################################
 #
 #      DONT MESS WITH THE INDENT. NOT GARUNTEED TO WORK IF YOU CHANGE IT
@@ -1387,6 +1393,7 @@ class Ui_MainWindow(object):
         material_prefix = self.lineEdit.text()
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         f.write('&control\n')
         f.write('calculation = \'scf\'\n')
         f.write('prefix = \'')
@@ -1397,12 +1404,17 @@ class Ui_MainWindow(object):
 =======
                 print('checking')
                 f = open("dataFile.txt", "w")
+=======
+                #print('checking')
+                #f = open("dataFile.txt", "w")
+>>>>>>> 2769371 (basic input mapping (EXCEPT FOR EPW))
                 #temp = self.spinBox_17.value()
                 #f.write('{}'.format(temp))
                 
                 #material_prefix = self.lineEdit.text()
                 #restart_mode = self.comboBox.currentText()
 
+<<<<<<< HEAD
                 material_prefix = self.material_prefix.text()
 >>>>>>> 3e54546 (updated variable names)
 
@@ -1420,9 +1432,67 @@ class Ui_MainWindow(object):
 <<<<<<< HEAD
     
 =======
+=======
+                #material_prefix = self.material_prefix.text()
+
+                
+                #f.write('&control\n')
+                #f.write('calculation = \'scf\'\n')
+                #f.write('prefix = \'')
+                
+                #f.write(material_prefix)
+
+                #f.write('\'')
+                #f.close()
 
 
+                material_prefix = self.material_prefix.text()
+                wf_collect = '.true'
+                scf_inputs = {
+                        'material_prefix': self.material_prefix.text(),
+                        'restart_mode': self.restart_mode.currentText(),
+                        'wf_collect': wf_collect,
+                        'pseudo_dir': self.pseudo_dir.text(),
+                        'outdir': self.current_dir.text(),
+                        'max_seconds': self.max_runtime.value(),
+                        'ibrav': self.bravais_index.currentText(),
+                        'celldm_1': self.crystal_constant.value(),
+                        'nat': self.num_atoms.value(),
+                        'ntyp': self.num_type_atoms.value(),
+                        'ecutwfc': self.nrg_cutoff.value(),
+                        'diagonalization': self.diagonalization.currentText(),
+                        'mixing_beta': self.mixing_beta.value(),
+                        'conv_thr': self.con_threshold.value(),
+                        'atom': self.atom.text(),
+                        'atomic_mass': self.atomic_mass.value(),
+                        'pseudopotential': self.pseudo_filename.text(),
+                        'coordinate_type': self.atomic_coord_type.currentText(),
+                        'kptx': self.kptx.value(),
+                        'kpty': self.kpty.value(),
+                        'kptz': self.kptz.value(),
+                        'offsetx': self.offset_x.value(),
+                        'offsety': self.offset_y.value(),
+                        'offsetz': self.offset_z.value()
+                }
+                
+                ph_inputs = {
+                        'material_prefix': scf_inputs['material_prefix'],
+                        'nq1': self.nq1.value(),
+                        'nq2': self.nq2.value(),
+                        'nq3': self.nq3.value(),
+                        'tr2_ph': self.self_consistency_threshold.value(),
+                        'recover': self.recover.currentText(),
+                }
+>>>>>>> 2769371 (basic input mapping (EXCEPT FOR EPW))
 
+
+               
+                build_PH_Input(ph_inputs, material_prefix)
+                build_PW_Input(scf_inputs, material_prefix)
+                build_NSCF_Input(scf_inputs, material_prefix)
+################################################################################################
+
+ 
 
 
 
@@ -1613,6 +1683,120 @@ class Ui_MainWindow(object):
 
 
 
+<<<<<<< HEAD
+=======
+#################################################################################
+
+
+def build_PW_Input(scf_inputs, material_prefix):
+        print('BUILDING PW INPUT FILE')
+        scf_name = 'scf-%s.in' % material_prefix #assigns pw input file to variable pw_name 
+
+        input_file = '''
+        &control                                                                                                                                                                                     
+        calculation = 'scf'                                                                                                                                                                         
+        prefix = '{material_prefix}'                                                                                                                                                                                
+        restart_mode = '{restart_mode}'                                                                                                                                                               
+        wf_collect = .true.                                                                                                                                                                          
+        verbosity = 'high'                                                                                                                                                                           
+        outdir = './'
+        max_seconds = {max_seconds}
+        pseudo_dir = {pseudo_dir}
+        /                                                                                                                                                                                            
+        &system                                                                                                                                                                                      
+        ibrav = {ibrav}                                                                                                                                                                                    
+        celldm(1) = {celldm_1}                                                                                                                                                                           
+        nat = {nat}                                                                                                                                                                                      
+        ntyp = {ntyp}                                                                                                                                                                                                                                                                                                                                                                          
+        ecutwfc = {ecutwfc} 
+        /                                                                                                                                                                                            
+        &electrons                                                                                                                                                                                   
+        diagonalization = '{diagonalization}'                                                                                                                                                                  
+        mixing_beta = {mixing_beta}                                                                                                                                                                            
+        conv_thr = {conv_thr}                                                                                                                                                                          
+        /                                                                                                                                                                                            
+        ATOMIC_SPECIES                                                                                                                                                                               
+        {atom} {atomic_mass} {pseudopotential}                                                                                                                                                              
+        ATOMIC_POSITIONS {coordinate_type}                                                                                                                                                                        
+        Si 0.0 0.0 0.0
+        Si 0.25 0.25 0.25
+        K_POINTS automatic                                                                                                                                                                           
+        {kptx} {kpty} {kptz} {offsetx} {offsety} {offsetz}
+        '''.format(**scf_inputs) #assigns information in ''' ''' to variable inputfile
+
+        with open(scf_name, "w") as f: #opens file pw_name
+                f.write(input_file) #writes inputfile to file pw_na
+
+     
+
+
+def build_PH_Input(ph_inputs, material_prefix):
+        print('BUILDING PH INPUT FILE')
+        ph_name = 'ph-%s.in' % material_prefix #assigns ph input file to variable ph_name 
+
+        input_file = '''
+        --
+        &inputph
+        prefix = '{material_prefix}'
+        fildvscf = 'dvscf'
+        ldisp = .true.
+        fildyn = '{material_prefix}.dyn'
+        nq1 = {nq1}
+        nq2 = {nq2}
+        nq3 = {nq3}
+        tr2_ph = {tr2_ph}
+        recover = {recover}
+        /
+        '''.format(**ph_inputs) #assigns information in ''' ''' to variable inputfile
+
+        with open(ph_name, "w") as f: #opens file pw_name
+                f.write(input_file) #writes inputfile to file ph
+
+
+
+def build_NSCF_Input(scf_inputs, material_prefix):
+        print('BUILDING NSCF INPUT FILE')
+        nscf_name = 'nscf-%s.in' % material_prefix #assigns pw input file to variable pw_name 
+
+        input_file = '''
+        &control                                                                                                                                                                                     
+        calculation = 'nscf'                                                                                                                                                                         
+        prefix = '{material_prefix}'                                                                                                                                                                                
+
+        restart_mode = '{restart_mode}'                                                                                                                                                               
+        wf_collect = .true.                                                                                                                                                                          
+        verbosity = 'high'                                                                                                                                                                           
+        outdir = './'
+        pseudo_dir = '{pseudo_dir}'
+        /                                                                                                                                                                                            
+        &system                                                                                                                                                                                      
+        ibrav = {ibrav}                                                                                                                                                                                    
+        celldm(1) = {celldm_1}                                                                                                                                                                           
+        nat = {nat}                                                                                                                                                                                      
+        ntyp = {ntyp}                                                                                                                                                                                                                                                                                                                                                                          
+        ecutwfc = {ecutwfc}   
+        nbnd = 8
+        /                                                                                                                                                                                            
+        &electrons                                                                                                                                                                                   
+        diagonalization = '{diagonalization}'                                                                                                                                                                  
+        mixing_beta = {mixing_beta}                                                                                                                                                                            
+        conv_thr = {conv_thr}                                                                                                                                                                          
+        /                                                                                                                                                                                            
+        ATOMIC_SPECIES                                                                                                                                                                               
+        {atom} {atomic_mass} {pseudopotential}                                                                                                                                                              
+        ATOMIC_POSITIONS {coordinate_type} 
+        Si 0.0 0.0 0.0
+        Si 0.25 0.25 0.25
+        '''.format(**scf_inputs) #assigns information in ''' ''' to variable inputfile
+
+        with open(nscf_name, "w") as f: #opens file pw_name
+                f.write(input_file) #writes inputfile to file pw_na
+
+#################################################################################
+
+
+
+>>>>>>> 2769371 (basic input mapping (EXCEPT FOR EPW))
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
