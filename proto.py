@@ -707,6 +707,7 @@ class Ui_MainWindow(object):
         self.formLayout_6.setObjectName("formLayout_6")
         self.doubleSpinBox_7 = QtWidgets.QDoubleSpinBox(self.formLayoutWidget_3)
         self.doubleSpinBox_7.setObjectName("doubleSpinBox_7")
+
         self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.doubleSpinBox_7)
         self.label_34 = QtWidgets.QLabel(self.formLayoutWidget_3)
         font = QtGui.QFont()
@@ -719,6 +720,7 @@ class Ui_MainWindow(object):
         self.comboBox_6.setObjectName("comboBox_6")
         self.comboBox_6.addItem("")
         self.comboBox_6.addItem("")
+
         self.formLayout_6.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.comboBox_6)
         self.label_35 = QtWidgets.QLabel(self.formLayoutWidget_3)
         font = QtGui.QFont()
@@ -1158,6 +1160,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(10)
         self.label_56.setFont(font)
+    
         self.label_56.setIndent(20)
         self.label_56.setObjectName("label_56")
         self.formLayout_9.setWidget(6, QtWidgets.QFormLayout.LabelRole, self.label_56)
@@ -1365,41 +1368,34 @@ class Ui_MainWindow(object):
 #############################################################################################
 
     def getInfo(self):
+     
+        print('checking')
+        f = open("dataFile.txt", "w")
+        #temp = self.spinBox_17.value()
+        #f.write('{}'.format(temp))
         
-                print('checking')
-                f = open("dataFile.txt", "w")
-                #temp = self.spinBox_17.value()
-                #f.write('{}'.format(temp))
-                
-                material_prefix = self.lineEdit.text()
-               
+        material_prefix = self.lineEdit.text()
+        
+        f.write('&control\n')
+        f.write('calculation = \'scf\'\n')
+        f.write('prefix = \'')
+        
+        f.write(material_prefix)
 
+        f.write("\n")
 
-                
-                f.write('&control\n')
-                f.write('calculation = \'scf\'\n')
-                f.write('prefix = \'')
-                
-                f.write(material_prefix)
+        f.write(f"q1 = {self.spinBox_17.value}\n") 
+        f.write(f"q2 = {self.spinBox_16.text()}\n")  
+        f.write(f"q3 = {self.spinBox_15.text()}\n")
+        f.write(f"tr2_ph = {self.doubleSpinBox_7.text()}\n")
+        f.write(f"recover = {self.comboBox_6.currentText()}\n")
+          
 
-                f.write('\'')
-                f.close()
+        f.close()
 
 
 ################################################################################################
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -1494,15 +1490,21 @@ class Ui_MainWindow(object):
         self.groupBox_4.setTitle(_translate("MainWindow", "Input Values"))
         self.label_31.setToolTip(_translate("MainWindow", "<html><head/><body><pre style=\" margin-top:12px; margin-bottom:-13px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Courier New\';\">Parameters of the Monkhorst-Pack grid (no offset)</span></pre></body></html>"))
         self.label_31.setText(_translate("MainWindow", "nq2"))
+        # self.label_31.currentTextChanged.connect(lambda field="nq2": self.on_ph_x_input_change(field))
         self.label_32.setToolTip(_translate("MainWindow", "<html><head/><body><pre style=\" margin-top:12px; margin-bottom:-13px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Courier New\';\">Parameters of the Monkhorst-Pack grid (no offset)</span></pre></body></html>"))
         self.label_32.setText(_translate("MainWindow", "nq3"))
+        # self.label_32.currentTextChanged.connect(lambda field="nq3": self.on_ph_x_input_change(field))
         self.label_33.setToolTip(_translate("MainWindow", "<html><head/><body><pre style=\" margin-top:12px; margin-bottom:-13px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Courier New\';\">Parameters of the Monkhorst-Pack grid (no offset)</span></pre></body></html>"))
         self.label_33.setText(_translate("MainWindow", "nq1"))
+        # self.label_33.currentTextChanged.connect(lambda field="nq1": self.on_ph_x_input_change(field))
         self.label_34.setText(_translate("MainWindow", "Self-Consistency Threshold"))
+
         self.comboBox_6.setItemText(0, _translate("MainWindow", "False"))
         self.comboBox_6.setItemText(1, _translate("MainWindow", "True"))
+
         self.label_35.setToolTip(_translate("MainWindow", "<html><head/><body><pre style=\" margin-top:12px; margin-bottom:-13px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Courier New\';\">If .true. restart from an interrupted run.</span></pre></body></html>"))
         self.label_35.setText(_translate("MainWindow", "Recover"))
+
         self.gridTabWidget.setTabText(self.gridTabWidget.indexOf(self.tab), _translate("MainWindow", "PH.x Input Values"))
         self.label_36.setToolTip(_translate("MainWindow", "<html><head/><body><p>Generate the map k+q –&gt; k for folding the rotation matrix U(k+q). If .true., the program reads ‘prefix.kmap’ and ‘prefix.kgmap’ from file. If .false., they are calculated.</p><p>Note that for a restart with <a href=\"https://docs.epw-code.org/doc/Inputs.html#epwread\"><span style=\" text-decoration: underline; color:#0000ff;\">epwread</span></a> =.true., kmaps also needs to be set to true (since the information to potentially calculate kgmaps is not generated in a restart run). However, the files “prefix.kmap” and “prefix.kgmap” themselves are actually not used if epwread=.true. and hence need not actually be there.</p></body></html>"))
         self.label_36.setText(_translate("MainWindow", "kmaps"))
@@ -1571,6 +1573,8 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "Simulate"))
         self.pushButton_2.setText(_translate("MainWindow", "Abort"))
         self.gridTabWidget.setTabText(self.gridTabWidget.indexOf(self.tab_3), _translate("MainWindow", "Simulate"))
+
+
 
 
 if __name__ == "__main__":
