@@ -113,7 +113,10 @@ QTabBar::tab:right:selected {
 QTabBar::tab:left:last, QTabBar::tab:right:last,
 QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
     margin-bottom: 0;
-}</string>
+}
+
+
+</string>
     </property>
     <property name="currentIndex">
      <number>0</number>
@@ -235,7 +238,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
 }</string>
            </property>
            <property name="currentIndex">
-            <number>3</number>
+            <number>0</number>
            </property>
            <widget class="QWidget" name="tab_4">
             <attribute name="title">
@@ -443,13 +446,13 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             <attribute name="title">
              <string>System</string>
             </attribute>
-            <widget class="QWidget" name="">
+            <widget class="QWidget" name="layoutWidget">
              <property name="geometry">
               <rect>
                <x>10</x>
                <y>20</y>
                <width>989</width>
-               <height>196</height>
+               <height>204</height>
               </rect>
              </property>
              <layout class="QFormLayout" name="formLayout_3">
@@ -711,7 +714,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
             <attribute name="title">
              <string>Electrons</string>
             </attribute>
-            <widget class="QWidget" name="">
+            <widget class="QWidget" name="layoutWidget">
              <property name="geometry">
               <rect>
                <x>10</x>
@@ -2092,7 +2095,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           <x>10</x>
           <y>10</y>
           <width>881</width>
-          <height>450</height>
+          <height>468</height>
          </rect>
         </property>
         <layout class="QFormLayout" name="formLayout_9">
@@ -2636,19 +2639,6 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
       </property>
       <property name="value">
        <number>24</number>
-      </property>
-     </widget>
-     <widget class="QDialogButtonBox" name="buttonBox">
-      <property name="geometry">
-       <rect>
-        <x>460</x>
-        <y>130</y>
-        <width>156</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="standardButtons">
-       <set>QDialogButtonBox::Ok</set>
       </property>
      </widget>
     </widget>
