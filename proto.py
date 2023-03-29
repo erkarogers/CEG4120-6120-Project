@@ -706,6 +706,7 @@ class Ui_MainWindow(object):
         self.formLayout_6.setVerticalSpacing(10)
         self.formLayout_6.setObjectName("formLayout_6")
 <<<<<<< HEAD
+<<<<<<< HEAD
         self.doubleSpinBox_7 = QtWidgets.QDoubleSpinBox(self.formLayoutWidget_3)
         self.doubleSpinBox_7.setObjectName("doubleSpinBox_7")
 
@@ -715,6 +716,11 @@ class Ui_MainWindow(object):
         self.self_consistency_threshold.setObjectName("self_consistency_threshold")
         self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.self_consistency_threshold)
 >>>>>>> 3e54546 (updated variable names)
+=======
+        self.self_consistency_threshold = QtWidgets.QDoubleSpinBox(self.formLayoutWidget_3)
+        self.self_consistency_threshold.setObjectName("self_consistency_threshold")
+        self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.self_consistency_threshold)
+>>>>>>> 7fd94d0be9fe612a98883f012bc0fe37f2586e2d
         self.label_34 = QtWidgets.QLabel(self.formLayoutWidget_3)
         font = QtGui.QFont()
         font.setPointSize(10)
@@ -723,6 +729,7 @@ class Ui_MainWindow(object):
         self.label_34.setObjectName("label_34")
         self.formLayout_6.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_34)
 <<<<<<< HEAD
+<<<<<<< HEAD
         self.comboBox_6 = QtWidgets.QComboBox(self.formLayoutWidget_3)
         self.comboBox_6.setObjectName("comboBox_6")
         self.comboBox_6.addItem("")
@@ -730,12 +737,17 @@ class Ui_MainWindow(object):
 
         self.formLayout_6.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.comboBox_6)
 =======
+=======
+>>>>>>> 7fd94d0be9fe612a98883f012bc0fe37f2586e2d
         self.recover = QtWidgets.QComboBox(self.formLayoutWidget_3)
         self.recover.setObjectName("recover")
         self.recover.addItem("")
         self.recover.addItem("")
         self.formLayout_6.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.recover)
+<<<<<<< HEAD
 >>>>>>> 3e54546 (updated variable names)
+=======
+>>>>>>> 7fd94d0be9fe612a98883f012bc0fe37f2586e2d
         self.label_35 = QtWidgets.QLabel(self.formLayoutWidget_3)
         font = QtGui.QFont()
         font.setPointSize(10)
@@ -1390,6 +1402,7 @@ class Ui_MainWindow(object):
         #temp = self.spinBox_17.value()
         #f.write('{}'.format(temp))
         
+<<<<<<< HEAD
         material_prefix = self.lineEdit.text()
         
 <<<<<<< HEAD
@@ -1408,12 +1421,17 @@ class Ui_MainWindow(object):
                 #print('checking')
                 #f = open("dataFile.txt", "w")
 >>>>>>> 2769371 (basic input mapping (EXCEPT FOR EPW))
+=======
+                #print('checking')
+                #f = open("dataFile.txt", "w")
+>>>>>>> 7fd94d0be9fe612a98883f012bc0fe37f2586e2d
                 #temp = self.spinBox_17.value()
                 #f.write('{}'.format(temp))
                 
                 #material_prefix = self.lineEdit.text()
                 #restart_mode = self.comboBox.currentText()
 
+<<<<<<< HEAD
 <<<<<<< HEAD
                 material_prefix = self.material_prefix.text()
 >>>>>>> 3e54546 (updated variable names)
@@ -1435,12 +1453,17 @@ class Ui_MainWindow(object):
 =======
                 #material_prefix = self.material_prefix.text()
 
+=======
+                #material_prefix = self.material_prefix.text()
+
+>>>>>>> 7fd94d0be9fe612a98883f012bc0fe37f2586e2d
                 
                 #f.write('&control\n')
                 #f.write('calculation = \'scf\'\n')
                 #f.write('prefix = \'')
                 
                 #f.write(material_prefix)
+<<<<<<< HEAD
 
                 #f.write('\'')
                 #f.close()
@@ -1484,6 +1507,59 @@ class Ui_MainWindow(object):
                         'recover': self.recover.currentText(),
                 }
 >>>>>>> 2769371 (basic input mapping (EXCEPT FOR EPW))
+=======
+>>>>>>> 7fd94d0be9fe612a98883f012bc0fe37f2586e2d
+
+                #f.write('\'')
+                #f.close()
+
+               
+                build_PH_Input(ph_inputs, material_prefix)
+                build_PW_Input(scf_inputs, material_prefix)
+                build_NSCF_Input(scf_inputs, material_prefix)
+################################################################################################
+
+<<<<<<< HEAD
+ 
+=======
+                material_prefix = self.material_prefix.text()
+                wf_collect = '.true'
+                scf_inputs = {
+                        'material_prefix': self.material_prefix.text(),
+                        'restart_mode': self.restart_mode.currentText(),
+                        'wf_collect': wf_collect,
+                        'pseudo_dir': self.pseudo_dir.text(),
+                        'outdir': self.current_dir.text(),
+                        'max_seconds': self.max_runtime.value(),
+                        'ibrav': self.bravais_index.currentText(),
+                        'celldm_1': self.crystal_constant.value(),
+                        'nat': self.num_atoms.value(),
+                        'ntyp': self.num_type_atoms.value(),
+                        'ecutwfc': self.nrg_cutoff.value(),
+                        'diagonalization': self.diagonalization.currentText(),
+                        'mixing_beta': self.mixing_beta.value(),
+                        'conv_thr': self.con_threshold.value(),
+                        'atom': self.atom.text(),
+                        'atomic_mass': self.atomic_mass.value(),
+                        'pseudopotential': self.pseudo_filename.text(),
+                        'coordinate_type': self.atomic_coord_type.currentText(),
+                        'kptx': self.kptx.value(),
+                        'kpty': self.kpty.value(),
+                        'kptz': self.kptz.value(),
+                        'offsetx': self.offset_x.value(),
+                        'offsety': self.offset_y.value(),
+                        'offsetz': self.offset_z.value()
+                }
+                
+                ph_inputs = {
+                        'material_prefix': scf_inputs['material_prefix'],
+                        'nq1': self.nq1.value(),
+                        'nq2': self.nq2.value(),
+                        'nq3': self.nq3.value(),
+                        'tr2_ph': self.self_consistency_threshold.value(),
+                        'recover': self.recover.currentText(),
+                }
+>>>>>>> 7fd94d0be9fe612a98883f012bc0fe37f2586e2d
 
 
                
@@ -1492,11 +1568,14 @@ class Ui_MainWindow(object):
                 build_NSCF_Input(scf_inputs, material_prefix)
 ################################################################################################
 
+<<<<<<< HEAD
+>>>>>>> 3e54546 (updated variable names)
+=======
  
 
 
 
->>>>>>> 3e54546 (updated variable names)
+>>>>>>> 7fd94d0be9fe612a98883f012bc0fe37f2586e2d
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -1600,6 +1679,7 @@ class Ui_MainWindow(object):
         # self.label_33.currentTextChanged.connect(lambda field="nq1": self.on_ph_x_input_change(field))
         self.label_34.setText(_translate("MainWindow", "Self-Consistency Threshold"))
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         self.comboBox_6.setItemText(0, _translate("MainWindow", "False"))
         self.comboBox_6.setItemText(1, _translate("MainWindow", "True"))
@@ -1608,6 +1688,10 @@ class Ui_MainWindow(object):
         self.recover.setItemText(0, _translate("MainWindow", "False"))
         self.recover.setItemText(1, _translate("MainWindow", "True"))
 >>>>>>> 3e54546 (updated variable names)
+=======
+        self.recover.setItemText(0, _translate("MainWindow", "False"))
+        self.recover.setItemText(1, _translate("MainWindow", "True"))
+>>>>>>> 7fd94d0be9fe612a98883f012bc0fe37f2586e2d
         self.label_35.setToolTip(_translate("MainWindow", "<html><head/><body><pre style=\" margin-top:12px; margin-bottom:-13px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Courier New\';\">If .true. restart from an interrupted run.</span></pre></body></html>"))
         self.label_35.setText(_translate("MainWindow", "Recover"))
 
@@ -1684,7 +1768,10 @@ class Ui_MainWindow(object):
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 7fd94d0be9fe612a98883f012bc0fe37f2586e2d
 #################################################################################
 
 
@@ -1796,7 +1883,10 @@ def build_NSCF_Input(scf_inputs, material_prefix):
 
 
 
+<<<<<<< HEAD
 >>>>>>> 2769371 (basic input mapping (EXCEPT FOR EPW))
+=======
+>>>>>>> 7fd94d0be9fe612a98883f012bc0fe37f2586e2d
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
