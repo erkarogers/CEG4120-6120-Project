@@ -281,7 +281,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </widget>
                 </item>
                 <item row="1" column="1">
-                 <widget class="QLineEdit" name="lineEdit">
+                 <widget class="QLineEdit" name="material_prefix">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -329,7 +329,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </widget>
                 </item>
                 <item row="2" column="1">
-                 <widget class="QComboBox" name="comboBox">
+                 <widget class="QComboBox" name="restart_mode">
                   <property name="font">
                    <font>
                     <pointsize>10</pointsize>
@@ -366,7 +366,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </widget>
                 </item>
                 <item row="3" column="1">
-                 <widget class="QLineEdit" name="lineEdit_2">
+                 <widget class="QLineEdit" name="pseudo_dir">
                   <property name="font">
                    <font>
                     <pointsize>10</pointsize>
@@ -393,7 +393,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </widget>
                 </item>
                 <item row="4" column="1">
-                 <widget class="QLineEdit" name="lineEdit_3">
+                 <widget class="QLineEdit" name="current_dir">
                   <property name="font">
                    <font>
                     <pointsize>10</pointsize>
@@ -402,7 +402,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </widget>
                 </item>
                 <item row="5" column="1">
-                 <widget class="QDoubleSpinBox" name="doubleSpinBox">
+                 <widget class="QDoubleSpinBox" name="max_runtime">
                   <property name="font">
                    <font>
                     <pointsize>10</pointsize>
@@ -481,7 +481,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                </widget>
               </item>
               <item row="1" column="1">
-               <widget class="QComboBox" name="comboBox_3">
+               <widget class="QComboBox" name="bravais_index">
                 <property name="font">
                  <font>
                   <pointsize>10</pointsize>
@@ -654,7 +654,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                </widget>
               </item>
               <item row="2" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
+               <widget class="QDoubleSpinBox" name="crystal_constant">
                 <property name="font">
                  <font>
                   <pointsize>10</pointsize>
@@ -663,7 +663,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                </widget>
               </item>
               <item row="3" column="1">
-               <widget class="QSpinBox" name="spinBox">
+               <widget class="QSpinBox" name="num_atoms">
                 <property name="font">
                  <font>
                   <pointsize>10</pointsize>
@@ -672,7 +672,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                </widget>
               </item>
               <item row="4" column="1">
-               <widget class="QSpinBox" name="spinBox_2">
+               <widget class="QSpinBox" name="num_type_atoms">
                 <property name="font">
                  <font>
                   <pointsize>10</pointsize>
@@ -681,7 +681,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                </widget>
               </item>
               <item row="5" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+               <widget class="QDoubleSpinBox" name="nrg_cutoff">
                 <property name="font">
                  <font>
                   <pointsize>10</pointsize>
@@ -749,7 +749,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                </widget>
               </item>
               <item row="1" column="1">
-               <widget class="QComboBox" name="comboBox_4">
+               <widget class="QComboBox" name="diagonalization">
                 <property name="font">
                  <font>
                   <pointsize>10</pointsize>
@@ -801,7 +801,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                </widget>
               </item>
               <item row="2" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBox_5">
+               <widget class="QDoubleSpinBox" name="mixing_beta">
                 <property name="font">
                  <font>
                   <pointsize>10</pointsize>
@@ -837,7 +837,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                </widget>
               </item>
               <item row="3" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBox_4">
+               <widget class="QDoubleSpinBox" name="con_threshold">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                   <horstretch>0</horstretch>
@@ -889,7 +889,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                </widget>
               </item>
               <item row="5" column="1">
-               <widget class="QLineEdit" name="lineEdit_4">
+               <widget class="QLineEdit" name="atom">
                 <property name="font">
                  <font>
                   <pointsize>10</pointsize>
@@ -916,7 +916,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                </widget>
               </item>
               <item row="6" column="1">
-               <widget class="QDoubleSpinBox" name="doubleSpinBox_6">
+               <widget class="QDoubleSpinBox" name="atomic_mass">
                 <property name="font">
                  <font>
                   <pointsize>10</pointsize>
@@ -943,7 +943,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                </widget>
               </item>
               <item row="7" column="1">
-               <widget class="QLineEdit" name="lineEdit_5">
+               <widget class="QLineEdit" name="pseudo_filename">
                 <property name="font">
                  <font>
                   <pointsize>10</pointsize>
@@ -970,7 +970,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                </widget>
               </item>
               <item row="8" column="1">
-               <widget class="QComboBox" name="comboBox_2">
+               <widget class="QComboBox" name="atomic_coord_type">
                 <property name="font">
                  <font>
                   <pointsize>10</pointsize>
@@ -1033,7 +1033,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </widget>
                 </item>
                 <item row="2" column="1">
-                 <widget class="QSpinBox" name="spinBox_12">
+                 <widget class="QSpinBox" name="offset_z">
                   <property name="font">
                    <font>
                     <pointsize>10</pointsize>
@@ -1042,7 +1042,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </widget>
                 </item>
                 <item row="1" column="1">
-                 <widget class="QSpinBox" name="spinBox_13">
+                 <widget class="QSpinBox" name="offset_y">
                   <property name="font">
                    <font>
                     <pointsize>10</pointsize>
@@ -1071,7 +1071,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </widget>
                 </item>
                 <item row="0" column="1">
-                 <widget class="QSpinBox" name="spinBox_14">
+                 <widget class="QSpinBox" name="offset_x">
                   <property name="font">
                    <font>
                     <pointsize>10</pointsize>
@@ -1084,7 +1084,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               <item row="0" column="0">
                <layout class="QGridLayout" name="gridLayout_2">
                 <item row="2" column="1">
-                 <widget class="QSpinBox" name="spinBox_4">
+                 <widget class="QSpinBox" name="kptz">
                   <property name="font">
                    <font>
                     <pointsize>10</pointsize>
@@ -1093,7 +1093,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </widget>
                 </item>
                 <item row="1" column="1">
-                 <widget class="QSpinBox" name="spinBox_3">
+                 <widget class="QSpinBox" name="kpty">
                   <property name="font">
                    <font>
                     <pointsize>10</pointsize>
@@ -1147,7 +1147,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
                  </widget>
                 </item>
                 <item row="0" column="1">
-                 <widget class="QSpinBox" name="spinBox_5">
+                 <widget class="QSpinBox" name="kptx">
                   <property name="font">
                    <font>
                     <pointsize>10</pointsize>
@@ -1177,7 +1177,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
               <string>K Point Types:</string>
              </property>
             </widget>
-            <widget class="QComboBox" name="comboBox_18">
+            <widget class="QComboBox" name="k_point_types">
              <property name="geometry">
               <rect>
                <x>130</x>
@@ -1272,7 +1272,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
        </property>
        <layout class="QGridLayout" name="gridLayout_9">
         <item row="2" column="1">
-         <widget class="QSpinBox" name="spinBox_15">
+         <widget class="QSpinBox" name="nq3">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -1287,7 +1287,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QSpinBox" name="spinBox_16">
+         <widget class="QSpinBox" name="nq2">
           <property name="font">
            <font>
             <pointsize>10</pointsize>
@@ -1350,7 +1350,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="QSpinBox" name="spinBox_17">
+         <widget class="QSpinBox" name="nq1">
           <property name="font">
            <font>
             <pointsize>10</pointsize>
@@ -1377,7 +1377,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          <number>10</number>
         </property>
         <item row="0" column="1">
-         <widget class="QDoubleSpinBox" name="doubleSpinBox_7"/>
+         <widget class="QDoubleSpinBox" name="self_consistency_threshold"/>
         </item>
         <item row="0" column="0">
          <widget class="QLabel" name="label_34">
@@ -1395,7 +1395,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
          </widget>
         </item>
         <item row="1" column="1">
-         <widget class="QComboBox" name="comboBox_6">
+         <widget class="QComboBox" name="recover">
           <item>
            <property name="text">
             <string>False</string>
@@ -1536,7 +1536,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
 }</string>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_8">
        <attribute name="title">
@@ -1577,7 +1577,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QComboBox" name="comboBox_7">
+          <widget class="QComboBox" name="kmaps">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -1614,7 +1614,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QComboBox" name="comboBox_8">
+          <widget class="QComboBox" name="epbwrite">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -1651,7 +1651,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="2" column="1">
-          <widget class="QComboBox" name="comboBox_9">
+          <widget class="QComboBox" name="epbread">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -1685,7 +1685,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="3" column="1">
-          <widget class="QComboBox" name="comboBox_10">
+          <widget class="QComboBox" name="epwwrite">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -1719,7 +1719,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="4" column="1">
-          <widget class="QComboBox" name="comboBox_11">
+          <widget class="QComboBox" name="epwread">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -1756,7 +1756,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="5" column="1">
-          <widget class="QComboBox" name="comboBox_12">
+          <widget class="QComboBox" name="polar_correct">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -1790,7 +1790,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="6" column="1">
-          <widget class="QComboBox" name="comboBox_13">
+          <widget class="QComboBox" name="center_wannier">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -1847,7 +1847,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QSpinBox" name="spinBox_18">
+          <widget class="QSpinBox" name="num_wannier">
            <property name="maximumSize">
             <size>
              <width>850</width>
@@ -1877,7 +1877,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QComboBox" name="comboBox_14">
+          <widget class="QComboBox" name="gen_ukk">
            <property name="maximumSize">
             <size>
              <width>850</width>
@@ -1917,7 +1917,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="2" column="1">
-          <widget class="QSpinBox" name="spinBox_19">
+          <widget class="QSpinBox" name="num_wannier_iter">
            <property name="maximumSize">
             <size>
              <width>850</width>
@@ -1956,7 +1956,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="3" column="1">
-          <widget class="QSpinBox" name="spinBox_20">
+          <widget class="QSpinBox" name="wannier_verbosity">
            <property name="maximumSize">
             <size>
              <width>850</width>
@@ -1989,7 +1989,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="4" column="1">
-          <widget class="QDoubleSpinBox" name="doubleSpinBox_8">
+          <widget class="QDoubleSpinBox" name="disentaglement_win_max">
            <property name="maximumSize">
             <size>
              <width>850</width>
@@ -2028,7 +2028,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="5" column="1">
-          <widget class="QDoubleSpinBox" name="doubleSpinBox_9">
+          <widget class="QDoubleSpinBox" name="win_max_frozen">
            <property name="maximumSize">
             <size>
              <width>850</width>
@@ -2067,7 +2067,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="6" column="1">
-          <widget class="QTextEdit" name="textEdit">
+          <widget class="QTextEdit" name="wannier_projections">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
              <horstretch>0</horstretch>
@@ -2121,7 +2121,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QComboBox" name="comboBox_15">
+          <widget class="QComboBox" name="print_vertexs">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -2158,7 +2158,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QComboBox" name="comboBox_16">
+          <widget class="QComboBox" name="cal_optical_params">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -2192,7 +2192,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="2" column="1">
-          <widget class="QDoubleSpinBox" name="doubleSpinBox_10">
+          <widget class="QDoubleSpinBox" name="scissor_shift">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -2219,7 +2219,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="3" column="1">
-          <widget class="QDoubleSpinBox" name="doubleSpinBox_11">
+          <widget class="QDoubleSpinBox" name="min_photon_nrg">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -2243,7 +2243,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="4" column="1">
-          <widget class="QDoubleSpinBox" name="doubleSpinBox_12">
+          <widget class="QDoubleSpinBox" name="max_photon_nrg">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -2270,7 +2270,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="5" column="1">
-          <widget class="QDoubleSpinBox" name="doubleSpinBox_13">
+          <widget class="QDoubleSpinBox" name="steps_photon_nrg">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -2297,7 +2297,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="6" column="1">
-          <widget class="QDoubleSpinBox" name="doubleSpinBox_14">
+          <widget class="QDoubleSpinBox" name="refreactive_index">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -2321,7 +2321,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="7" column="1">
-          <widget class="QDoubleSpinBox" name="doubleSpinBox_15">
+          <widget class="QDoubleSpinBox" name="band_gap_width">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -2354,7 +2354,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="8" column="1">
-          <widget class="QDoubleSpinBox" name="doubleSpinBox_16">
+          <widget class="QDoubleSpinBox" name="temperature">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -2384,7 +2384,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="9" column="1">
-          <widget class="QDoubleSpinBox" name="doubleSpinBox_17">
+          <widget class="QDoubleSpinBox" name="step_broad_param">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -2414,7 +2414,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="10" column="1">
-          <widget class="QComboBox" name="comboBox_17">
+          <widget class="QComboBox" name="specified_fermi_nrg">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -2448,7 +2448,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="11" column="1">
-          <widget class="QDoubleSpinBox" name="doubleSpinBox_18">
+          <widget class="QDoubleSpinBox" name="fermi_nrg">
            <property name="font">
             <font>
              <pointsize>10</pointsize>
@@ -2474,7 +2474,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </property>
         <layout class="QGridLayout" name="gridLayout_8">
          <item row="2" column="1">
-          <widget class="QSpinBox" name="spinBox_21"/>
+          <widget class="QSpinBox" name="nfk3"/>
          </item>
          <item row="1" column="0">
           <widget class="QLabel" name="label_62">
@@ -2492,7 +2492,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QSpinBox" name="spinBox_22"/>
+          <widget class="QSpinBox" name="nfk2"/>
          </item>
          <item row="2" column="0">
           <widget class="QLabel" name="label_63">
@@ -2510,7 +2510,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QSpinBox" name="spinBox_23"/>
+          <widget class="QSpinBox" name="nfk1"/>
          </item>
          <item row="0" column="0">
           <widget class="QLabel" name="label_64">
@@ -2540,10 +2540,10 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
         </property>
         <layout class="QGridLayout" name="gridLayout_10">
          <item row="2" column="1">
-          <widget class="QSpinBox" name="spinBox_24"/>
+          <widget class="QSpinBox" name="nqf3"/>
          </item>
          <item row="1" column="1">
-          <widget class="QSpinBox" name="spinBox_25"/>
+          <widget class="QSpinBox" name="nqf2"/>
          </item>
          <item row="1" column="0">
           <widget class="QLabel" name="label_65">
@@ -2591,7 +2591,7 @@ QTabBar::tab:left:only-one, QTabBar::tab:right:only-one {
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QSpinBox" name="spinBox_26"/>
+          <widget class="QSpinBox" name="nqf1"/>
          </item>
         </layout>
        </widget>
