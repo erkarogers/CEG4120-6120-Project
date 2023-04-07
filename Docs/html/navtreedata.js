@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "SCS GUI", "index.html", [
+  [ "Semi Conductor Simulation GUI", "index.html", [
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
