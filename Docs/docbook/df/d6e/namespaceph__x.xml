@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceph__x" xml:lang="en-US">
+<title>ph_x Namespace Reference</title>
+<indexterm><primary>ph_x</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_namespaceph__x_1a7e3c5adb8191e51939fc4410b155b5f4">bind_PH_X_inputs</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_namespaceph__x_1a7c32640005a7bf330204548b7edfb23f">build_PH_Input</link> (ph_inputs, material_prefix)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceph__x_1a8c8a88ef627842ee07024dffff1b352d">href</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceph__x_1ac8af0871e09a3f0aabd80e964194bdd5">target</link></para>
+</listitem>
+            <listitem><para>HTML <link linkend="_namespaceph__x_1ab06a97d2134cc78fbdb5b7eba939a6a5">documentation_link</link> = HTML(value=&apos;&lt;a <link linkend="_namespaceph__x_1a8c8a88ef627842ee07024dffff1b352d">href</link>=&quot;https://www.quantum-espresso.org/Doc/INPUT_PH.html#idm218&quot; <link linkend="_namespaceph__x_1ac8af0871e09a3f0aabd80e964194bdd5">target</link>=&quot;_blank&quot;&gt;INPUT_PH.html&lt;/a&gt;&apos;)</para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceph__x_1afd6afe2392d2a6086d0e930042d5b03b">nq1</link> = IntText(name=&quot;nq1&quot;, value= 3)</para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceph__x_1aa9e8cb16e48d8f874eb44e683852cf70">nq2</link> = IntText(name=&quot;nq2&quot;, value= 3)</para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceph__x_1a49dc1a97951b0372f27acb9f9c215ff7">nq3</link> = IntText(name=&quot;nq3&quot;, value= 3)</para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceph__x_1a8a353a0810a6059e0448141fae97bb8f">self_consistency_threshold</link> = FloatText(name=&quot;Self-Consistency Threshold&quot;, value=1.0e-12)</para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceph__x_1a319529d1d82f659fba1ec125ad681d62">recover</link> = Dropdown(name=&quot;recover&quot;, value=&quot;false&quot;, options=[&quot;true&quot;,&quot;false&quot;])</para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceph__x_1a60861702ba7cf1720dad56323d217bf8">icon_nq1</link></para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceph__x_1a63e405e46a6961ecc458f1cb65f05a65">icon_nq2</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceph__x_1a446a4ee67b81a3c727588bf0be638a95">icon_nq3</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceph__x_1a2242bbd283035de6d4bca92c1fdb28ce">icon_self_consistency_threshold</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceph__x_1a12a62bcfd9cb93eeee86b02291374c44">icon_recover</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_namespaceph__x_1a3ac01af2b0af371853c85a35a959d5ca">form_items</link></para>
+</listitem>
+            <listitem><para>Box <link linkend="_namespaceph__x_1a07c5e48d70701ba8fafa7918eb99d8b8">ph_x_box</link> = Box(<link linkend="_namespaceph__x_1a3ac01af2b0af371853c85a35a959d5ca">form_items</link>, layout=box_layout(40))</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceph__x_1a629eb3947e59ceee37fcb842fe0d63ac">search_sym</link> = &apos;.false.&apos;</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespaceph__x_1a7a95ddd28c0fc75dc67aa7d046296319">ph_cores</link> = 20</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceph__x_1af96083ae22e69bdb39780d3b780295e8">ph_walltime</link> = &apos;00:05:00&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespaceph__x_1a7e3c5adb8191e51939fc4410b155b5f4"/><section>
+    <title>bind_PH_X_inputs()</title>
+<indexterm><primary>bind_PH_X_inputs</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>bind_PH_X_inputs</secondary></indexterm>
+<para><computeroutput>def ph_x.bind_PH_X_inputs ( self)</computeroutput></para></section>
+<anchor xml:id="_namespaceph__x_1a7c32640005a7bf330204548b7edfb23f"/><section>
+    <title>build_PH_Input()</title>
+<indexterm><primary>build_PH_Input</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>build_PH_Input</secondary></indexterm>
+<para><computeroutput>def ph_x.build_PH_Input ( ph_inputs,  material_prefix)</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceph__x_1ab06a97d2134cc78fbdb5b7eba939a6a5"/><section>
+    <title>documentation_link</title>
+<indexterm><primary>documentation_link</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>documentation_link</secondary></indexterm>
+<para><computeroutput>HTML ph_x.documentation_link = HTML(value=&apos;&lt;a <link linkend="_namespaceph__x_1a8c8a88ef627842ee07024dffff1b352d">href</link>=&quot;https://www.quantum-espresso.org/Doc/INPUT_PH.html#idm218&quot; <link linkend="_namespaceph__x_1ac8af0871e09a3f0aabd80e964194bdd5">target</link>=&quot;_blank&quot;&gt;INPUT_PH.html&lt;/a&gt;&apos;)</computeroutput></para></section>
+<anchor xml:id="_namespaceph__x_1a3ac01af2b0af371853c85a35a959d5ca"/><section>
+    <title>form_items</title>
+<indexterm><primary>form_items</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>form_items</secondary></indexterm>
+<para><computeroutput>list ph_x.form_items</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;[
+2 &#32;&#32;&#32;&#32;
+3 &#32;&#32;&#32;&#32;HBox([Label(value=<emphasis role="stringliteral">&apos;nq1&apos;</emphasis>),
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Box([nq1,&#32;icon_nq1])
+5 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;],&#32;layout&#32;=&#32;form_item_layout()),
+6 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+7 &#32;&#32;&#32;&#32;HBox([Label(value=<emphasis role="stringliteral">&apos;nq2&apos;</emphasis>),&#32;
+8 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Box([nq2,&#32;icon_nq2])
+9 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;],layout=form_item_layout()),
+10 &#32;&#32;&#32;&#32;
+11 &#32;&#32;&#32;&#32;&#32;HBox([Label(value=<emphasis role="stringliteral">&apos;nq3&apos;</emphasis>),&#32;
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Box([nq3,&#32;icon_nq3])
+13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;],layout=form_item_layout()),
+14 &#32;&#32;&#32;&#32;
+15 &#32;&#32;&#32;&#32;&#32;HBox([Label(value=<emphasis role="stringliteral">&apos;Self-Consistency&#32;Threshold&apos;</emphasis>),&#32;
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Box([self_consistency_threshold,&#32;icon_self_consistency_threshold])
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;],layout=form_item_layout()),
+18 &#32;&#32;&#32;&#32;
+19 &#32;&#32;&#32;&#32;&#32;&#32;HBox([Label(value=<emphasis role="stringliteral">&apos;Recover&apos;</emphasis>),&#32;
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Box([recover,&#32;icon_recover])
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;],layout=form_item_layout()),&#32;&#32;&#32;
+22 &#32;&#32;&#32;&#32;
+23 &#32;&#32;&#32;&#32;HBox([Label(value=<emphasis role="stringliteral">&apos;Documentation&#32;URL:&apos;</emphasis>),&#32;documentation_link],&#32;layout=Layout())
+24 &#32;&#32;&#32;&#32;
+25 &#32;&#32;&#32;&#32;<emphasis role="comment">#Box([Label(value=&apos;nq1&apos;),&#32;nq1],&#32;layout=form_item_layout()),</emphasis>
+26 &#32;&#32;&#32;&#32;<emphasis role="comment">#Box([Label(value=&apos;nq2&apos;),&#32;nq2],&#32;layout=form_item_layout()),</emphasis>
+27 &#32;&#32;&#32;&#32;<emphasis role="comment">#Box([Label(value=&apos;nq3&apos;),&#32;nq3],&#32;layout=form_item_layout()),</emphasis>
+28 &#32;&#32;&#32;&#32;<emphasis role="comment">#Box([Label(value=&apos;Self-Consistency&#32;Threshold&apos;),&#32;self_consistency_threshold],&#32;layout=form_item_layout()),</emphasis>
+29 &#32;&#32;&#32;&#32;<emphasis role="comment">#Box([Label(value=&apos;Recover&apos;),&#32;recover],&#32;layout=form_item_layout())</emphasis>
+30 ]
+</programlisting></section>
+<anchor xml:id="_namespaceph__x_1a8c8a88ef627842ee07024dffff1b352d"/><section>
+    <title>href</title>
+<indexterm><primary>href</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>href</secondary></indexterm>
+<para><computeroutput>ph_x.href</computeroutput></para></section>
+<anchor xml:id="_namespaceph__x_1a60861702ba7cf1720dad56323d217bf8"/><section>
+    <title>icon_nq1</title>
+<indexterm><primary>icon_nq1</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>icon_nq1</secondary></indexterm>
+<para><computeroutput>Button ph_x.icon_nq1</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Parameters&#32;of&#32;the&#32;Monkhorst-Pack&#32;grid&#32;(no&#32;offset)&#32;used&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;when&#32;ldisp=.true.&#32;Same&#32;meaning&#32;as&#32;for&#32;nk1,&#32;nk2,&#32;nk3&#32;in&#32;the&#32;input&#32;of&#32;pw.x.&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;DEFAULT:&#32;0,0,0&apos;</emphasis>&#32;,&#32;
+5 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting><para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</para>
+</section>
+<anchor xml:id="_namespaceph__x_1a63e405e46a6961ecc458f1cb65f05a65"/><section>
+    <title>icon_nq2</title>
+<indexterm><primary>icon_nq2</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>icon_nq2</secondary></indexterm>
+<para><computeroutput>Button ph_x.icon_nq2</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Parameters&#32;of&#32;the&#32;Monkhorst-Pack&#32;grid&#32;(no&#32;offset)&#32;used&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;when&#32;ldisp=.true.&#32;Same&#32;meaning&#32;as&#32;for&#32;nk1,&#32;nk2,&#32;nk3&#32;in&#32;the&#32;input&#32;of&#32;pw.x.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;DEFAULT:&#32;0,0,0&apos;</emphasis>,&#32;
+5 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceph__x_1a446a4ee67b81a3c727588bf0be638a95"/><section>
+    <title>icon_nq3</title>
+<indexterm><primary>icon_nq3</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>icon_nq3</secondary></indexterm>
+<para><computeroutput>Button ph_x.icon_nq3</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Parameters&#32;of&#32;the&#32;Monkhorst-Pack&#32;grid&#32;(no&#32;offset)&#32;used&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;when&#32;ldisp=.true.&#32;Same&#32;meaning&#32;as&#32;for&#32;nk1,&#32;nk2,&#32;nk3&#32;in&#32;the&#32;input&#32;of&#32;pw.x.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;0,0,0&apos;</emphasis>,&#32;
+5 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceph__x_1a12a62bcfd9cb93eeee86b02291374c44"/><section>
+    <title>icon_recover</title>
+<indexterm><primary>icon_recover</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>icon_recover</secondary></indexterm>
+<para><computeroutput>Button ph_x.icon_recover</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;&#32;If&#32;.true.&#32;restart&#32;from&#32;an&#32;interrupted&#32;run.&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;DEFAULT:&#32;false&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceph__x_1a2242bbd283035de6d4bca92c1fdb28ce"/><section>
+    <title>icon_self_consistency_threshold</title>
+<indexterm><primary>icon_self_consistency_threshold</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>icon_self_consistency_threshold</secondary></indexterm>
+<para><computeroutput>Button ph_x.icon_self_consistency_threshold</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Threshold&#32;for&#32;self-consistency.&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;DEFAULT:1e-12&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceph__x_1afd6afe2392d2a6086d0e930042d5b03b"/><section>
+    <title>nq1</title>
+<indexterm><primary>nq1</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>nq1</secondary></indexterm>
+<para><computeroutput>IntText ph_x.nq1 = IntText(name=&quot;nq1&quot;, value= 3)</computeroutput></para></section>
+<anchor xml:id="_namespaceph__x_1aa9e8cb16e48d8f874eb44e683852cf70"/><section>
+    <title>nq2</title>
+<indexterm><primary>nq2</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>nq2</secondary></indexterm>
+<para><computeroutput>IntText ph_x.nq2 = IntText(name=&quot;nq2&quot;, value= 3)</computeroutput></para></section>
+<anchor xml:id="_namespaceph__x_1a49dc1a97951b0372f27acb9f9c215ff7"/><section>
+    <title>nq3</title>
+<indexterm><primary>nq3</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>nq3</secondary></indexterm>
+<para><computeroutput>IntText ph_x.nq3 = IntText(name=&quot;nq3&quot;, value= 3)</computeroutput></para></section>
+<anchor xml:id="_namespaceph__x_1a7a95ddd28c0fc75dc67aa7d046296319"/><section>
+    <title>ph_cores</title>
+<indexterm><primary>ph_cores</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>ph_cores</secondary></indexterm>
+<para><computeroutput>int ph_x.ph_cores = 20</computeroutput></para></section>
+<anchor xml:id="_namespaceph__x_1af96083ae22e69bdb39780d3b780295e8"/><section>
+    <title>ph_walltime</title>
+<indexterm><primary>ph_walltime</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>ph_walltime</secondary></indexterm>
+<para><computeroutput>str ph_x.ph_walltime = &apos;00:05:00&apos;</computeroutput></para></section>
+<anchor xml:id="_namespaceph__x_1a07c5e48d70701ba8fafa7918eb99d8b8"/><section>
+    <title>ph_x_box</title>
+<indexterm><primary>ph_x_box</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>ph_x_box</secondary></indexterm>
+<para><computeroutput>Box ph_x.ph_x_box = Box(<link linkend="_namespaceph__x_1a3ac01af2b0af371853c85a35a959d5ca">form_items</link>, layout=box_layout(40))</computeroutput></para></section>
+<anchor xml:id="_namespaceph__x_1a319529d1d82f659fba1ec125ad681d62"/><section>
+    <title>recover</title>
+<indexterm><primary>recover</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>recover</secondary></indexterm>
+<para><computeroutput>Dropdown ph_x.recover = Dropdown(name=&quot;recover&quot;, value=&quot;false&quot;, options=[&quot;true&quot;,&quot;false&quot;])</computeroutput></para></section>
+<anchor xml:id="_namespaceph__x_1a629eb3947e59ceee37fcb842fe0d63ac"/><section>
+    <title>search_sym</title>
+<indexterm><primary>search_sym</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>search_sym</secondary></indexterm>
+<para><computeroutput>str ph_x.search_sym = &apos;.false.&apos;</computeroutput></para></section>
+<anchor xml:id="_namespaceph__x_1a8a353a0810a6059e0448141fae97bb8f"/><section>
+    <title>self_consistency_threshold</title>
+<indexterm><primary>self_consistency_threshold</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>self_consistency_threshold</secondary></indexterm>
+<para><computeroutput>FloatText ph_x.self_consistency_threshold = FloatText(name=&quot;Self-Consistency Threshold&quot;, value=1.0e-12)</computeroutput></para></section>
+<anchor xml:id="_namespaceph__x_1ac8af0871e09a3f0aabd80e964194bdd5"/><section>
+    <title>target</title>
+<indexterm><primary>target</primary><secondary>ph_x</secondary></indexterm>
+<indexterm><primary>ph_x</primary><secondary>target</secondary></indexterm>
+<para><computeroutput>ph_x.target</computeroutput></para></section>
+</section>
+</section>

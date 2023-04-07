@@ -24,30 +24,30 @@ documentation_link = HTML(value='<a href="https://docs.epw-code.org/doc/Inputs.h
 # %%
 # Setup
 
-# option for turning on/off reading in kmaps from file
+## option for turning on/off reading in kmaps from file
 kmaps = Dropdown(name="kmaps", value=".false.", options={"false": ".false.", "true": ".true."})
 
-# option for turning on/off writing coarse bloch space electron phonon matrix elements (.epb files) to file
+## option for turning on/off writing coarse bloch space electron phonon matrix elements (.epb files) to file
 epbwrite = Dropdown(name="epbwrite", value=".true.", options={"false": ".false.", "true": ".true."})
     
-# option for turning on/off reading coarse bloch space electron phonon matrix elements (.epb files) from file
+## option for turning on/off reading coarse bloch space electron phonon matrix elements (.epb files) from file
 epbread = Dropdown(name="epbread", value=".false.", options={"false": ".false.", "true": ".true."})
 
-# option for turning on/off writing coarse wannier space electron phonon matrix elements (.epw files) to file
+## option for turning on/off writing coarse wannier space electron phonon matrix elements (.epw files) to file
 epwwrite = Dropdown(name="epwwrite", value=".true.", options={"false": ".false.", "true": ".true."})
     
-# epwread option for turning on/off reading coarse wannier space electron phonon matrix elements (.epw files) from file
+## epwread option for turning on/off reading coarse wannier space electron phonon matrix elements (.epw files) from file
 epwread = Dropdown(name="epwread", value=".false.", options={"false": ".false.", "true": ".true."})
 
-# option for polar material correction to Wannier interpolation
+## option for polar material correction to Wannier interpolation
 lpolar = Dropdown(name="Correct for polar materials",value="false",options=["false", "true"])
 
-# create Wannier conversion 
+## create Wannier conversion 
 wannierize = Dropdown(name="Center Wannier Functions",value="true",options=["false", "true"])
 
 
 ####
-# Creates the info buttons and adds in the description when you hover your cursor over the button
+## Creates the info buttons and adds in the description when you hover your cursor over the button
 
 icon_kmaps = Button( icon='fa-info-circle',
                                 tooltip='Generate the map k+q –> k for folding the rotation matrix U(k+q).' '\n''\n'
@@ -143,25 +143,25 @@ setup_box
 # %%
 # Wannier
 
-# number of iterations for creating wannier function representations
+## number of iterations for creating wannier function representations
 num_iter = IntText(name="Number of Iterations", value=1500)
 
-# verbosity of EPW output file
+## verbosity of EPW output file
 iprint = IntText(name="Verbosity Level", value=2)
 
-# Maximum value of the disentanglement window. See wannier90 documentation.
+## Maximum value of the disentanglement window. See wannier90 documentation.
 dis_win_max = FloatText(name="Disentaglement Window Max", value=18.0)
 
-# Window which includes frozen states for Wannier90. See wannier90 documentation.
+## Window which includes frozen states for Wannier90. See wannier90 documentation.
 dis_froz_max = FloatText(name="Window Max for Frozen States",value=8.5)
 
-# Initial wannier projections, to be passed to Wannier90. These must agree with nbnd if specified other than the default 'random' setting (number of desired wannier projections = number of computed bands)
+## Initial wannier projections, to be passed to Wannier90. These must agree with nbnd if specified other than the default 'random' setting (number of desired wannier projections = number of computed bands)
 projections = Textarea(name="Projections?", value="proj(1) = 'random'")
 
 
 
 ####
-# Creates the info buttons and adds in the description when you hover your cursor over the button
+## Creates the info buttons and adds in the description when you hover your cursor over the button
 
 icon_num_iter = Button( icon='fa-info-circle',
                                 tooltip='Number of iterations to produce maximally localized wannier functions', 
@@ -232,49 +232,49 @@ wannier_box
 # %%
 # Misc
 
-# option to print all electron-phonon coupling elements to output file
-# will create a masssive file that will take a long time to write, use caution when setting to .true.
+## option to print all electron-phonon coupling elements to output file
+## will create a masssive file that will take a long time to write, use caution when setting to .true.
 prgtkk = Dropdown(name="Print Electron-Photon Vertexs", value=".false.", 
                   options={"false": ".false.", "true": ".true."})
 
-# option to calculate optical absorption function
+## option to calculate optical absorption function
 lindabs = Dropdown(name="Calculate Optical Parameters", value=".true.", 
                    options={"false": ".false.", "true": ".true."})
                                                                                                                                                                            
-# scissor shift to correct for DFT Bandgap narrowing
+## scissor shift to correct for DFT Bandgap narrowing
 scissor = FloatText(name="Scissor Shift", value=0)
 
-# lowest optical frequency of interest, in eV
+## lowest optical frequency of interest, in eV
 omegamin = FloatText(name="Min Photon Energy", value=0.05 )
 
-# highest optical frequency of interest, in eV
+## highest optical frequency of interest, in eV
 omegamax = FloatText( name="Max Photon Energy", value=0.05)
 
-# increment for sweeping optical frequencies, in eV
+## increment for sweeping optical frequencies, in eV
 omegastep = FloatText(name="Steps in Photon Energy", value=0.00)
                                                                                                                                                                             
-# material's index of refraction
+## material's index of refraction
 n_r = FloatText(name="Refractive Index", value=3.4)
 
-# Width of the Fermi surface window to take into account states in the self-energy delta functions in eV. Narrowing this value reduces the FloatText of bands included in the selfenergy calculations.
+## Width of the Fermi surface window to take into account states in the self-energy delta functions in eV. Narrowing this value reduces the FloatText of bands included in the selfenergy calculations.
 fsthick = FloatText(name="Band Gap Width", value=4.0)
  
-# system temperature in Kelvin
+## system temperature in Kelvin
 temps = FloatText(name="Temperature (K)", value=300)
 
-# Smearing in the energy-conserving delta functions in eV
+## Smearing in the energy-conserving delta functions in eV
 degaussw = FloatText(name="Step Function Broadening Parameter", value=0.005)
 
 degaussq = FloatText(name="User Specific Fermi Energy", value=0.05)
 
-# option to specify fermi energy, such as from prior nscf step
+## option to specify fermi energy, such as from prior nscf step
 efermi_read = Dropdown(name="Fermi Energy", value=".true.",
                        options={"false": ".false.", "true": ".true."})
 
 
 
 ####
-# Creates the info buttons and adds in the description when you hover your cursor over the button
+## Creates the info buttons and adds in the description when you hover your cursor over the button
 
 icon_prgtkk = Button( icon='fa-info-circle',
                                 tooltip='Allows to print the electron-phonon vertex |g| (in meV) for each q-point, k-point, i-band, j-band and modes.''\n'
@@ -421,28 +421,28 @@ misc_box
 # %%
 # Mesh Sampling
 
-# kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
+## kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
 nkf1 = IntText(name="nkf1",cvalue=20, layout=input_layout(30))       
 
-# kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
+## kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
 nkf2 = IntText(name="nkf2", value=20, layout=input_layout(30))  
 
-# kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
+## kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
 nkf3 = IntText(name="nkf3", value=20, layout=input_layout(30)) 
 
-# fine mesh kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
+## fine mesh kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
 nqf1 = IntText(name="nqf1", value=20, layout=input_layout(30)) 
 
-# fine kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
+## fine kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
 nqf2 = IntText(name="nqf2", value=20, layout=input_layout(30)) 
 
-# fine kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
+## fine kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
 nqf3 = IntText(name="nqf3", value=20, layout=input_layout(30)) 
 
 
 
 ####
-# Creates the info buttons and adds in the description when you hover your cursor over the button
+## Creates the info buttons and adds in the description when you hover your cursor over the button
 
 icon_nkf1 = Button( icon='fa-info-circle',
                                 tooltip='Dimensions of the fine electron grid''\n''\n'
@@ -517,7 +517,7 @@ mesh_box
 # ## Combine UI Forms for this section
 
 # %%
-# combine forms into tabs
+## combine forms into tabs
 epw_x_tabs = Tab()
 tab_contents = [setup_box, wannier_box, misc_box, mesh_box]
 children = [content for content in tab_contents]
@@ -534,7 +534,7 @@ epw_x_tabs
 ## NON USER INPUTS
 
 # %%
-# option for centering Wannier function at center of Wigner-Seitz cell
+## option for centering Wannier function at center of Wigner-Seitz cell
 use_ws = '.false.'
 
 w90_data = '''
@@ -682,9 +682,9 @@ def build_EPW_Input(epw_inputs, material_prefix):
     nqf3 = {nqf3}
     /
     {qpoint_list}
-    '''.format(**epw_inputs) #assigns information in ''' ''' to variable inputfile
+    '''.format(**epw_inputs) ## assigns information in ''' ''' to variable inputfile
 
-    with open(epw_name, "w") as f: #opens file epw_name
-        f.write(input_file) #writes inputfile to file epw_na
+    with open(epw_name, "w") as f: ## opens file epw_name
+        f.write(input_file) ## writes inputfile to file epw_na
 
 

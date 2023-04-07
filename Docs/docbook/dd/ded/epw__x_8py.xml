@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_epw__x_8py" xml:lang="en-US">
+<title>epw_x.py File Reference</title>
+<indexterm><primary>epw_x.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespaceepw__x">epw_x</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_namespaceepw__x_1aa525d5c1ef7d143ec8a4343ceaa04503">epw_x.bind_EPW_X_inputs</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_namespaceepw__x_1ab896e9370697a079f1dbb4b4d093c031">epw_x.build_EPW_Input</link> (epw_inputs, material_prefix)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceepw__x_1a3cb2fa9f732acb114ea0185c818e4119">epw_x.href</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceepw__x_1ad4de5e6e8e3bcfb97e6246465b4ebb6b">epw_x.target</link></para>
+</listitem>
+            <listitem><para>HTML <link linkend="_namespaceepw__x_1a8fe6221b84e2194f9f7c30f9a442a3ea">epw_x.documentation_link</link> = HTML(value=&apos;&lt;a href=&quot;https://docs.epw-code.org/doc/Inputs.html#filkf&quot; target=&quot;_blank&quot;&gt;INPUT_EPW.html&lt;/a&gt;&apos;)</para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a898c9657249c8dd9c97025e0095e06ef">epw_x.kmaps</link> = Dropdown(name=&quot;kmaps&quot;, value=&quot;.false.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</para>
+
+<para>option for turning on/off reading in kmaps from file </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a8b0d11566e4ca2794b756a9059b333c8">epw_x.epbwrite</link> = Dropdown(name=&quot;epbwrite&quot;, value=&quot;.true.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</para>
+
+<para>option for turning on/off writing coarse bloch space electron phonon matrix elements (.epb files) to file </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a5520a18bcb4b1875b3d37853f613e69b">epw_x.epbread</link> = Dropdown(name=&quot;epbread&quot;, value=&quot;.false.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</para>
+
+<para>option for turning on/off reading coarse bloch space electron phonon matrix elements (.epb files) from file </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a1ac9b578b46b47a02a5076e4f953d0b7">epw_x.epwwrite</link> = Dropdown(name=&quot;epwwrite&quot;, value=&quot;.true.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</para>
+
+<para>option for turning on/off writing coarse wannier space electron phonon matrix elements (.epw files) to file </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a2f241413bf99ebb9667ffd98269315c1">epw_x.epwread</link> = Dropdown(name=&quot;epwread&quot;, value=&quot;.false.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</para>
+
+<para>epwread option for turning on/off reading coarse wannier space electron phonon matrix elements (.epw files) from file </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1ad8b07025d2c3a55164d015b032165055">epw_x.lpolar</link> = Dropdown(name=&quot;Correct for polar materials&quot;,value=&quot;false&quot;,options=[&quot;false&quot;, &quot;true&quot;])</para>
+
+<para>option for polar material correction to Wannier interpolation </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a37f9876568c46ed0d3e2cf1acaa88888">epw_x.wannierize</link> = Dropdown(name=&quot;Center Wannier Functions&quot;,value=&quot;true&quot;,options=[&quot;false&quot;, &quot;true&quot;])</para>
+
+<para>create Wannier conversion </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a642326d6b3fecec5f75452eec8d0c820">epw_x.icon_kmaps</link></para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a1b91a619523ac9d566e6ed2ebd5037a3">epw_x.icon_epbwrite</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a020358f2273867ce436e8ff8d072ec27">epw_x.icon_epbread</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a8904886b673c9ff1e2e34c57e2ee2ba8">epw_x.icon_epwwrite</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a293920247f350a4234a68b3c27e6a928">epw_x.icon_epwread</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1adf0c0b5f725b5ee33b5a46a020fa2db9">epw_x.icon_lpolar</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1af74e2cb944ff706c3f71fa4d7c0c0a44">epw_x.icon_wannierize</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_namespaceepw__x_1acf15b56e5127c5415bf2dcc56577e8cb">epw_x.form_items</link></para>
+</listitem>
+            <listitem><para>Box <link linkend="_namespaceepw__x_1af64aee424d8ce37097edcf01cc08c747">epw_x.setup_box</link> = Box(form_items, layout=box_layout(40))</para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1a848ac1ebc3208284f772ffbaa6e9943f">epw_x.num_iter</link> = IntText(name=&quot;Number of Iterations&quot;, value=1500)</para>
+
+<para>number of iterations for creating wannier function representations </para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1a42fb730a626ec580604790e96994e200">epw_x.iprint</link> = IntText(name=&quot;Verbosity Level&quot;, value=2)</para>
+
+<para>verbosity of EPW output file </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a8fe0bb2b941ce59db53edd1afae66401">epw_x.dis_win_max</link> = FloatText(name=&quot;Disentaglement Window Max&quot;, value=18.0)</para>
+
+<para>Maximum value of the disentanglement window. </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1ad41b21a1e41d8e4467b52c6ef8597caf">epw_x.dis_froz_max</link> = FloatText(name=&quot;Window Max for Frozen States&quot;,value=8.5)</para>
+
+<para>Window which includes frozen states for Wannier90. </para>
+</listitem>
+            <listitem><para>Textarea <link linkend="_namespaceepw__x_1a57c32b8e8d49203b32ab1cd44b59b323">epw_x.projections</link> = Textarea(name=&quot;Projections?&quot;, value=&quot;proj(1) = &apos;random&apos;&quot;)</para>
+
+<para>Initial wannier projections, to be passed to Wannier90. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a29f722328476671a3a20ca70293d207d">epw_x.icon_num_iter</link></para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1ad579e41850fb69c1446d0b49721ac3c9">epw_x.icon_iprint</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a15c1762665798ac066fe2d89cdbda55f">epw_x.icon_dis_win_max</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a093ae14a993afe00dfcd081b0b449b3a">epw_x.icon_dis_froz_max</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a9662bdf9d238faec042d186a882acd79">epw_x.icon_projections</link></para>
+</listitem>
+            <listitem><para>Box <link linkend="_namespaceepw__x_1a3c8360875b77c22055eac4183290aeed">epw_x.wannier_box</link> = Box(form_items, layout=box_layout(40))</para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a47131e48b50045f135543c09cd344db2">epw_x.prgtkk</link></para>
+
+<para>option to print all electron-phonon coupling elements to output file will create a masssive file that will take a long time to write, use caution when setting to .true. </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a71a278f580cd77b799e705a2b456dc5d">epw_x.lindabs</link></para>
+
+<para>option to calculate optical absorption function </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a7e7a06b01d042c9aeedb47f8203496cd">epw_x.scissor</link> = FloatText(name=&quot;Scissor Shift&quot;, value=0)</para>
+
+<para>scissor shift to correct for DFT Bandgap narrowing </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a4796bd0a91860fa17fbec655c1c21867">epw_x.omegamin</link> = FloatText(name=&quot;Min Photon Energy&quot;, value=0.05 )</para>
+
+<para>lowest optical frequency of interest, in eV </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1abebeca8a76affb007e4377c7288a7cfc">epw_x.omegamax</link> = FloatText( name=&quot;Max Photon Energy&quot;, value=0.05)</para>
+
+<para>highest optical frequency of interest, in eV </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a22506665928d39c815fe0ff6a0527942">epw_x.omegastep</link> = FloatText(name=&quot;Steps in Photon Energy&quot;, value=0.00)</para>
+
+<para>increment for sweeping optical frequencies, in eV </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a847c8e1144d965ecefeb4d5e23fca74b">epw_x.n_r</link> = FloatText(name=&quot;Refractive Index&quot;, value=3.4)</para>
+
+<para>material&apos;s index of refraction </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a38efb809e0904ac55417f123cd63c5f1">epw_x.fsthick</link> = FloatText(name=&quot;Band Gap Width&quot;, value=4.0)</para>
+
+<para>Width of the Fermi surface window to take into account states in the self-energy delta functions in eV. </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a511e9ea95cc93a450f49b9b652df70e1">epw_x.temps</link> = FloatText(name=&quot;Temperature (K)&quot;, value=300)</para>
+
+<para>system temperature in Kelvin </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a0f873c3a6d1f455e0b51a201a5771fd4">epw_x.degaussw</link> = FloatText(name=&quot;Step Function Broadening Parameter&quot;, value=0.005)</para>
+
+<para>Smearing in the energy-conserving delta functions in eV. </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1af4044643145cca5c42d88428abb6d509">epw_x.degaussq</link> = FloatText(name=&quot;User Specific Fermi Energy&quot;, value=0.05)</para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a4f16ff3a0fdef79d098bdde1ba250c9c">epw_x.efermi_read</link></para>
+
+<para>option to specify fermi energy, such as from prior nscf step </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1aac2b41a549a7e30b264f7990f4ed7f4b">epw_x.icon_prgtkk</link></para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1aa7b0982051ac7ccd561aeaff63f4865e">epw_x.icon_lindabs</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a4996b6dbd37d341abc7e3f875c56b450">epw_x.icon_scissor</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1aec927bce0a4ab99db92c00c4a7ff8e22">epw_x.icon_omegamin</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1ad45904651c9a06d39c6a5853f574d3a9">epw_x.icon_omegamax</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a2436b7a6a13c96453986687bb59ccb35">epw_x.icon_omegastep</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1aecd61f924d3abdc4577eda0ddc91b21a">epw_x.icon_n_r</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a2f63c1912169f7e826b60f12cc770a9b">epw_x.icon_fsthick</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1ad519b4cd6ec8aad771679d39c1a3c253">epw_x.icon_temps</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1afc267ca7cc58271f3a2a9f8ee121f856">epw_x.icon_degaussw</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1af76fbe9fadf46c8bd40083cc30c144b3">epw_x.icon_degaussq</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a821035c63af611758990cf54b475bfda">epw_x.icon_efermi_read</link></para>
+</listitem>
+            <listitem><para>Box <link linkend="_namespaceepw__x_1a81cdd28f5353d511b339e871218bc287">epw_x.misc_box</link> = Box(form_items, layout=box_layout(35))</para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1ac885b7b05b221fe9717b9a138119d37b">epw_x.nkf1</link> = IntText(name=&quot;nkf1&quot;,cvalue=20, layout=input_layout(30))</para>
+
+<para>kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1a880c0d9a8305250c56710e579395fcb3">epw_x.nkf2</link> = IntText(name=&quot;nkf2&quot;, value=20, layout=input_layout(30))</para>
+
+<para>kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1a2a2af96b347d4319b5b23e06fa44988a">epw_x.nkf3</link> = IntText(name=&quot;nkf3&quot;, value=20, layout=input_layout(30))</para>
+
+<para>kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1af2bdde3fc4d13386f38bbf8a9755455c">epw_x.nqf1</link> = IntText(name=&quot;nqf1&quot;, value=20, layout=input_layout(30))</para>
+
+<para>fine mesh kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1a5cee9a87a3cce57b152bb093751d93b8">epw_x.nqf2</link> = IntText(name=&quot;nqf2&quot;, value=20, layout=input_layout(30))</para>
+
+<para>fine kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1a7d112f2eae2db9254ff7d87e0401c748">epw_x.nqf3</link> = IntText(name=&quot;nqf3&quot;, value=20, layout=input_layout(30))</para>
+
+<para>fine kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1abb4f6d90f05d0c4e6f6ffbd92b057fc7">epw_x.icon_nkf1</link></para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a512f7d2c3f390b786d8d89c63c4870da">epw_x.icon_nkf2</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a5eba8b6348ddaa6a9aac520bc22c4e55">epw_x.icon_nkf3</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a7510ac34f2f71caab68c628f21e8389b">epw_x.icon_nqf1</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1ab5067ac20a5a15ed989785cb861b1383">epw_x.icon_nqf2</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a08a9cc48fbda767b114b665d97563760">epw_x.icon_nqf3</link></para>
+</listitem>
+            <listitem><para>Box <link linkend="_namespaceepw__x_1a89e8b77990a2781775f41e079d64d988">epw_x.mesh_box</link> = Box(form_items, layout=box_layout(20))</para>
+</listitem>
+            <listitem><para>Tab <link linkend="_namespaceepw__x_1aa7134bf8257f3e2d1e219ddc8d09ee30">epw_x.epw_x_tabs</link> = Tab()</para>
+
+<para>combine forms into tabs </para>
+</listitem>
+            <listitem><para>list <link linkend="_namespaceepw__x_1a9845e8188a9599a1235c421a7c9bd1e9">epw_x.tab_contents</link> = [setup_box, wannier_box, misc_box, mesh_box]</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespaceepw__x_1afd6d9b208a73524727ecada95c7ef767">epw_x.children</link> = [content for content in tab_contents]</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceepw__x_1a3dcf0b475ae587123d609fdbac98ae96">epw_x.use_ws</link> = &apos;.false.&apos;</para>
+
+<para>NON USER INPUTS. </para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceepw__x_1ab3a44233a8df02393101758bc19c9c81">epw_x.w90_data</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_namespaceepw__x_1ae4408785f7b486336faab7519c7be7b7">epw_x.epw_cores</link> = 40</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceepw__x_1a6d06c75fc93f0cc692ad006c64f62e46">epw_x.epw_walltime</link> = &apos;00:30:00&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>
