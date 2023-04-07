@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_pw__x_8py" xml:lang="en-US">
+<title>pw_x.py File Reference</title>
+<indexterm><primary>pw_x.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacepw__x">pw_x</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_namespacepw__x_1a16099c23ec3eb8d319a775c3f936dc2e">pw_x.bind_PW_X_inputs</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_namespacepw__x_1afbfd0a5decf16fd6c52ac584dd898631">pw_x.build_PW_Input</link> (scf_inputs, material_prefix)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacepw__x_1a6fcf086e848942e69209213255f1c624">pw_x.href</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacepw__x_1a20ecf34f1ecb63673b45a995d3a8a631">pw_x.target</link></para>
+</listitem>
+            <listitem><para>HTML <link linkend="_namespacepw__x_1aca855ad708758f1e805174a480e413e4">pw_x.documentation_link</link> = HTML(value=&apos;&lt;a href=&quot;https://www.quantum-espresso.org/Doc/INPUT_PW.html&quot; target=&quot;_blank&quot;&gt;INPUT_PW.html&lt;/a&gt;&apos;)</para>
+</listitem>
+            <listitem><para>Text <link linkend="_namespacepw__x_1aeaae9ca0e18c4846d347a26ab086edeb">pw_x.material_prefix</link> = Text(name=&quot;Material Prefix&quot;, value=&quot;si&quot;)</para>
+
+<para>Create Control form. </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespacepw__x_1a64bf734f3915602370421428abd8599a">pw_x.restart_mode</link> = Dropdown(name=&quot;Restart Mode&quot;, value=&quot;from_scratch&quot;, options=[&quot;from_scratch&quot;, &quot;restart&quot;])</para>
+</listitem>
+            <listitem><para>Text <link linkend="_namespacepw__x_1a4abd8750cbe8a036edbf3a4fa3c2af99">pw_x.pseudo_dir</link> = Text(name=&quot;Pseudopotential File Directory&quot;, value=&quot;./&quot;)</para>
+</listitem>
+            <listitem><para>Text <link linkend="_namespacepw__x_1a91f39e49b00feb594a6a8127b1f7294f">pw_x.outdir</link> = Text(name=&quot;Current Directory&quot;, value=&quot;./&quot;)</para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespacepw__x_1a84941c9877b32298b8f39769091ed71a">pw_x.max_runtime</link> = FloatText(name=&apos;Max Run Time (Seconds)&apos;, value=10000000)</para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1a0c04477f91850200dda0a33dde09a439">pw_x.icon_material_prefix</link></para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1a4f7cec742525e53bf2e05f8ec8c0474c">pw_x.icon_restart_mode</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1a1456850fcd116e4de3428d65ea7b61d7">pw_x.icon_pseudo_dir</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1a544af034ac5b7f36a7f4e6dddccfe25c">pw_x.icon_outdir</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1a1169e1a406c752a49df9c59517b49447">pw_x.icon_max_runtime</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacepw__x_1a5454de9abda707a777a26e9eda805024">pw_x.form_items</link></para>
+</listitem>
+            <listitem><para>Box <link linkend="_namespacepw__x_1a0ed558e4763050458531ac02b3c19736">pw_x.controls_box</link> = Box(form_items, layout=box_layout(60))</para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespacepw__x_1aaf4b997568e6d8bd7b3b129049ac81b5">pw_x.ibrav</link></para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespacepw__x_1a22b66d2f537f927c58bdc6a06255ec6e">pw_x.celldm_1</link> = FloatText(name=&quot;Crystallographic Constant&quot;,value=10.2094)</para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespacepw__x_1ac04726cda94d314790988852a219b0dd">pw_x.nat</link> = FloatText(name=&quot;Number of atoms in the cell system&quot; ,value=1)</para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespacepw__x_1acda023a842f7b9a35e2d5260158a8dec">pw_x.ntyp</link> = FloatText(name=&quot;Number of Types of Atoms&quot;,value=1)</para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespacepw__x_1a37cd1c01a5c3f660a3cf91a70d2e1c66">pw_x.ecutwfc</link> = FloatText(name=&quot;Wavefunction Kinetic NRG Cutoff (Ry)&quot;,min=25.0,max=100.0,value=25.0)</para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1ac4c7fb1a20597902cd5198b4c28c2eb2">pw_x.icon_ibrav</link></para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1ac34306b48f4ef115cd4372a849c7efdc">pw_x.icon_celldm_1</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1ae31de7ecddd82b6d396d84ddaf199245">pw_x.icon_nat</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1a87a5256dfc6d7a2da6dfcd533179ad33">pw_x.icon_ntyp</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1a3c0beabe929e8a83d2858f8abb32f638">pw_x.icon_ecutwfc</link></para>
+</listitem>
+            <listitem><para>Box <link linkend="_namespacepw__x_1a6d635546501b4f568b5b683445549c7b">pw_x.system_box</link> = Box(form_items, layout=box_layout(65))</para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespacepw__x_1aee8c7ca543dd163ca3a6868f574f3615">pw_x.diagonalization</link></para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespacepw__x_1a4b6d59d544c7adbc0bb3ceed45d7f1c3">pw_x.mixing_beta</link> = FloatText(name=&quot;Mixing Beta&quot;,value=0.70)</para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespacepw__x_1abf511f1150b86a81a865bf35aa2ccf04">pw_x.con_threshold</link> = FloatText(name=&quot;Convergence Threshold&quot;,value=1.0e-13)</para>
+</listitem>
+            <listitem><para>Text <link linkend="_namespacepw__x_1aab7432117d587e4500126569206ba95b">pw_x.atom</link> = Text(name=&quot;Atom&quot;,value=&quot;&quot;)</para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespacepw__x_1a1d9f8f70a339b42aea6b7596a7f220e9">pw_x.atomic_mass</link> = FloatText(name=&quot;Atomic Mass&quot;,value=28.0855)</para>
+</listitem>
+            <listitem><para>Text <link linkend="_namespacepw__x_1a6099bac66b9f9f04e0add8ff7f399328">pw_x.pseudo_filename</link></para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespacepw__x_1ab48f9b2d4512cd47d88216705ea59903">pw_x.atomic_coord_type</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1a1c990b3ea0181bbf2bc322df945b8741">pw_x.icon_diagonalization</link></para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1a0b02512501d5da9db32d063a2f72c503">pw_x.icon_mixing_beta</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1a4e1d11bdf8ccaa650b1bbaaa5367b17c">pw_x.icon_con_threshold</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1ae396fcd0033d4ceccb8f3e2439583a91">pw_x.icon_atom</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1a5843a5c30be483d9c74ca05cb5f004aa">pw_x.icon_atomic_mass</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1abf80d25d9f0c9b70c408fa70d707cda9">pw_x.icon_pseudo_filename</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespacepw__x_1ab08b26e2876fe5789a4a380e2ec284f8">pw_x.icon_atomic_coord_type</link></para>
+</listitem>
+            <listitem><para>Box <link linkend="_namespacepw__x_1a16c9745a79a40fb5891da169b6753d86">pw_x.electrons_box</link> = Box(form_items, layout=box_layout(60))</para>
+
+<para>UI. </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespacepw__x_1a4dad481c3ef0e69a228031284f08e471">pw_x.kpoint_type</link></para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespacepw__x_1a308122d307bae2ba7381038b8ed420ca">pw_x.kptx</link> = IntText(name=&quot;kptx&quot;, value=6, layout=Layout(width=&apos;60%&apos;))</para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespacepw__x_1ace19afd1ed547f1c022ad1aaec3cecfa">pw_x.kpty</link> = IntText(name=&quot;kpty&quot;, value= 6, layout=Layout(width=&apos;60%&apos;))</para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespacepw__x_1abdc67a9ea8ca121c28af67ccb15c5ec2">pw_x.kptz</link> = IntText(name=&quot;kptz&quot;, value= 6, layout=Layout(width=&apos;60%&apos;))</para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespacepw__x_1ad9b22452415d79ea6d4abe078a85aca5">pw_x.offset_x</link> = IntText(name=&quot;offsetx&quot;, value= 0, layout=Layout(width=&apos;60%&apos;))</para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespacepw__x_1a2a1ef17847712d1344a8cd10893af8f5">pw_x.offset_y</link> = IntText(name=&quot;offsety&quot;, value= 0, layout=Layout(width=&apos;60%&apos;))</para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespacepw__x_1a03e8afecd51592bdf90aeb27f3287e99">pw_x.offset_z</link> = IntText(name=&quot;offsetz&quot;, value= 0, layout=Layout(width=&apos;60%&apos;))</para>
+</listitem>
+            <listitem><para>VBox <link linkend="_namespacepw__x_1a1f7a0c8e3e9f0a1d6b5e2b3d1ab6157f">pw_x.left_section</link></para>
+</listitem>
+            <listitem><para>VBox <link linkend="_namespacepw__x_1a94569e5455bc5562f884f70838dc8aba">pw_x.right_section</link></para>
+</listitem>
+            <listitem><para>VBox <link linkend="_namespacepw__x_1abc0779d0d1a56c40748ae585a7aa4afa">pw_x.kpoints_box</link></para>
+</listitem>
+            <listitem><para>Tab <link linkend="_namespacepw__x_1a4675c4eb65d7daa2e1611122af6e5504">pw_x.pw_x_tabs</link> = Tab()</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacepw__x_1a755d533adc7706c3d4819a3a4012a6af">pw_x.tab_contents</link> = [controls_box, system_box, electrons_box, kpoints_box]</para>
+</listitem>
+            <listitem><para><link linkend="_namespacepw__x_1af13bc024dc0136b6bf1d6e62a220f874">pw_x.children</link></para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacepw__x_1a6beceddcbfe8cf129efedf2ece7c336d">pw_x.wf_collect</link> = &apos;.true&apos;</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacepw__x_1a44bf6b1c470ebd1504fdb1360b949817">pw_x.etot_conv_thr</link> = 1e-4</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacepw__x_1a9db9e7279446164adf744ceabfc2cca4">pw_x.nbnd_flag</link> = 0</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacepw__x_1aa6f034b0323f0ea64faa59146b733087">pw_x.nbnd</link> = 4</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacepw__x_1a503e847b204735462921db7e1abc208d">pw_x.nosym</link> = &apos;.false.&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacepw__x_1a12601e037d6c513e421ce4d4488e8c5c">pw_x.psName</link> = &apos;Si_ONCV_PBE-1.2.upf&apos;</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacepw__x_1afb9dac1caea29cc4366463a29ceb7416">pw_x.cellparam_coordinate_type</link> = &apos;alat&apos;</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacepw__x_1afbfac3f8c16ee92814c868b8bebed032">pw_x.cellparam_list</link> = [0.0,0.0,0.0,0.25,0.25,0.25,0.5,0.5,0.5]</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacepw__x_1aa9034ad8531753c98834496110e9a91f">pw_x.atom_list</link> = [&apos;Si&apos;,0.0,0.0,0.0,&apos;Si&apos;,0.25,0.25,0.25]</para>
+</listitem>
+            <listitem><para>np <link linkend="_namespacepw__x_1a9620a6c03245c8e5876b34d34a64bfe6">pw_x.atom_array</link> = np.array(atom_list)</para>
+</listitem>
+            <listitem><para>np <link linkend="_namespacepw__x_1aeecf295760a7ce1dffa6c7b11b2acf5e">pw_x.atom_splits</link> = np.split(atom_array,nat.value)</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacepw__x_1a7cd277f130fb1f6e49549ec478c4c4e5">pw_x.join_line</link> = [&apos; &apos;.join(i) for i in atom_splits]</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacepw__x_1aa87f5a9fffd542f8061e76703017d277">pw_x.atomic_positions</link> = &apos;\n&apos;.join(join_line)</para>
+</listitem>
+            <listitem><para>dict <link linkend="_namespacepw__x_1ac0fc08540db190e275da60795b5d21e7">pw_x.search_sym</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacepw__x_1a9c6965b0f411108c7863d2b7701a2f7d">pw_x.pw_cores</link> = 20</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespacepw__x_1a0c45d53f4617412c84e43f5a26a7f6f2">pw_x.pw_walltime</link> = &apos;00:05:00&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,927 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespaceepw__x" xml:lang="en-US">
+<title>epw_x Namespace Reference</title>
+<indexterm><primary>epw_x</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_namespaceepw__x_1aa525d5c1ef7d143ec8a4343ceaa04503">bind_EPW_X_inputs</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_namespaceepw__x_1ab896e9370697a079f1dbb4b4d093c031">build_EPW_Input</link> (epw_inputs, material_prefix)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespaceepw__x_1a3cb2fa9f732acb114ea0185c818e4119">href</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespaceepw__x_1ad4de5e6e8e3bcfb97e6246465b4ebb6b">target</link></para>
+</listitem>
+            <listitem><para>HTML <link linkend="_namespaceepw__x_1a8fe6221b84e2194f9f7c30f9a442a3ea">documentation_link</link> = HTML(value=&apos;&lt;a <link linkend="_namespaceepw__x_1a3cb2fa9f732acb114ea0185c818e4119">href</link>=&quot;https://docs.epw-code.org/doc/Inputs.html#filkf&quot; <link linkend="_namespaceepw__x_1ad4de5e6e8e3bcfb97e6246465b4ebb6b">target</link>=&quot;_blank&quot;&gt;INPUT_EPW.html&lt;/a&gt;&apos;)</para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a898c9657249c8dd9c97025e0095e06ef">kmaps</link> = Dropdown(name=&quot;kmaps&quot;, value=&quot;.false.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</para>
+
+<para>option for turning on/off reading in kmaps from file </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a8b0d11566e4ca2794b756a9059b333c8">epbwrite</link> = Dropdown(name=&quot;epbwrite&quot;, value=&quot;.true.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</para>
+
+<para>option for turning on/off writing coarse bloch space electron phonon matrix elements (.epb files) to file </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a5520a18bcb4b1875b3d37853f613e69b">epbread</link> = Dropdown(name=&quot;epbread&quot;, value=&quot;.false.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</para>
+
+<para>option for turning on/off reading coarse bloch space electron phonon matrix elements (.epb files) from file </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a1ac9b578b46b47a02a5076e4f953d0b7">epwwrite</link> = Dropdown(name=&quot;epwwrite&quot;, value=&quot;.true.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</para>
+
+<para>option for turning on/off writing coarse wannier space electron phonon matrix elements (.epw files) to file </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a2f241413bf99ebb9667ffd98269315c1">epwread</link> = Dropdown(name=&quot;epwread&quot;, value=&quot;.false.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</para>
+
+<para>epwread option for turning on/off reading coarse wannier space electron phonon matrix elements (.epw files) from file </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1ad8b07025d2c3a55164d015b032165055">lpolar</link> = Dropdown(name=&quot;Correct for polar materials&quot;,value=&quot;false&quot;,options=[&quot;false&quot;, &quot;true&quot;])</para>
+
+<para>option for polar material correction to Wannier interpolation </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a37f9876568c46ed0d3e2cf1acaa88888">wannierize</link> = Dropdown(name=&quot;Center Wannier Functions&quot;,value=&quot;true&quot;,options=[&quot;false&quot;, &quot;true&quot;])</para>
+
+<para>create Wannier conversion </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a642326d6b3fecec5f75452eec8d0c820">icon_kmaps</link></para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a1b91a619523ac9d566e6ed2ebd5037a3">icon_epbwrite</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a020358f2273867ce436e8ff8d072ec27">icon_epbread</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a8904886b673c9ff1e2e34c57e2ee2ba8">icon_epwwrite</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a293920247f350a4234a68b3c27e6a928">icon_epwread</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1adf0c0b5f725b5ee33b5a46a020fa2db9">icon_lpolar</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1af74e2cb944ff706c3f71fa4d7c0c0a44">icon_wannierize</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_namespaceepw__x_1acf15b56e5127c5415bf2dcc56577e8cb">form_items</link></para>
+</listitem>
+            <listitem><para>Box <link linkend="_namespaceepw__x_1af64aee424d8ce37097edcf01cc08c747">setup_box</link> = Box(<link linkend="_namespaceepw__x_1acf15b56e5127c5415bf2dcc56577e8cb">form_items</link>, layout=box_layout(40))</para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1a848ac1ebc3208284f772ffbaa6e9943f">num_iter</link> = IntText(name=&quot;Number of Iterations&quot;, value=1500)</para>
+
+<para>number of iterations for creating wannier function representations </para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1a42fb730a626ec580604790e96994e200">iprint</link> = IntText(name=&quot;Verbosity Level&quot;, value=2)</para>
+
+<para>verbosity of EPW output file </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a8fe0bb2b941ce59db53edd1afae66401">dis_win_max</link> = FloatText(name=&quot;Disentaglement Window Max&quot;, value=18.0)</para>
+
+<para>Maximum value of the disentanglement window. </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1ad41b21a1e41d8e4467b52c6ef8597caf">dis_froz_max</link> = FloatText(name=&quot;Window Max for Frozen States&quot;,value=8.5)</para>
+
+<para>Window which includes frozen states for Wannier90. </para>
+</listitem>
+            <listitem><para>Textarea <link linkend="_namespaceepw__x_1a57c32b8e8d49203b32ab1cd44b59b323">projections</link> = Textarea(name=&quot;Projections?&quot;, value=&quot;proj(1) = &apos;random&apos;&quot;)</para>
+
+<para>Initial wannier projections, to be passed to Wannier90. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a29f722328476671a3a20ca70293d207d">icon_num_iter</link></para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1ad579e41850fb69c1446d0b49721ac3c9">icon_iprint</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a15c1762665798ac066fe2d89cdbda55f">icon_dis_win_max</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a093ae14a993afe00dfcd081b0b449b3a">icon_dis_froz_max</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a9662bdf9d238faec042d186a882acd79">icon_projections</link></para>
+</listitem>
+            <listitem><para>Box <link linkend="_namespaceepw__x_1a3c8360875b77c22055eac4183290aeed">wannier_box</link> = Box(<link linkend="_namespaceepw__x_1acf15b56e5127c5415bf2dcc56577e8cb">form_items</link>, layout=box_layout(40))</para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a47131e48b50045f135543c09cd344db2">prgtkk</link></para>
+
+<para>option to print all electron-phonon coupling elements to output file will create a masssive file that will take a long time to write, use caution when setting to .true. </para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a71a278f580cd77b799e705a2b456dc5d">lindabs</link></para>
+
+<para>option to calculate optical absorption function </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a7e7a06b01d042c9aeedb47f8203496cd">scissor</link> = FloatText(name=&quot;Scissor Shift&quot;, value=0)</para>
+
+<para>scissor shift to correct for DFT Bandgap narrowing </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a4796bd0a91860fa17fbec655c1c21867">omegamin</link> = FloatText(name=&quot;Min Photon Energy&quot;, value=0.05 )</para>
+
+<para>lowest optical frequency of interest, in eV </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1abebeca8a76affb007e4377c7288a7cfc">omegamax</link> = FloatText( name=&quot;Max Photon Energy&quot;, value=0.05)</para>
+
+<para>highest optical frequency of interest, in eV </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a22506665928d39c815fe0ff6a0527942">omegastep</link> = FloatText(name=&quot;Steps in Photon Energy&quot;, value=0.00)</para>
+
+<para>increment for sweeping optical frequencies, in eV </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a847c8e1144d965ecefeb4d5e23fca74b">n_r</link> = FloatText(name=&quot;Refractive Index&quot;, value=3.4)</para>
+
+<para>material&apos;s index of refraction </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a38efb809e0904ac55417f123cd63c5f1">fsthick</link> = FloatText(name=&quot;Band Gap Width&quot;, value=4.0)</para>
+
+<para>Width of the Fermi surface window to take into account states in the self-energy delta functions in eV. </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a511e9ea95cc93a450f49b9b652df70e1">temps</link> = FloatText(name=&quot;Temperature (K)&quot;, value=300)</para>
+
+<para>system temperature in Kelvin </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1a0f873c3a6d1f455e0b51a201a5771fd4">degaussw</link> = FloatText(name=&quot;Step Function Broadening Parameter&quot;, value=0.005)</para>
+
+<para>Smearing in the energy-conserving delta functions in eV. </para>
+</listitem>
+            <listitem><para>FloatText <link linkend="_namespaceepw__x_1af4044643145cca5c42d88428abb6d509">degaussq</link> = FloatText(name=&quot;User Specific Fermi Energy&quot;, value=0.05)</para>
+</listitem>
+            <listitem><para>Dropdown <link linkend="_namespaceepw__x_1a4f16ff3a0fdef79d098bdde1ba250c9c">efermi_read</link></para>
+
+<para>option to specify fermi energy, such as from prior nscf step </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1aac2b41a549a7e30b264f7990f4ed7f4b">icon_prgtkk</link></para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1aa7b0982051ac7ccd561aeaff63f4865e">icon_lindabs</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a4996b6dbd37d341abc7e3f875c56b450">icon_scissor</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1aec927bce0a4ab99db92c00c4a7ff8e22">icon_omegamin</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1ad45904651c9a06d39c6a5853f574d3a9">icon_omegamax</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a2436b7a6a13c96453986687bb59ccb35">icon_omegastep</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1aecd61f924d3abdc4577eda0ddc91b21a">icon_n_r</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a2f63c1912169f7e826b60f12cc770a9b">icon_fsthick</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1ad519b4cd6ec8aad771679d39c1a3c253">icon_temps</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1afc267ca7cc58271f3a2a9f8ee121f856">icon_degaussw</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1af76fbe9fadf46c8bd40083cc30c144b3">icon_degaussq</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a821035c63af611758990cf54b475bfda">icon_efermi_read</link></para>
+</listitem>
+            <listitem><para>Box <link linkend="_namespaceepw__x_1a81cdd28f5353d511b339e871218bc287">misc_box</link> = Box(<link linkend="_namespaceepw__x_1acf15b56e5127c5415bf2dcc56577e8cb">form_items</link>, layout=box_layout(35))</para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1ac885b7b05b221fe9717b9a138119d37b">nkf1</link> = IntText(name=&quot;nkf1&quot;,cvalue=20, layout=input_layout(30))</para>
+
+<para>kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1a880c0d9a8305250c56710e579395fcb3">nkf2</link> = IntText(name=&quot;nkf2&quot;, value=20, layout=input_layout(30))</para>
+
+<para>kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1a2a2af96b347d4319b5b23e06fa44988a">nkf3</link> = IntText(name=&quot;nkf3&quot;, value=20, layout=input_layout(30))</para>
+
+<para>kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1af2bdde3fc4d13386f38bbf8a9755455c">nqf1</link> = IntText(name=&quot;nqf1&quot;, value=20, layout=input_layout(30))</para>
+
+<para>fine mesh kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1a5cee9a87a3cce57b152bb093751d93b8">nqf2</link> = IntText(name=&quot;nqf2&quot;, value=20, layout=input_layout(30))</para>
+
+<para>fine kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</listitem>
+            <listitem><para>IntText <link linkend="_namespaceepw__x_1a7d112f2eae2db9254ff7d87e0401c748">nqf3</link> = IntText(name=&quot;nqf3&quot;, value=20, layout=input_layout(30))</para>
+
+<para>fine kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1abb4f6d90f05d0c4e6f6ffbd92b057fc7">icon_nkf1</link></para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a512f7d2c3f390b786d8d89c63c4870da">icon_nkf2</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a5eba8b6348ddaa6a9aac520bc22c4e55">icon_nkf3</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a7510ac34f2f71caab68c628f21e8389b">icon_nqf1</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1ab5067ac20a5a15ed989785cb861b1383">icon_nqf2</link></para>
+</listitem>
+            <listitem><para>Button <link linkend="_namespaceepw__x_1a08a9cc48fbda767b114b665d97563760">icon_nqf3</link></para>
+</listitem>
+            <listitem><para>Box <link linkend="_namespaceepw__x_1a89e8b77990a2781775f41e079d64d988">mesh_box</link> = Box(<link linkend="_namespaceepw__x_1acf15b56e5127c5415bf2dcc56577e8cb">form_items</link>, layout=box_layout(20))</para>
+</listitem>
+            <listitem><para>Tab <link linkend="_namespaceepw__x_1aa7134bf8257f3e2d1e219ddc8d09ee30">epw_x_tabs</link> = Tab()</para>
+
+<para>combine forms into tabs </para>
+</listitem>
+            <listitem><para>list <link linkend="_namespaceepw__x_1a9845e8188a9599a1235c421a7c9bd1e9">tab_contents</link> = [<link linkend="_namespaceepw__x_1af64aee424d8ce37097edcf01cc08c747">setup_box</link>, <link linkend="_namespaceepw__x_1a3c8360875b77c22055eac4183290aeed">wannier_box</link>, <link linkend="_namespaceepw__x_1a81cdd28f5353d511b339e871218bc287">misc_box</link>, <link linkend="_namespaceepw__x_1a89e8b77990a2781775f41e079d64d988">mesh_box</link>]</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespaceepw__x_1afd6d9b208a73524727ecada95c7ef767">children</link> = [content for content in <link linkend="_namespaceepw__x_1a9845e8188a9599a1235c421a7c9bd1e9">tab_contents</link>]</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceepw__x_1a3dcf0b475ae587123d609fdbac98ae96">use_ws</link> = &apos;.false.&apos;</para>
+
+<para>NON USER INPUTS. </para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceepw__x_1ab3a44233a8df02393101758bc19c9c81">w90_data</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_namespaceepw__x_1ae4408785f7b486336faab7519c7be7b7">epw_cores</link> = 40</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespaceepw__x_1a6d06c75fc93f0cc692ad006c64f62e46">epw_walltime</link> = &apos;00:30:00&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespaceepw__x_1aa525d5c1ef7d143ec8a4343ceaa04503"/><section>
+    <title>bind_EPW_X_inputs()</title>
+<indexterm><primary>bind_EPW_X_inputs</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>bind_EPW_X_inputs</secondary></indexterm>
+<para><computeroutput>def epw_x.bind_EPW_X_inputs ( self)</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1ab896e9370697a079f1dbb4b4d093c031"/><section>
+    <title>build_EPW_Input()</title>
+<indexterm><primary>build_EPW_Input</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>build_EPW_Input</secondary></indexterm>
+<para><computeroutput>def epw_x.build_EPW_Input ( epw_inputs,  material_prefix)</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespaceepw__x_1afd6d9b208a73524727ecada95c7ef767"/><section>
+    <title>children</title>
+<indexterm><primary>children</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>children</secondary></indexterm>
+<para><computeroutput>epw_x.children = [content for content in <link linkend="_namespaceepw__x_1a9845e8188a9599a1235c421a7c9bd1e9">tab_contents</link>]</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1af4044643145cca5c42d88428abb6d509"/><section>
+    <title>degaussq</title>
+<indexterm><primary>degaussq</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>degaussq</secondary></indexterm>
+<para><computeroutput>FloatText epw_x.degaussq = FloatText(name=&quot;User Specific Fermi Energy&quot;, value=0.05)</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1a0f873c3a6d1f455e0b51a201a5771fd4"/><section>
+    <title>degaussw</title>
+<indexterm><primary>degaussw</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>degaussw</secondary></indexterm>
+<para><computeroutput>FloatText epw_x.degaussw = FloatText(name=&quot;Step Function Broadening Parameter&quot;, value=0.005)</computeroutput></para><para>
+
+<para>Smearing in the energy-conserving delta functions in eV. </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1ad41b21a1e41d8e4467b52c6ef8597caf"/><section>
+    <title>dis_froz_max</title>
+<indexterm><primary>dis_froz_max</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>dis_froz_max</secondary></indexterm>
+<para><computeroutput>FloatText epw_x.dis_froz_max = FloatText(name=&quot;Window Max for Frozen States&quot;,value=8.5)</computeroutput></para><para>
+
+<para>Window which includes frozen states for Wannier90. </para>
+</para>
+
+<para>See wannier90 documentation. </para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a8fe0bb2b941ce59db53edd1afae66401"/><section>
+    <title>dis_win_max</title>
+<indexterm><primary>dis_win_max</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>dis_win_max</secondary></indexterm>
+<para><computeroutput>FloatText epw_x.dis_win_max = FloatText(name=&quot;Disentaglement Window Max&quot;, value=18.0)</computeroutput></para><para>
+
+<para>Maximum value of the disentanglement window. </para>
+</para>
+
+<para>See wannier90 documentation. </para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a8fe6221b84e2194f9f7c30f9a442a3ea"/><section>
+    <title>documentation_link</title>
+<indexterm><primary>documentation_link</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>documentation_link</secondary></indexterm>
+<para><computeroutput>HTML epw_x.documentation_link = HTML(value=&apos;&lt;a <link linkend="_namespaceepw__x_1a3cb2fa9f732acb114ea0185c818e4119">href</link>=&quot;https://docs.epw-code.org/doc/Inputs.html#filkf&quot; <link linkend="_namespaceepw__x_1ad4de5e6e8e3bcfb97e6246465b4ebb6b">target</link>=&quot;_blank&quot;&gt;INPUT_EPW.html&lt;/a&gt;&apos;)</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1a4f16ff3a0fdef79d098bdde1ba250c9c"/><section>
+    <title>efermi_read</title>
+<indexterm><primary>efermi_read</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>efermi_read</secondary></indexterm>
+<para><computeroutput>Dropdown epw_x.efermi_read</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Dropdown(name=<emphasis role="stringliteral">&quot;Fermi&#32;Energy&quot;</emphasis>,&#32;value=<emphasis role="stringliteral">&quot;.true.&quot;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;options={<emphasis role="stringliteral">&quot;false&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;.false.&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;true&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;.true.&quot;</emphasis>})
+</programlisting><para>
+
+<para>option to specify fermi energy, such as from prior nscf step </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a5520a18bcb4b1875b3d37853f613e69b"/><section>
+    <title>epbread</title>
+<indexterm><primary>epbread</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>epbread</secondary></indexterm>
+<para><computeroutput>Dropdown epw_x.epbread = Dropdown(name=&quot;epbread&quot;, value=&quot;.false.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</computeroutput></para><para>
+
+<para>option for turning on/off reading coarse bloch space electron phonon matrix elements (.epb files) from file </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a8b0d11566e4ca2794b756a9059b333c8"/><section>
+    <title>epbwrite</title>
+<indexterm><primary>epbwrite</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>epbwrite</secondary></indexterm>
+<para><computeroutput>Dropdown epw_x.epbwrite = Dropdown(name=&quot;epbwrite&quot;, value=&quot;.true.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</computeroutput></para><para>
+
+<para>option for turning on/off writing coarse bloch space electron phonon matrix elements (.epb files) to file </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1ae4408785f7b486336faab7519c7be7b7"/><section>
+    <title>epw_cores</title>
+<indexterm><primary>epw_cores</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>epw_cores</secondary></indexterm>
+<para><computeroutput>int epw_x.epw_cores = 40</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1a6d06c75fc93f0cc692ad006c64f62e46"/><section>
+    <title>epw_walltime</title>
+<indexterm><primary>epw_walltime</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>epw_walltime</secondary></indexterm>
+<para><computeroutput>str epw_x.epw_walltime = &apos;00:30:00&apos;</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1aa7134bf8257f3e2d1e219ddc8d09ee30"/><section>
+    <title>epw_x_tabs</title>
+<indexterm><primary>epw_x_tabs</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>epw_x_tabs</secondary></indexterm>
+<para><computeroutput>Tab epw_x.epw_x_tabs = Tab()</computeroutput></para><para>
+
+<para>combine forms into tabs </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a2f241413bf99ebb9667ffd98269315c1"/><section>
+    <title>epwread</title>
+<indexterm><primary>epwread</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>epwread</secondary></indexterm>
+<para><computeroutput>Dropdown epw_x.epwread = Dropdown(name=&quot;epwread&quot;, value=&quot;.false.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</computeroutput></para><para>
+
+<para>epwread option for turning on/off reading coarse wannier space electron phonon matrix elements (.epw files) from file </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a1ac9b578b46b47a02a5076e4f953d0b7"/><section>
+    <title>epwwrite</title>
+<indexterm><primary>epwwrite</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>epwwrite</secondary></indexterm>
+<para><computeroutput>Dropdown epw_x.epwwrite = Dropdown(name=&quot;epwwrite&quot;, value=&quot;.true.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</computeroutput></para><para>
+
+<para>option for turning on/off writing coarse wannier space electron phonon matrix elements (.epw files) to file </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1acf15b56e5127c5415bf2dcc56577e8cb"/><section>
+    <title>form_items</title>
+<indexterm><primary>form_items</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>form_items</secondary></indexterm>
+<para><computeroutput>list epw_x.form_items</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1a38efb809e0904ac55417f123cd63c5f1"/><section>
+    <title>fsthick</title>
+<indexterm><primary>fsthick</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>fsthick</secondary></indexterm>
+<para><computeroutput>FloatText epw_x.fsthick = FloatText(name=&quot;Band Gap Width&quot;, value=4.0)</computeroutput></para><para>
+
+<para>Width of the Fermi surface window to take into account states in the self-energy delta functions in eV. </para>
+</para>
+
+<para>Narrowing this value reduces the FloatText of bands included in the selfenergy calculations. </para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a3cb2fa9f732acb114ea0185c818e4119"/><section>
+    <title>href</title>
+<indexterm><primary>href</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>href</secondary></indexterm>
+<para><computeroutput>epw_x.href</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1af76fbe9fadf46c8bd40083cc30c144b3"/><section>
+    <title>icon_degaussq</title>
+<indexterm><primary>icon_degaussq</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_degaussq</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_degaussq</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Smearing&#32;for&#32;sum&#32;over&#32;q&#32;in&#32;the&#32;e-ph&#32;coupling&#32;in&#32;[meV]&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;0.05&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1afc267ca7cc58271f3a2a9f8ee121f856"/><section>
+    <title>icon_degaussw</title>
+<indexterm><primary>icon_degaussw</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_degaussw</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_degaussw</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Smearing&#32;in&#32;the&#32;energy-conserving&#32;delta&#32;functions&#32;in&#32;[eV]&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;0.025&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a093ae14a993afe00dfcd081b0b449b3a"/><section>
+    <title>icon_dis_froz_max</title>
+<indexterm><primary>icon_dis_froz_max</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_dis_froz_max</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_dis_froz_max</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;The&#32;upper&#32;bound&#32;of&#32;the&#32;inner&#32;(frozen)&#32;energy&#32;window&#32;for&#32;the&#32;disentanglement&#32;procedure.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;If&#32;dis_froz_max&#32;is&#32;not&#32;specified,&#32;then&#32;there&#32;are&#32;no&#32;frozen&#32;states.&#32;Units&#32;are&#32;eV.&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;No&#32;default.&apos;</emphasis>,&#32;
+5 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a15c1762665798ac066fe2d89cdbda55f"/><section>
+    <title>icon_dis_win_max</title>
+<indexterm><primary>icon_dis_win_max</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_dis_win_max</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_dis_win_max</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;The&#32;upper&#32;bound&#32;of&#32;the&#32;outer&#32;energy&#32;window&#32;for&#32;the&#32;disentanglement&#32;procedure.&#32;Units&#32;are&#32;eV.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;The&#32;default&#32;is&#32;the&#32;highest&#32;eigenvalue&#32;in&#32;the&#32;given&#32;states&#32;(i.e.,&#32;all&#32;states&#32;are&#32;included&#32;in&#32;the&#32;disentanglement&#32;procedure).&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a821035c63af611758990cf54b475bfda"/><section>
+    <title>icon_efermi_read</title>
+<indexterm><primary>icon_efermi_read</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_efermi_read</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_efermi_read</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;If&#32;.true.&#32;the&#32;Fermi&#32;energy&#32;is&#32;read&#32;from&#32;the&#32;input&#32;file.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;false&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a020358f2273867ce436e8ff8d072ec27"/><section>
+    <title>icon_epbread</title>
+<indexterm><primary>icon_epbread</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_epbread</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_epbread</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;If&#32;epbwrite&#32;=&#32;.true.,&#32;the&#32;electron-phonon&#32;matrix&#32;elements&#32;in&#32;the&#32;coarse&#32;Bloch&#32;representation&#32;and&#32;relevant&#32;data&#32;(dyn&#32;matrices)&#32;are&#32;written&#32;to&#32;disk.&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>&#32;
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;If&#32;epbread&#32;=&#32;.true.&#32;the&#32;above&#32;quantities&#32;are&#32;read&#32;from&#32;the&#32;‘prefix.epb’&#32;files.&#32;Pool&#32;dependent&#32;files.&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a1b91a619523ac9d566e6ed2ebd5037a3"/><section>
+    <title>icon_epbwrite</title>
+<indexterm><primary>icon_epbwrite</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_epbwrite</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_epbwrite</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;If&#32;epbwrite&#32;=&#32;.true.,&#32;the&#32;electron-phonon&#32;matrix&#32;elements&#32;in&#32;the&#32;coarse&#32;Bloch&#32;representation&#32;and&#32;relevant&#32;data&#32;(dyn&#32;matrices)&#32;are&#32;written&#32;to&#32;disk.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>&#32;
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;If&#32;epbread&#32;=&#32;.true.&#32;the&#32;above&#32;quantities&#32;are&#32;read&#32;from&#32;the&#32;‘prefix.epb’&#32;files.&#32;Pool&#32;dependent&#32;files.&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a293920247f350a4234a68b3c27e6a928"/><section>
+    <title>icon_epwread</title>
+<indexterm><primary>icon_epwread</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_epwread</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_epwread</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;If&#32;epwread&#32;=&#32;.true.,&#32;the&#32;electron-phonon&#32;matrix&#32;elements&#32;in&#32;the&#32;coarse&#32;Wannier&#32;representation&#32;are&#32;read&#32;from&#32;the&#32;‘epwdata.fmt’&#32;and&#32;‘XX.epmatwpX’&#32;files.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;Each&#32;pool&#32;reads&#32;the&#32;same&#32;file.&#32;It&#32;is&#32;used&#32;for&#32;a&#32;restart&#32;calculation&#32;and&#32;requires&#32;kmaps&#32;=&#32;.true.&#32;A&#32;prior&#32;calculation&#32;with&#32;epwwrite&#32;=&#32;.true&#32;is&#32;also&#32;required.&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a8904886b673c9ff1e2e34c57e2ee2ba8"/><section>
+    <title>icon_epwwrite</title>
+<indexterm><primary>icon_epwwrite</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_epwwrite</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_epwwrite</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;If&#32;epwwrite&#32;=&#32;.true.,&#32;the&#32;electron-phonon&#32;matrix&#32;elements&#32;in&#32;the&#32;coarse&#32;Wannier&#32;representation&#32;and&#32;relevant&#32;data&#32;(dyn&#32;matrices)&#32;are&#32;written&#32;to&#32;disk.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;Each&#32;pool&#32;reads&#32;the&#32;same&#32;file.&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a2f63c1912169f7e826b60f12cc770a9b"/><section>
+    <title>icon_fsthick</title>
+<indexterm><primary>icon_fsthick</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_fsthick</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_fsthick</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Width&#32;of&#32;the&#32;Fermi&#32;surface&#32;window&#32;to&#32;take&#32;into&#32;account&#32;states&#32;in&#32;the&#32;self-energy&#32;delta&#32;functions&#32;in&#32;[eV].&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;Narrowing&#32;this&#32;value&#32;reduces&#32;the&#32;number&#32;of&#32;bands&#32;included&#32;in&#32;the&#32;selfenergy&#32;calculations.&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;1e10&apos;</emphasis>,&#32;
+5 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1ad579e41850fb69c1446d0b49721ac3c9"/><section>
+    <title>icon_iprint</title>
+<indexterm><primary>icon_iprint</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_iprint</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_iprint</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;This&#32;indicates&#32;the&#32;level&#32;of&#32;verbosity&#32;of&#32;the&#32;output&#32;from&#32;0&#32;(“low”),&#32;the&#32;bare&#32;minimum,&#32;to&#32;3&#32;(“high”),&#32;which&#32;corresponds&#32;to&#32;full&#32;debugging&#32;output.&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;The&#32;default&#32;value&#32;is&#32;1.&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a642326d6b3fecec5f75452eec8d0c820"/><section>
+    <title>icon_kmaps</title>
+<indexterm><primary>icon_kmaps</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_kmaps</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_kmaps</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Generate&#32;the&#32;map&#32;k+q&#32;–&gt;&#32;k&#32;for&#32;folding&#32;the&#32;rotation&#32;matrix&#32;U(k+q).&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;If&#32;.true.,&#32;the&#32;program&#32;reads&#32;‘prefix.kmap’&#32;and&#32;‘prefix.kgmap’&#32;from&#32;file.&#32;If&#32;.false.,&#32;they&#32;are&#32;calculated.&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;Note&#32;that&#32;for&#32;a&#32;restart&#32;with&#32;epwread&#32;=.true.,&#32;kmaps&#32;also&#32;needs&#32;to&#32;be&#32;set&#32;to&#32;true&#32;(since&#32;the&#32;information&#32;to&#32;potentially&#32;calculate&#32;kgmaps&#32;is&#32;not&#32;generated&#32;in&#32;a&#32;restart&#32;run).&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+5 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;However,&#32;the&#32;files&#32;“prefix.kmap”&#32;and&#32;“prefix.kgmap”&#32;themselves&#32;are&#32;actually&#32;not&#32;used&#32;if&#32;epwread=.true.&#32;and&#32;hence&#32;need&#32;not&#32;actually&#32;be&#32;there.&apos;</emphasis>,&#32;
+6 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting><para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1aa7b0982051ac7ccd561aeaff63f4865e"/><section>
+    <title>icon_lindabs</title>
+<indexterm><primary>icon_lindabs</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_lindabs</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_lindabs</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;If&#32;.true.&#32;computes&#32;indirect&#32;phonon&#32;absorption.&#32;See&#32;the&#32;input&#32;variables&#32;omegamax,&#32;omegamin,&#32;omegastep&#32;and&#32;n_r.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFUALT:&#32;false&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1adf0c0b5f725b5ee33b5a46a020fa2db9"/><section>
+    <title>icon_lpolar</title>
+<indexterm><primary>icon_lpolar</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_lpolar</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_lpolar</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;If&#32;.true.&#32;enable&#32;the&#32;correct&#32;Wannier&#32;interpolation&#32;in&#32;the&#32;case&#32;of&#32;polar&#32;material.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;false&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1aecd61f924d3abdc4577eda0ddc91b21a"/><section>
+    <title>icon_n_r</title>
+<indexterm><primary>icon_n_r</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_n_r</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_n_r</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;index&#32;of&#32;refraction&#32;needed&#32;to&#32;convert&#32;the&#32;imaginary&#32;dielectric&#32;function&#32;(directly&#32;computed&#32;by&#32;EPW)&#32;to&#32;an&#32;absorption&#32;coefficient.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;Look&#32;up&#32;from&#32;experimental&#32;measurement&#32;if&#32;unknown&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1abb4f6d90f05d0c4e6f6ffbd92b057fc7"/><section>
+    <title>icon_nkf1</title>
+<indexterm><primary>icon_nkf1</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_nkf1</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_nkf1</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Dimensions&#32;of&#32;the&#32;fine&#32;electron&#32;grid&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;0&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting><para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a512f7d2c3f390b786d8d89c63c4870da"/><section>
+    <title>icon_nkf2</title>
+<indexterm><primary>icon_nkf2</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_nkf2</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_nkf2</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Dimensions&#32;of&#32;the&#32;fine&#32;electron&#32;grid&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;0&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a5eba8b6348ddaa6a9aac520bc22c4e55"/><section>
+    <title>icon_nkf3</title>
+<indexterm><primary>icon_nkf3</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_nkf3</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_nkf3</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Dimensions&#32;of&#32;the&#32;fine&#32;electron&#32;grid&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;0&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a7510ac34f2f71caab68c628f21e8389b"/><section>
+    <title>icon_nqf1</title>
+<indexterm><primary>icon_nqf1</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_nqf1</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_nqf1</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Dimensions&#32;of&#32;the&#32;fine&#32;phonon&#32;grid&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;0&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1ab5067ac20a5a15ed989785cb861b1383"/><section>
+    <title>icon_nqf2</title>
+<indexterm><primary>icon_nqf2</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_nqf2</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_nqf2</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Dimensions&#32;of&#32;the&#32;fine&#32;phonon&#32;grid&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;0&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a08a9cc48fbda767b114b665d97563760"/><section>
+    <title>icon_nqf3</title>
+<indexterm><primary>icon_nqf3</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_nqf3</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_nqf3</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Dimensions&#32;of&#32;the&#32;fine&#32;phonon&#32;grid&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;0&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a29f722328476671a3a20ca70293d207d"/><section>
+    <title>icon_num_iter</title>
+<indexterm><primary>icon_num_iter</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_num_iter</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_num_iter</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Number&#32;of&#32;iterations&#32;to&#32;produce&#32;maximally&#32;localized&#32;wannier&#32;functions&apos;</emphasis>,&#32;
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting><para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1ad45904651c9a06d39c6a5853f574d3a9"/><section>
+    <title>icon_omegamax</title>
+<indexterm><primary>icon_omegamax</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_omegamax</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_omegamax</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Photon&#32;energy&#32;maximum&#32;(in&#32;eV)&#32;when&#32;lindabs&#32;=&#32;.true.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;10&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1aec927bce0a4ab99db92c00c4a7ff8e22"/><section>
+    <title>icon_omegamin</title>
+<indexterm><primary>icon_omegamin</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_omegamin</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_omegamin</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Photon&#32;energy&#32;minimum&#32;(in&#32;eV)&#32;when&#32;lindabs&#32;=&#32;.true.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;0&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a2436b7a6a13c96453986687bb59ccb35"/><section>
+    <title>icon_omegastep</title>
+<indexterm><primary>icon_omegastep</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_omegastep</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_omegastep</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Steps&#32;in&#32;photon&#32;energy&#32;(in&#32;eV)&#32;when&#32;lindabs&#32;=&#32;.true.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;10&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1aac2b41a549a7e30b264f7990f4ed7f4b"/><section>
+    <title>icon_prgtkk</title>
+<indexterm><primary>icon_prgtkk</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_prgtkk</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_prgtkk</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Allows&#32;to&#32;print&#32;the&#32;electron-phonon&#32;vertex&#32;|g|&#32;(in&#32;meV)&#32;for&#32;each&#32;q-point,&#32;k-point,&#32;i-band,&#32;j-band&#32;and&#32;modes.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;Note:&#32;Average&#32;over&#32;degenerate&#32;i-band,&#32;j-band&#32;and&#32;modes&#32;is&#32;performed&#32;but&#32;not&#32;on&#32;degenerate&#32;k&#32;or&#32;q-points.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;Warning:&#32;this&#32;produces&#32;huge&#32;text&#32;data&#32;in&#32;the&#32;main&#32;output&#32;file&#32;and&#32;considerably&#32;slows&#32;down&#32;the&#32;calculation.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+5 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;Suggestion:&#32;Use&#32;only&#32;1&#32;k-point&#32;(like&#32;Gamma).&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+6 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;false&apos;</emphasis>,&#32;
+7 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting><para>
+
+<para>Creates the info buttons and adds in the description when you hover your cursor over the button. </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a9662bdf9d238faec042d186a882acd79"/><section>
+    <title>icon_projections</title>
+<indexterm><primary>icon_projections</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_projections</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_projections</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;&apos;</emphasis>,&#32;
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a4996b6dbd37d341abc7e3f875c56b450"/><section>
+    <title>icon_scissor</title>
+<indexterm><primary>icon_scissor</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_scissor</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_scissor</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Gives&#32;the&#32;value&#32;of&#32;the&#32;scissor&#32;shift&#32;of&#32;the&#32;gap&#32;(in&#32;eV).&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;0.0&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1ad519b4cd6ec8aad771679d39c1a3c253"/><section>
+    <title>icon_temps</title>
+<indexterm><primary>icon_temps</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_temps</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_temps</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;Temperature&#32;values&#32;used&#32;in&#32;superconductivitiy,&#32;transport,&#32;indabs,&#32;etc.&#32;in&#32;kelvin&#32;unit.&#32;If&#32;no&#32;temps&#32;are&#32;provided,&#32;temps=300&#32;and&#32;nstemp&#32;=1.&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;If&#32;two&#32;temps&#32;are&#32;provided,&#32;with&#32;temps(1)&lt;temps(2)&#32;and&#32;nstemp&#32;&gt;2,&#32;then&#32;temps&#32;is&#32;transformed&#32;into&#32;an&#32;evenly&#32;spaced&#32;grid&#32;with&#32;nstemp&#32;points,&#32;including&#32;temps(1)&#32;and&#32;temps(2)&#32;as&#32;the&#32;minimum&#32;and&#32;maximum&#32;values,&#32;respectively&#32;[Ex)&#32;nstemp&#32;&#32;&#32;&#32;&#32;&#32;=&#32;&#32;&#32;5&#32;temps&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;300&#32;500].&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;In&#32;this&#32;case,&#32;points&#32;are&#32;spaced&#32;according&#32;to&#32;(temps(2)&#32;-&#32;temps(1))&#32;/&#32;(nstemp-1).&#32;Otherwise,&#32;temps&#32;is&#32;treated&#32;as&#32;a&#32;list,&#32;with&#32;the&#32;given&#32;temperatures&#32;used&#32;directly&#32;[Ex)&#32;temps&#32;&#32;&#32;&#32;=&#32;17&#32;20&#32;30].&apos;</emphasis><emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+5 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;No&#32;more&#32;than&#32;50&#32;temperatures&#32;can&#32;be&#32;supplied&#32;in&#32;this&#32;way.&apos;</emphasis>
+6 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;300&apos;</emphasis>,&#32;
+7 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1af74e2cb944ff706c3f71fa4d7c0c0a44"/><section>
+    <title>icon_wannierize</title>
+<indexterm><primary>icon_wannierize</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>icon_wannierize</secondary></indexterm>
+<para><computeroutput>Button epw_x.icon_wannierize</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Button(&#32;icon=<emphasis role="stringliteral">&apos;fa-info-circle&apos;</emphasis>,
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tooltip=<emphasis role="stringliteral">&apos;&#32;Calculate&#32;the&#32;Wannier&#32;functions&#32;using&#32;W90&#32;library&#32;calls&#32;and&#32;write&#32;rotation&#32;matrix&#32;to&#32;file&#32;‘filukk’.&#32;If&#32;.false.,&#32;filukk&#32;is&#32;read&#32;from&#32;disk.&apos;</emphasis>&#32;<emphasis role="stringliteral">&apos;\n&apos;</emphasis>
+3 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;DEFAULT:&#32;false&apos;</emphasis>,&#32;
+4 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;layout&#32;=&#32;Layout(width=<emphasis role="stringliteral">&apos;40px&apos;</emphasis>))
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a42fb730a626ec580604790e96994e200"/><section>
+    <title>iprint</title>
+<indexterm><primary>iprint</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>iprint</secondary></indexterm>
+<para><computeroutput>IntText epw_x.iprint = IntText(name=&quot;Verbosity Level&quot;, value=2)</computeroutput></para><para>
+
+<para>verbosity of EPW output file </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a898c9657249c8dd9c97025e0095e06ef"/><section>
+    <title>kmaps</title>
+<indexterm><primary>kmaps</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>kmaps</secondary></indexterm>
+<para><computeroutput>Dropdown epw_x.kmaps = Dropdown(name=&quot;kmaps&quot;, value=&quot;.false.&quot;, options={&quot;false&quot;: &quot;.false.&quot;, &quot;true&quot;: &quot;.true.&quot;})</computeroutput></para><para>
+
+<para>option for turning on/off reading in kmaps from file </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a71a278f580cd77b799e705a2b456dc5d"/><section>
+    <title>lindabs</title>
+<indexterm><primary>lindabs</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>lindabs</secondary></indexterm>
+<para><computeroutput>Dropdown epw_x.lindabs</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Dropdown(name=<emphasis role="stringliteral">&quot;Calculate&#32;Optical&#32;Parameters&quot;</emphasis>,&#32;value=<emphasis role="stringliteral">&quot;.true.&quot;</emphasis>,&#32;
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;options={<emphasis role="stringliteral">&quot;false&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;.false.&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;true&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;.true.&quot;</emphasis>})
+</programlisting><para>
+
+<para>option to calculate optical absorption function </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1ad8b07025d2c3a55164d015b032165055"/><section>
+    <title>lpolar</title>
+<indexterm><primary>lpolar</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>lpolar</secondary></indexterm>
+<para><computeroutput>Dropdown epw_x.lpolar = Dropdown(name=&quot;Correct for polar materials&quot;,value=&quot;false&quot;,options=[&quot;false&quot;, &quot;true&quot;])</computeroutput></para><para>
+
+<para>option for polar material correction to Wannier interpolation </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a89e8b77990a2781775f41e079d64d988"/><section>
+    <title>mesh_box</title>
+<indexterm><primary>mesh_box</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>mesh_box</secondary></indexterm>
+<para><computeroutput>Box epw_x.mesh_box = Box(<link linkend="_namespaceepw__x_1acf15b56e5127c5415bf2dcc56577e8cb">form_items</link>, layout=box_layout(20))</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1a81cdd28f5353d511b339e871218bc287"/><section>
+    <title>misc_box</title>
+<indexterm><primary>misc_box</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>misc_box</secondary></indexterm>
+<para><computeroutput>Box epw_x.misc_box = Box(<link linkend="_namespaceepw__x_1acf15b56e5127c5415bf2dcc56577e8cb">form_items</link>, layout=box_layout(35))</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1a847c8e1144d965ecefeb4d5e23fca74b"/><section>
+    <title>n_r</title>
+<indexterm><primary>n_r</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>n_r</secondary></indexterm>
+<para><computeroutput>FloatText epw_x.n_r = FloatText(name=&quot;Refractive Index&quot;, value=3.4)</computeroutput></para><para>
+
+<para>material&apos;s index of refraction </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1ac885b7b05b221fe9717b9a138119d37b"/><section>
+    <title>nkf1</title>
+<indexterm><primary>nkf1</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>nkf1</secondary></indexterm>
+<para><computeroutput>IntText epw_x.nkf1 = IntText(name=&quot;nkf1&quot;,cvalue=20, layout=input_layout(30))</computeroutput></para><para>
+
+<para>kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a880c0d9a8305250c56710e579395fcb3"/><section>
+    <title>nkf2</title>
+<indexterm><primary>nkf2</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>nkf2</secondary></indexterm>
+<para><computeroutput>IntText epw_x.nkf2 = IntText(name=&quot;nkf2&quot;, value=20, layout=input_layout(30))</computeroutput></para><para>
+
+<para>kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a2a2af96b347d4319b5b23e06fa44988a"/><section>
+    <title>nkf3</title>
+<indexterm><primary>nkf3</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>nkf3</secondary></indexterm>
+<para><computeroutput>IntText epw_x.nkf3 = IntText(name=&quot;nkf3&quot;, value=20, layout=input_layout(30))</computeroutput></para><para>
+
+<para>kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1af2bdde3fc4d13386f38bbf8a9755455c"/><section>
+    <title>nqf1</title>
+<indexterm><primary>nqf1</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>nqf1</secondary></indexterm>
+<para><computeroutput>IntText epw_x.nqf1 = IntText(name=&quot;nqf1&quot;, value=20, layout=input_layout(30))</computeroutput></para><para>
+
+<para>fine mesh kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a5cee9a87a3cce57b152bb093751d93b8"/><section>
+    <title>nqf2</title>
+<indexterm><primary>nqf2</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>nqf2</secondary></indexterm>
+<para><computeroutput>IntText epw_x.nqf2 = IntText(name=&quot;nqf2&quot;, value=20, layout=input_layout(30))</computeroutput></para><para>
+
+<para>fine kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a7d112f2eae2db9254ff7d87e0401c748"/><section>
+    <title>nqf3</title>
+<indexterm><primary>nqf3</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>nqf3</secondary></indexterm>
+<para><computeroutput>IntText epw_x.nqf3 = IntText(name=&quot;nqf3&quot;, value=20, layout=input_layout(30))</computeroutput></para><para>
+
+<para>fine kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a848ac1ebc3208284f772ffbaa6e9943f"/><section>
+    <title>num_iter</title>
+<indexterm><primary>num_iter</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>num_iter</secondary></indexterm>
+<para><computeroutput>IntText epw_x.num_iter = IntText(name=&quot;Number of Iterations&quot;, value=1500)</computeroutput></para><para>
+
+<para>number of iterations for creating wannier function representations </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1abebeca8a76affb007e4377c7288a7cfc"/><section>
+    <title>omegamax</title>
+<indexterm><primary>omegamax</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>omegamax</secondary></indexterm>
+<para><computeroutput>FloatText epw_x.omegamax = FloatText( name=&quot;Max Photon Energy&quot;, value=0.05)</computeroutput></para><para>
+
+<para>highest optical frequency of interest, in eV </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a4796bd0a91860fa17fbec655c1c21867"/><section>
+    <title>omegamin</title>
+<indexterm><primary>omegamin</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>omegamin</secondary></indexterm>
+<para><computeroutput>FloatText epw_x.omegamin = FloatText(name=&quot;Min Photon Energy&quot;, value=0.05 )</computeroutput></para><para>
+
+<para>lowest optical frequency of interest, in eV </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a22506665928d39c815fe0ff6a0527942"/><section>
+    <title>omegastep</title>
+<indexterm><primary>omegastep</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>omegastep</secondary></indexterm>
+<para><computeroutput>FloatText epw_x.omegastep = FloatText(name=&quot;Steps in Photon Energy&quot;, value=0.00)</computeroutput></para><para>
+
+<para>increment for sweeping optical frequencies, in eV </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a47131e48b50045f135543c09cd344db2"/><section>
+    <title>prgtkk</title>
+<indexterm><primary>prgtkk</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>prgtkk</secondary></indexterm>
+<para><computeroutput>Dropdown epw_x.prgtkk</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;Dropdown(name=<emphasis role="stringliteral">&quot;Print&#32;Electron-Photon&#32;Vertexs&quot;</emphasis>,&#32;value=<emphasis role="stringliteral">&quot;.false.&quot;</emphasis>,&#32;
+2 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;options={<emphasis role="stringliteral">&quot;false&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;.false.&quot;</emphasis>,&#32;<emphasis role="stringliteral">&quot;true&quot;</emphasis>:&#32;<emphasis role="stringliteral">&quot;.true.&quot;</emphasis>})
+</programlisting><para>
+
+<para>option to print all electron-phonon coupling elements to output file will create a masssive file that will take a long time to write, use caution when setting to .true. </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a57c32b8e8d49203b32ab1cd44b59b323"/><section>
+    <title>projections</title>
+<indexterm><primary>projections</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>projections</secondary></indexterm>
+<para><computeroutput>Textarea epw_x.projections = Textarea(name=&quot;Projections?&quot;, value=&quot;proj(1) = &apos;random&apos;&quot;)</computeroutput></para><para>
+
+<para>Initial wannier projections, to be passed to Wannier90. </para>
+</para>
+
+<para>These must agree with nbnd if specified other than the default &apos;random&apos; setting (number of desired wannier projections = number of computed bands) </para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a7e7a06b01d042c9aeedb47f8203496cd"/><section>
+    <title>scissor</title>
+<indexterm><primary>scissor</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>scissor</secondary></indexterm>
+<para><computeroutput>FloatText epw_x.scissor = FloatText(name=&quot;Scissor Shift&quot;, value=0)</computeroutput></para><para>
+
+<para>scissor shift to correct for DFT Bandgap narrowing </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1af64aee424d8ce37097edcf01cc08c747"/><section>
+    <title>setup_box</title>
+<indexterm><primary>setup_box</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>setup_box</secondary></indexterm>
+<para><computeroutput>Box epw_x.setup_box = Box(<link linkend="_namespaceepw__x_1acf15b56e5127c5415bf2dcc56577e8cb">form_items</link>, layout=box_layout(40))</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1a9845e8188a9599a1235c421a7c9bd1e9"/><section>
+    <title>tab_contents</title>
+<indexterm><primary>tab_contents</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>tab_contents</secondary></indexterm>
+<para><computeroutput>list epw_x.tab_contents = [<link linkend="_namespaceepw__x_1af64aee424d8ce37097edcf01cc08c747">setup_box</link>, <link linkend="_namespaceepw__x_1a3c8360875b77c22055eac4183290aeed">wannier_box</link>, <link linkend="_namespaceepw__x_1a81cdd28f5353d511b339e871218bc287">misc_box</link>, <link linkend="_namespaceepw__x_1a89e8b77990a2781775f41e079d64d988">mesh_box</link>]</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1ad4de5e6e8e3bcfb97e6246465b4ebb6b"/><section>
+    <title>target</title>
+<indexterm><primary>target</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>target</secondary></indexterm>
+<para><computeroutput>epw_x.target</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1a511e9ea95cc93a450f49b9b652df70e1"/><section>
+    <title>temps</title>
+<indexterm><primary>temps</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>temps</secondary></indexterm>
+<para><computeroutput>FloatText epw_x.temps = FloatText(name=&quot;Temperature (K)&quot;, value=300)</computeroutput></para><para>
+
+<para>system temperature in Kelvin </para>
+</para>
+</section>
+<anchor xml:id="_namespaceepw__x_1a3dcf0b475ae587123d609fdbac98ae96"/><section>
+    <title>use_ws</title>
+<indexterm><primary>use_ws</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>use_ws</secondary></indexterm>
+<para><computeroutput>str epw_x.use_ws = &apos;.false.&apos;</computeroutput></para><para>
+
+<para>NON USER INPUTS. </para>
+</para>
+
+<para>option for centering Wannier function at center of Wigner-Seitz cell </para>
+</section>
+<anchor xml:id="_namespaceepw__x_1ab3a44233a8df02393101758bc19c9c81"/><section>
+    <title>w90_data</title>
+<indexterm><primary>w90_data</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>w90_data</secondary></indexterm>
+<para><computeroutput>str epw_x.w90_data</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">1 =&#32;&#32;<emphasis role="stringliteral">&apos;&apos;&apos;</emphasis>
+2 <emphasis role="stringliteral">wdata(1)&#32;=&#32;&apos;bands_plot&#32;=&#32;.true.&apos;</emphasis>
+3 <emphasis role="stringliteral">wdata(2)&#32;=&#32;&apos;begin&#32;kpoint_path&apos;</emphasis>
+4 <emphasis role="stringliteral">wdata(3)&#32;=&#32;&apos;L&#32;0.50&#32;0.00&#32;0.00&#32;G&#32;0.00&#32;0.00&#32;0.00&apos;</emphasis>
+5 <emphasis role="stringliteral">wdata(4)&#32;=&#32;&apos;G&#32;0.00&#32;0.00&#32;0.00&#32;X&#32;0.50&#32;0.50&#32;0.00&apos;</emphasis>
+6 <emphasis role="stringliteral">wdata(5)&#32;=&#32;&apos;end&#32;kpoint_path&apos;</emphasis>
+7 <emphasis role="stringliteral">wdata(6)&#32;=&#32;&apos;bands_plot_format&#32;=&#32;gnuplot&apos;</emphasis>
+8 <emphasis role="stringliteral">wdata(7)&#32;=&#32;&apos;guiding_centres&#32;=&#32;.true.&apos;</emphasis>
+9 <emphasis role="stringliteral">wdata(8)&#32;=&#32;&apos;dis_num_iter&#32;=&#32;500&apos;</emphasis>
+10 <emphasis role="stringliteral">wdata(9)&#32;=&#32;&apos;num_print_cycles&#32;=&#32;10&apos;</emphasis>
+11 <emphasis role="stringliteral">wdata(10)&#32;=&#32;&apos;dis_mix_ratio&#32;=&#32;1.0&apos;</emphasis>
+12 <emphasis role="stringliteral">wdata(11)&#32;=&#32;&apos;use_ws_distance&#32;=&#32;T&apos;</emphasis>
+13 <emphasis role="stringliteral">&apos;&apos;&apos;</emphasis>
+</programlisting></section>
+<anchor xml:id="_namespaceepw__x_1a3c8360875b77c22055eac4183290aeed"/><section>
+    <title>wannier_box</title>
+<indexterm><primary>wannier_box</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>wannier_box</secondary></indexterm>
+<para><computeroutput>Box epw_x.wannier_box = Box(<link linkend="_namespaceepw__x_1acf15b56e5127c5415bf2dcc56577e8cb">form_items</link>, layout=box_layout(40))</computeroutput></para></section>
+<anchor xml:id="_namespaceepw__x_1a37f9876568c46ed0d3e2cf1acaa88888"/><section>
+    <title>wannierize</title>
+<indexterm><primary>wannierize</primary><secondary>epw_x</secondary></indexterm>
+<indexterm><primary>epw_x</primary><secondary>wannierize</secondary></indexterm>
+<para><computeroutput>Dropdown epw_x.wannierize = Dropdown(name=&quot;Center Wannier Functions&quot;,value=&quot;true&quot;,options=[&quot;false&quot;, &quot;true&quot;])</computeroutput></para><para>
+
+<para>create Wannier conversion </para>
+</para>
+</section>
+</section>
+</section>
