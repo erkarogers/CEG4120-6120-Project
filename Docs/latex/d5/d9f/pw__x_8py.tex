@@ -1,0 +1,171 @@
+\hypertarget{pw__x_8py}{}\doxysection{pw\+\_\+x.\+py File Reference}
+\label{pw__x_8py}\index{pw\_x.py@{pw\_x.py}}
+
+
+PW\+\_\+X step input widget creation.  
+
+
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacepw__x}{pw\+\_\+x}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepw__x_a16099c23ec3eb8d319a775c3f936dc2e}{pw\+\_\+x.\+bind\+\_\+\+PW\+\_\+\+X\+\_\+inputs}} (self)
+\item 
+def \mbox{\hyperlink{namespacepw__x_afbfd0a5decf16fd6c52ac584dd898631}{pw\+\_\+x.\+build\+\_\+\+PW\+\_\+\+Input}} (scf\+\_\+inputs, material\+\_\+prefix)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepw__x_a6fcf086e848942e69209213255f1c624}{pw\+\_\+x.\+href}}
+\item 
+\mbox{\hyperlink{namespacepw__x_a20ecf34f1ecb63673b45a995d3a8a631}{pw\+\_\+x.\+target}}
+\item 
+HTML \mbox{\hyperlink{namespacepw__x_aca855ad708758f1e805174a480e413e4}{pw\+\_\+x.\+documentation\+\_\+link}} = HTML(value=\textquotesingle{}$<$a href=\char`\"{}https\+://www.\+quantum-\/espresso.\+org/Doc/INPUT\+\_\+\+PW.\+html\char`\"{} target=\char`\"{}\+\_\+blank\char`\"{}$>$INPUT\+\_\+\+PW.\+html$<$/a$>$\textquotesingle{})
+\item 
+Text \mbox{\hyperlink{namespacepw__x_aeaae9ca0e18c4846d347a26ab086edeb}{pw\+\_\+x.\+material\+\_\+prefix}} = Text(name=\char`\"{}Material Prefix\char`\"{}, value=\char`\"{}si\char`\"{})
+\begin{DoxyCompactList}\small\item\em Create Control form. \end{DoxyCompactList}\item 
+Dropdown \mbox{\hyperlink{namespacepw__x_a64bf734f3915602370421428abd8599a}{pw\+\_\+x.\+restart\+\_\+mode}} = Dropdown(name=\char`\"{}Restart Mode\char`\"{}, value=\char`\"{}from\+\_\+scratch\char`\"{}, options=\mbox{[}\char`\"{}from\+\_\+scratch\char`\"{}, \char`\"{}restart\char`\"{}\mbox{]})
+\item 
+Text \mbox{\hyperlink{namespacepw__x_a4abd8750cbe8a036edbf3a4fa3c2af99}{pw\+\_\+x.\+pseudo\+\_\+dir}} = Text(name=\char`\"{}Pseudopotential File Directory\char`\"{}, value=\char`\"{}./\char`\"{})
+\item 
+Text \mbox{\hyperlink{namespacepw__x_a91f39e49b00feb594a6a8127b1f7294f}{pw\+\_\+x.\+outdir}} = Text(name=\char`\"{}Current Directory\char`\"{}, value=\char`\"{}./\char`\"{})
+\item 
+Float\+Text \mbox{\hyperlink{namespacepw__x_a84941c9877b32298b8f39769091ed71a}{pw\+\_\+x.\+max\+\_\+runtime}} = Float\+Text(name=\textquotesingle{}Max Run Time (Seconds)\textquotesingle{}, value=10000000)
+\item 
+Button \mbox{\hyperlink{namespacepw__x_a0c04477f91850200dda0a33dde09a439}{pw\+\_\+x.\+icon\+\_\+material\+\_\+prefix}}
+\begin{DoxyCompactList}\small\item\em Creates the info buttons and adds in the description when you hover your cursor over the button. \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{namespacepw__x_a4f7cec742525e53bf2e05f8ec8c0474c}{pw\+\_\+x.\+icon\+\_\+restart\+\_\+mode}}
+\item 
+Button \mbox{\hyperlink{namespacepw__x_a1456850fcd116e4de3428d65ea7b61d7}{pw\+\_\+x.\+icon\+\_\+pseudo\+\_\+dir}}
+\item 
+Button \mbox{\hyperlink{namespacepw__x_a544af034ac5b7f36a7f4e6dddccfe25c}{pw\+\_\+x.\+icon\+\_\+outdir}}
+\item 
+Button \mbox{\hyperlink{namespacepw__x_a1169e1a406c752a49df9c59517b49447}{pw\+\_\+x.\+icon\+\_\+max\+\_\+runtime}}
+\item 
+list \mbox{\hyperlink{namespacepw__x_a5454de9abda707a777a26e9eda805024}{pw\+\_\+x.\+form\+\_\+items}}
+\item 
+Box \mbox{\hyperlink{namespacepw__x_a0ed558e4763050458531ac02b3c19736}{pw\+\_\+x.\+controls\+\_\+box}} = Box(form\+\_\+items, layout=box\+\_\+layout(60))
+\item 
+Dropdown \mbox{\hyperlink{namespacepw__x_aaf4b997568e6d8bd7b3b129049ac81b5}{pw\+\_\+x.\+ibrav}}
+\item 
+Float\+Text \mbox{\hyperlink{namespacepw__x_a22b66d2f537f927c58bdc6a06255ec6e}{pw\+\_\+x.\+celldm\+\_\+1}} = Float\+Text(name=\char`\"{}Crystallographic Constant\char`\"{},value=10.\+2094)
+\item 
+Float\+Text \mbox{\hyperlink{namespacepw__x_ac04726cda94d314790988852a219b0dd}{pw\+\_\+x.\+nat}} = Float\+Text(name=\char`\"{}Number of atoms in the cell system\char`\"{} ,value=1)
+\item 
+Float\+Text \mbox{\hyperlink{namespacepw__x_acda023a842f7b9a35e2d5260158a8dec}{pw\+\_\+x.\+ntyp}} = Float\+Text(name=\char`\"{}Number of Types of Atoms\char`\"{},value=1)
+\item 
+Float\+Text \mbox{\hyperlink{namespacepw__x_a37cd1c01a5c3f660a3cf91a70d2e1c66}{pw\+\_\+x.\+ecutwfc}} = Float\+Text(name=\char`\"{}Wavefunction Kinetic NRG Cutoff (Ry)\char`\"{},min=25.\+0,max=100.\+0,value=25.\+0)
+\item 
+Button \mbox{\hyperlink{namespacepw__x_ac4c7fb1a20597902cd5198b4c28c2eb2}{pw\+\_\+x.\+icon\+\_\+ibrav}}
+\begin{DoxyCompactList}\small\item\em Creates the info buttons and adds in the description when you hover your cursor over the button. \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{namespacepw__x_ac34306b48f4ef115cd4372a849c7efdc}{pw\+\_\+x.\+icon\+\_\+celldm\+\_\+1}}
+\item 
+Button \mbox{\hyperlink{namespacepw__x_ae31de7ecddd82b6d396d84ddaf199245}{pw\+\_\+x.\+icon\+\_\+nat}}
+\item 
+Button \mbox{\hyperlink{namespacepw__x_a87a5256dfc6d7a2da6dfcd533179ad33}{pw\+\_\+x.\+icon\+\_\+ntyp}}
+\item 
+Button \mbox{\hyperlink{namespacepw__x_a3c0beabe929e8a83d2858f8abb32f638}{pw\+\_\+x.\+icon\+\_\+ecutwfc}}
+\item 
+Box \mbox{\hyperlink{namespacepw__x_a6d635546501b4f568b5b683445549c7b}{pw\+\_\+x.\+system\+\_\+box}} = Box(form\+\_\+items, layout=box\+\_\+layout(65))
+\item 
+Dropdown \mbox{\hyperlink{namespacepw__x_aee8c7ca543dd163ca3a6868f574f3615}{pw\+\_\+x.\+diagonalization}}
+\item 
+Float\+Text \mbox{\hyperlink{namespacepw__x_a4b6d59d544c7adbc0bb3ceed45d7f1c3}{pw\+\_\+x.\+mixing\+\_\+beta}} = Float\+Text(name=\char`\"{}Mixing Beta\char`\"{},value=0.\+70)
+\item 
+Float\+Text \mbox{\hyperlink{namespacepw__x_abf511f1150b86a81a865bf35aa2ccf04}{pw\+\_\+x.\+con\+\_\+threshold}} = Float\+Text(name=\char`\"{}Convergence Threshold\char`\"{},value=1.\+0e-\/13)
+\item 
+Text \mbox{\hyperlink{namespacepw__x_aab7432117d587e4500126569206ba95b}{pw\+\_\+x.\+atom}} = Text(name=\char`\"{}Atom\char`\"{},value=\char`\"{}\char`\"{})
+\item 
+Float\+Text \mbox{\hyperlink{namespacepw__x_a1d9f8f70a339b42aea6b7596a7f220e9}{pw\+\_\+x.\+atomic\+\_\+mass}} = Float\+Text(name=\char`\"{}Atomic Mass\char`\"{},value=28.\+0855)
+\item 
+Text \mbox{\hyperlink{namespacepw__x_a6099bac66b9f9f04e0add8ff7f399328}{pw\+\_\+x.\+pseudo\+\_\+filename}}
+\item 
+Dropdown \mbox{\hyperlink{namespacepw__x_ab48f9b2d4512cd47d88216705ea59903}{pw\+\_\+x.\+atomic\+\_\+coord\+\_\+type}}
+\item 
+Button \mbox{\hyperlink{namespacepw__x_a1c990b3ea0181bbf2bc322df945b8741}{pw\+\_\+x.\+icon\+\_\+diagonalization}}
+\begin{DoxyCompactList}\small\item\em Creates the info buttons and adds in the description when you hover your cursor over the button. \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{namespacepw__x_a0b02512501d5da9db32d063a2f72c503}{pw\+\_\+x.\+icon\+\_\+mixing\+\_\+beta}}
+\item 
+Button \mbox{\hyperlink{namespacepw__x_a4e1d11bdf8ccaa650b1bbaaa5367b17c}{pw\+\_\+x.\+icon\+\_\+con\+\_\+threshold}}
+\item 
+Button \mbox{\hyperlink{namespacepw__x_ae396fcd0033d4ceccb8f3e2439583a91}{pw\+\_\+x.\+icon\+\_\+atom}}
+\item 
+Button \mbox{\hyperlink{namespacepw__x_a5843a5c30be483d9c74ca05cb5f004aa}{pw\+\_\+x.\+icon\+\_\+atomic\+\_\+mass}}
+\item 
+Button \mbox{\hyperlink{namespacepw__x_abf80d25d9f0c9b70c408fa70d707cda9}{pw\+\_\+x.\+icon\+\_\+pseudo\+\_\+filename}}
+\item 
+Button \mbox{\hyperlink{namespacepw__x_ab08b26e2876fe5789a4a380e2ec284f8}{pw\+\_\+x.\+icon\+\_\+atomic\+\_\+coord\+\_\+type}}
+\item 
+Box \mbox{\hyperlink{namespacepw__x_a16c9745a79a40fb5891da169b6753d86}{pw\+\_\+x.\+electrons\+\_\+box}} = Box(form\+\_\+items, layout=box\+\_\+layout(60))
+\begin{DoxyCompactList}\small\item\em UI. \end{DoxyCompactList}\item 
+Dropdown \mbox{\hyperlink{namespacepw__x_a4dad481c3ef0e69a228031284f08e471}{pw\+\_\+x.\+kpoint\+\_\+type}}
+\item 
+Int\+Text \mbox{\hyperlink{namespacepw__x_a308122d307bae2ba7381038b8ed420ca}{pw\+\_\+x.\+kptx}} = Int\+Text(name=\char`\"{}kptx\char`\"{}, value=6, layout=Layout(width=\textquotesingle{}60\%\textquotesingle{}))
+\item 
+Int\+Text \mbox{\hyperlink{namespacepw__x_ace19afd1ed547f1c022ad1aaec3cecfa}{pw\+\_\+x.\+kpty}} = Int\+Text(name=\char`\"{}kpty\char`\"{}, value= 6, layout=Layout(width=\textquotesingle{}60\%\textquotesingle{}))
+\item 
+Int\+Text \mbox{\hyperlink{namespacepw__x_abdc67a9ea8ca121c28af67ccb15c5ec2}{pw\+\_\+x.\+kptz}} = Int\+Text(name=\char`\"{}kptz\char`\"{}, value= 6, layout=Layout(width=\textquotesingle{}60\%\textquotesingle{}))
+\item 
+Int\+Text \mbox{\hyperlink{namespacepw__x_ad9b22452415d79ea6d4abe078a85aca5}{pw\+\_\+x.\+offset\+\_\+x}} = Int\+Text(name=\char`\"{}offsetx\char`\"{}, value= 0, layout=Layout(width=\textquotesingle{}60\%\textquotesingle{}))
+\item 
+Int\+Text \mbox{\hyperlink{namespacepw__x_a2a1ef17847712d1344a8cd10893af8f5}{pw\+\_\+x.\+offset\+\_\+y}} = Int\+Text(name=\char`\"{}offsety\char`\"{}, value= 0, layout=Layout(width=\textquotesingle{}60\%\textquotesingle{}))
+\item 
+Int\+Text \mbox{\hyperlink{namespacepw__x_a03e8afecd51592bdf90aeb27f3287e99}{pw\+\_\+x.\+offset\+\_\+z}} = Int\+Text(name=\char`\"{}offsetz\char`\"{}, value= 0, layout=Layout(width=\textquotesingle{}60\%\textquotesingle{}))
+\item 
+VBox \mbox{\hyperlink{namespacepw__x_a1f7a0c8e3e9f0a1d6b5e2b3d1ab6157f}{pw\+\_\+x.\+left\+\_\+section}}
+\item 
+VBox \mbox{\hyperlink{namespacepw__x_a94569e5455bc5562f884f70838dc8aba}{pw\+\_\+x.\+right\+\_\+section}}
+\item 
+VBox \mbox{\hyperlink{namespacepw__x_abc0779d0d1a56c40748ae585a7aa4afa}{pw\+\_\+x.\+kpoints\+\_\+box}}
+\item 
+Tab \mbox{\hyperlink{namespacepw__x_a4675c4eb65d7daa2e1611122af6e5504}{pw\+\_\+x.\+pw\+\_\+x\+\_\+tabs}} = Tab()
+\item 
+list \mbox{\hyperlink{namespacepw__x_a755d533adc7706c3d4819a3a4012a6af}{pw\+\_\+x.\+tab\+\_\+contents}} = \mbox{[}controls\+\_\+box, system\+\_\+box, electrons\+\_\+box, kpoints\+\_\+box\mbox{]}
+\item 
+\mbox{\hyperlink{namespacepw__x_af13bc024dc0136b6bf1d6e62a220f874}{pw\+\_\+x.\+children}}
+\item 
+str \mbox{\hyperlink{namespacepw__x_a6beceddcbfe8cf129efedf2ece7c336d}{pw\+\_\+x.\+wf\+\_\+collect}} = \textquotesingle{}.true\textquotesingle{}
+\item 
+int \mbox{\hyperlink{namespacepw__x_a44bf6b1c470ebd1504fdb1360b949817}{pw\+\_\+x.\+etot\+\_\+conv\+\_\+thr}} = 1e-\/4
+\item 
+int \mbox{\hyperlink{namespacepw__x_a9db9e7279446164adf744ceabfc2cca4}{pw\+\_\+x.\+nbnd\+\_\+flag}} = 0
+\item 
+int \mbox{\hyperlink{namespacepw__x_aa6f034b0323f0ea64faa59146b733087}{pw\+\_\+x.\+nbnd}} = 4
+\item 
+str \mbox{\hyperlink{namespacepw__x_a503e847b204735462921db7e1abc208d}{pw\+\_\+x.\+nosym}} = \textquotesingle{}.false.\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacepw__x_a12601e037d6c513e421ce4d4488e8c5c}{pw\+\_\+x.\+ps\+Name}} = \textquotesingle{}Si\+\_\+\+ONCV\+\_\+\+PBE-\/1.\+2.upf\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacepw__x_afb9dac1caea29cc4366463a29ceb7416}{pw\+\_\+x.\+cellparam\+\_\+coordinate\+\_\+type}} = \textquotesingle{}alat\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespacepw__x_afbfac3f8c16ee92814c868b8bebed032}{pw\+\_\+x.\+cellparam\+\_\+list}} = \mbox{[}0.\+0,0.\+0,0.\+0,0.\+25,0.\+25,0.\+25,0.\+5,0.\+5,0.\+5\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacepw__x_aa9034ad8531753c98834496110e9a91f}{pw\+\_\+x.\+atom\+\_\+list}} = \mbox{[}\textquotesingle{}Si\textquotesingle{},0.\+0,0.\+0,0.\+0,\textquotesingle{}Si\textquotesingle{},0.\+25,0.\+25,0.\+25\mbox{]}
+\item 
+np \mbox{\hyperlink{namespacepw__x_a9620a6c03245c8e5876b34d34a64bfe6}{pw\+\_\+x.\+atom\+\_\+array}} = np.\+array(atom\+\_\+list)
+\item 
+np \mbox{\hyperlink{namespacepw__x_aeecf295760a7ce1dffa6c7b11b2acf5e}{pw\+\_\+x.\+atom\+\_\+splits}} = np.\+split(atom\+\_\+array,nat.\+value)
+\item 
+list \mbox{\hyperlink{namespacepw__x_a7cd277f130fb1f6e49549ec478c4c4e5}{pw\+\_\+x.\+join\+\_\+line}} = \mbox{[}\textquotesingle{} \textquotesingle{}.join(i) for i in atom\+\_\+splits\mbox{]}
+\item 
+str \mbox{\hyperlink{namespacepw__x_aa87f5a9fffd542f8061e76703017d277}{pw\+\_\+x.\+atomic\+\_\+positions}} = \textquotesingle{}\textbackslash{}n\textquotesingle{}.join(join\+\_\+line)
+\item 
+dict \mbox{\hyperlink{namespacepw__x_ac0fc08540db190e275da60795b5d21e7}{pw\+\_\+x.\+search\+\_\+sym}}
+\item 
+int \mbox{\hyperlink{namespacepw__x_a9c6965b0f411108c7863d2b7701a2f7d}{pw\+\_\+x.\+pw\+\_\+cores}} = 20
+\item 
+str \mbox{\hyperlink{namespacepw__x_a0c45d53f4617412c84e43f5a26a7f6f2}{pw\+\_\+x.\+pw\+\_\+walltime}} = \textquotesingle{}00\+:05\+:00\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+PW\+\_\+X step input widget creation. 
+
+
+
+Definition in file \mbox{\hyperlink{pw__x_8py_source}{pw\+\_\+x.\+py}}.
+

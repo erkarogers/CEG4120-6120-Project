@@ -1,0 +1,108 @@
+\hypertarget{tool_8py_source}{}\doxysection{tool.\+py}
+\mbox{\hyperlink{tool_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00001}\mbox{\hyperlink{namespacetool}{00001}}\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00019}00019\ \textcolor{comment}{\#\ }}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00020}00020\ \textcolor{comment}{\#\ @section\ notes\_main\ Notes}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00021}00021\ \textcolor{comment}{\#\ }}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00022}00022\ \textcolor{comment}{\#\ @section\ todo\_main\ TODO}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00023}00023\ \textcolor{comment}{\#}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00059}00059\ \textcolor{comment}{\#\ Import\ libraries}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00060}00060\ \textcolor{keyword}{from}\ ipywidgets\ \textcolor{keyword}{import}\ HTML,\ AppLayout,\ VBox,\ Button,\ Tab,\ FloatProgress}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00061}00061\ \textcolor{keyword}{import}\ os}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00062}00062\ \%run\ styles.ipynb}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00063}00063\ \%run\ pw\_x.ipynb\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00064}00064\ \%run\ ph\_x.ipynb}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00065}00065\ \%run\ epw\_x.ipynb}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00067}00067\ \textcolor{comment}{\#\ \%\%}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00068}00068\ \textcolor{comment}{\#\ bind\ Control\ form\ to\ output}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00072}\mbox{\hyperlink{namespacetool_ae0723badc8b183ad40361a948900a5ca}{00072}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacetool_ae0723badc8b183ad40361a948900a5ca}{on\_simulate\_btn\_click}}(self):}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00073}00073\ \ \ \ \ bind\_PW\_X\_inputs(self)\ \ \ \ \ \ \textcolor{comment}{\#\ method\ defined\ in\ pw\_x.ipynb}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00074}00074\ \ \ \ \ bind\_PH\_X\_inputs(self)\ \ \ \ \ \ \textcolor{comment}{\#\ method\ defined\ in\ ph\_x.ipynb}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00075}00075\ \ \ \ \ bind\_EPW\_X\_inputs(self)\ \ \ \ \ \textcolor{comment}{\#\ method\ defined\ in\ epw\_x.ipynb}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00076}00076\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00078}00078\ \textcolor{comment}{\#\ \%\%}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00079}00079\ \textcolor{comment}{\#\ Simulate}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00087}\mbox{\hyperlink{namespacetool_a5d51de985f1ec4c38eb60aea03576acc}{00087}}\ simulate\_btn\ =\ Button(description=\textcolor{stringliteral}{"{}Simulate"{}},\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ button\_style=\textcolor{stringliteral}{''},\ \textcolor{comment}{\#\ 'success',\ 'info',\ 'warning',\ 'danger'\ or\ '',\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tooltip=\textcolor{stringliteral}{'Run\ Simulation'}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00091}\mbox{\hyperlink{namespacetool_ab721a09824f6d1176bd6e7ac3d2e9398}{00091}}\ simulate\_btn.style.button\_color=\textcolor{stringliteral}{'lightgreen'}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00093}00093\ simulate\_btn.on\_click(on\_simulate\_btn\_click)}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00095}00095\ \textcolor{comment}{\#\ simulate\_btn\ =\ ui.RunCommand(label="{}Simulate"{},\ tooltip="{}Run\ Simulation"{},\ start\_func=start\_simulation)}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00106}\mbox{\hyperlink{namespacetool_a00bdad0a1b9aed11bf32312111dba19a}{00106}}\ progress\_bar\ =\ FloatProgress(}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00107}00107\ \ \ \ \ value=4.5,}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00108}00108\ \ \ \ \ min=0,}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00109}00109\ \ \ \ \ max=10.0,}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00110}00110\ \ \ \ \ bar\_style=\textcolor{stringliteral}{'info'},}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00111}00111\ \ \ \ \ style=\{\textcolor{stringliteral}{'bar\_color'}:\ \textcolor{stringliteral}{'\#0000ff'}\},}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00112}00112\ \ \ \ \ orientation=\textcolor{stringliteral}{'horizontal'}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00113}00113\ )}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00118}\mbox{\hyperlink{namespacetool_ad1ac7d67b2e615d1cf7d390a1dc92930}{00118}}\ abort\_btn\ =\ Button(description=\textcolor{stringliteral}{"{}Abort"{}},\ disabled=\textcolor{keyword}{True})}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00119}00119\ \textcolor{comment}{\#\ abort\_btn\ =\ ui.RunCommand(label="{}Run"{},\ tooltip="{}Abort\ Simulation"{},\ start\_func=abort)}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00124}\mbox{\hyperlink{namespacetool_a4695a775080ae0fe37c8c224af78659d}{00124}}\ form\_items\ =\ [}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00125}00125\ \ \ \ \ Box([simulate\_btn],\ layout=form\_item\_layout()),}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00126}00126\ \ \ \ \ Box([progress\_bar],\ layout=form\_item\_layout()),}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00127}00127\ \ \ \ \ Box([abort\_btn],\ layout=form\_item\_layout())}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00128}00128\ ]}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00129}00129\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00130}\mbox{\hyperlink{namespacetool_ad806e76624359faa41e6c69e3404ed27}{00130}}\ simulate\_box\ =\ Box(form\_items,\ layout=box\_layout(40))}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00131}00131\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00132}00132\ \textcolor{comment}{\#simulate\_box}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00135}00135\ \textcolor{comment}{\#\ \%\%\ [markdown]}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00136}00136\ \textcolor{comment}{\#\ \#\#\ Combine\ All\ Tabs}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00138}00138\ \textcolor{comment}{\#\ \%\%}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00143}00143\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00144}00144\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00147}\mbox{\hyperlink{namespacetool_a6d44b3c528d0a757d4e1208f86fabcfb}{00147}}\ header\ =\ HTML(}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00148}00148\ \ \ \ \ value=\textcolor{stringliteral}{"{}<h2>SEMICONDUCTOR\ PHYSICS\ SIMULATION\ TOOL</h2>"{}},}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00149}00149\ \ \ \ \ placeholder=\textcolor{stringliteral}{'Title'},}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00150}00150\ \ \ \ \ layout=Layout(height=\textcolor{stringliteral}{'auto'})}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00151}00151\ )}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00152}00152\ header.add\_class(\textcolor{stringliteral}{'header'})}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00153}00153\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00154}00154\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00156}\mbox{\hyperlink{namespacetool_a53789ebf0309a950de162cb48d111b35}{00156}}\ tool\_tabs\ =\ Tab()}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00157}00157\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00158}00158\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00164}\mbox{\hyperlink{namespacetool_ac14b2487a0c3118ea91fa5a729f4c0d9}{00164}}\ tab\_contents\ =\ [pw\_x\_tabs,\ ph\_x\_box,\ epw\_x\_tabs,\ simulate\_box]}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00165}\mbox{\hyperlink{namespacetool_a1de5ac89574c69b9f80a0855fe842a1c}{00165}}\ tool\_tabs.children\ =\ tab\_contents}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00166}00166\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00167}00167\ tool\_tabs.set\_title(0,\ \textcolor{stringliteral}{"{}PW.x\ Inputs"{}})}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00168}00168\ tool\_tabs.set\_title(1,\ \textcolor{stringliteral}{"{}PH.x\ Inputs"{}})}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00169}00169\ tool\_tabs.set\_title(2,\ \textcolor{stringliteral}{"{}EPW.x\ Inputs"{}})}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00170}00170\ tool\_tabs.set\_title(3,\ \textcolor{stringliteral}{"{}Simulate"{}})}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00172}00172\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00175}\mbox{\hyperlink{namespacetool_addf0ea02cd4dd1ad91343c8643d4bca0}{00175}}\ app\ =\ AppLayout(center=tool\_tabs,\ header=header,\ pane\_heights=[1,\ 5,\ \textcolor{stringliteral}{'0'}])}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00176}00176\ app.add\_class(\textcolor{stringliteral}{"{}main"{}})}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00177}00177\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00178}00178\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00179}00179\ \textcolor{comment}{\#\ \%\%}}
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00180}00180\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00181}00181\ }
+\DoxyCodeLine{\Hypertarget{tool_8py_source_l00182}00182\ }
+
+\end{DoxyCode}

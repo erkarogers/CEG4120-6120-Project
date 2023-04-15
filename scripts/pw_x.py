@@ -1,6 +1,42 @@
 # %% [markdown]
 # # DFT SCF Step (PW.X)
 
+##
+# @file pw_x.py
+# 
+# @brief PW_X step input widget creation
+# 
+# @page PW_X
+# @section description_pw Description
+# @ref pw_x.py is a jupyter notebook that contains the input widgets for the PW_X step
+# 
+# @section todo_pw TODO
+# 
+# @section notes_pw Notes
+# @ref Quantum Espresso Input_PW documentation: https://www.quantum-espresso.org/Doc/INPUT_PW.html
+#
+# @section libraries_pw Libraries/Modules
+# - ipywidgets  : https://ipywidgets.readthedocs.io/en/latest/
+#  - Tab        : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Tab
+#  - Box        : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Box
+#  - VBox       : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#VBox
+#  - HBox       : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#HBox
+#  - GridBox    : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#GridBox
+#  - Layout     : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Layout
+#  - HTML        : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#HTML
+#  - Label      : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Label
+#  - IntText    : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#IntText
+#  - FloatText  : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#FloatText
+#  - Dropdown   : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Dropdown
+#  - Text       : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Text
+#  - Textarea   : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Textarea
+# - os          : https://docs.python.org/3/library/os.html
+# - nanohub     : https://nanohub.org/tools/quantumespresso/
+# - styles      : styles.py
+#  - Runs the styles.ipynb notebook 
+# 
+
+
 # %%
 ### Import libraries
 

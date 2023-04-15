@@ -1,0 +1,172 @@
+\hypertarget{ph__x_8py_source}{}\doxysection{ph\+\_\+x.\+py}
+\mbox{\hyperlink{ph__x_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00001}\mbox{\hyperlink{namespaceph__x}{00001}}\ \textcolor{comment}{\#\ \%\%\ [markdown]}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00002}00002\ \textcolor{comment}{\#\ \#\ DFPT\ Phonon\ Step\ (PH.X)}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00034}00034\ \textcolor{comment}{\#\ \%\%}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00036}00036\ \textcolor{keyword}{from}\ ipywidgets\ \textcolor{keyword}{import}\ Style,\ Box,\ Layout,\ Label,\ IntText,\ FloatText,\ Dropdown}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00037}00037\ \%run\ styles.ipynb}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00039}00039\ \textcolor{comment}{\#\ \%\%\ [markdown]}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00040}00040\ \textcolor{comment}{\#\ \#\#\ Documentation\ Link}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00042}00042\ \textcolor{comment}{\#\ \%\%}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00043}00043\ \%\%html}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00044}\mbox{\hyperlink{namespaceph__x_a8c8a88ef627842ee07024dffff1b352d}{00044}}\ <a\ href=\textcolor{stringliteral}{"{}https://www.quantum-\/espresso.org/Doc/INPUT\_PH.html\#idm218"{}}\ target=\textcolor{stringliteral}{"{}\_blank"{}}>INPUT\_PW.html</a>}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00046}00046\ \textcolor{comment}{\#\ \%\%}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00047}\mbox{\hyperlink{namespaceph__x_ab06a97d2134cc78fbdb5b7eba939a6a5}{00047}}\ documentation\_link\ =\ HTML(value=\textcolor{stringliteral}{'<a\ href="{}https://www.quantum-\/espresso.org/Doc/INPUT\_PH.html\#idm218"{}\ target="{}\_blank"{}>INPUT\_PH.html</a>'})}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00049}00049\ \textcolor{comment}{\#\ \%\%\ [markdown]}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00050}00050\ \textcolor{comment}{\#\ \#\#\ PH.X\ Inputs}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00052}00052\ \textcolor{comment}{\#\ \%\%}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00053}00053\ \textcolor{comment}{\#\ ph.x\ inputs}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00055}00055\ \textcolor{comment}{\#qpoints\ in\ 100\ crystal\ direction,\ for\ sampling\ periodic\ cell\ in\ reciprocal\ space\ in\ the\ phonon\ calculation}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00056}\mbox{\hyperlink{namespaceph__x_afd6afe2392d2a6086d0e930042d5b03b}{00056}}\ nq1\ =\ IntText(name=\textcolor{stringliteral}{"{}nq1"{}},\ value=\ 3)}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00058}00058\ \textcolor{comment}{\#qpoints\ in\ 010\ crystal\ direction,\ for\ sampling\ periodic\ cell\ in\ reciprocal\ space\ in\ the\ phonon\ calculation}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00059}\mbox{\hyperlink{namespaceph__x_aa9e8cb16e48d8f874eb44e683852cf70}{00059}}\ nq2\ =\ IntText(name=\textcolor{stringliteral}{"{}nq2"{}},\ value=\ 3)}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00060}00060\ \textcolor{comment}{\#\ qpoints\ in\ 001\ crystal\ direction,\ for\ sampling\ periodic\ cell\ in\ reciprocal\ space\ in\ the\ phonon\ calculation}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00061}\mbox{\hyperlink{namespaceph__x_a49dc1a97951b0372f27acb9f9c215ff7}{00061}}\ nq3\ =\ IntText(name=\textcolor{stringliteral}{"{}nq3"{}},\ value=\ 3)}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00063}00063\ \textcolor{comment}{\#\ convergence\ threshold\ for\ phonon\ calculation}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00064}\mbox{\hyperlink{namespaceph__x_a8a353a0810a6059e0448141fae97bb8f}{00064}}\ self\_consistency\_threshold\ =\ FloatText(name=\textcolor{stringliteral}{"{}Self-\/Consistency\ Threshold"{}},\ value=1.0e-\/12)}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00066}00066\ \textcolor{comment}{\#\ option\ for\ recovering\ from\ previous\ failed/timed\ out\ calculation}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00067}\mbox{\hyperlink{namespaceph__x_a319529d1d82f659fba1ec125ad681d62}{00067}}\ recover\ =\ Dropdown(name=\textcolor{stringliteral}{"{}recover"{}},\ value=\textcolor{stringliteral}{"{}false"{}},\ options=[\textcolor{stringliteral}{"{}true"{}},\textcolor{stringliteral}{"{}false"{}}])}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00073}\mbox{\hyperlink{namespaceph__x_a60861702ba7cf1720dad56323d217bf8}{00073}}\ icon\_nq1\ =\ Button(\ icon=\textcolor{stringliteral}{'fa-\/info-\/circle'},}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tooltip=\textcolor{stringliteral}{'Parameters\ of\ the\ Monkhorst-\/Pack\ grid\ (no\ offset)\ used'}\ \textcolor{stringliteral}{'\(\backslash\)n'}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'when\ ldisp=.true.\ Same\ meaning\ as\ for\ nk1,\ nk2,\ nk3\ in\ the\ input\ of\ pw.x.'}\ \textcolor{stringliteral}{'\(\backslash\)n'}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)n'}\textcolor{stringliteral}{'DEFAULT:\ 0,0,0'}\ ,\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ layout\ =\ Layout(width=\textcolor{stringliteral}{'40px'}))}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00079}\mbox{\hyperlink{namespaceph__x_a63e405e46a6961ecc458f1cb65f05a65}{00079}}\ icon\_nq2\ =\ Button(\ icon=\textcolor{stringliteral}{'fa-\/info-\/circle'},}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tooltip=\textcolor{stringliteral}{'Parameters\ of\ the\ Monkhorst-\/Pack\ grid\ (no\ offset)\ used'}\ \textcolor{stringliteral}{'\(\backslash\)n'}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'when\ ldisp=.true.\ Same\ meaning\ as\ for\ nk1,\ nk2,\ nk3\ in\ the\ input\ of\ pw.x.'}\textcolor{stringliteral}{'\(\backslash\)n'}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)n'}\textcolor{stringliteral}{'DEFAULT:\ 0,0,0'},\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ layout\ =\ Layout(width=\textcolor{stringliteral}{'40px'}))}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00085}\mbox{\hyperlink{namespaceph__x_a446a4ee67b81a3c727588bf0be638a95}{00085}}\ icon\_nq3\ =\ Button(\ icon=\textcolor{stringliteral}{'fa-\/info-\/circle'},}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tooltip=\textcolor{stringliteral}{'Parameters\ of\ the\ Monkhorst-\/Pack\ grid\ (no\ offset)\ used'}\ \textcolor{stringliteral}{'\(\backslash\)n'}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'when\ ldisp=.true.\ Same\ meaning\ as\ for\ nk1,\ nk2,\ nk3\ in\ the\ input\ of\ pw.x.'}\textcolor{stringliteral}{'\(\backslash\)n'}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)n'}\ \textcolor{stringliteral}{'DEFAULT:\ 0,0,0'},\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ layout\ =\ Layout(width=\textcolor{stringliteral}{'40px'}))}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00091}\mbox{\hyperlink{namespaceph__x_a2242bbd283035de6d4bca92c1fdb28ce}{00091}}\ icon\_self\_consistency\_threshold\ =\ Button(\ icon=\textcolor{stringliteral}{'fa-\/info-\/circle'},}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tooltip=\textcolor{stringliteral}{'Threshold\ for\ self-\/consistency.'}\ \textcolor{stringliteral}{'\(\backslash\)n'}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)n'}\textcolor{stringliteral}{'DEFAULT:1e-\/12'},\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ layout\ =\ Layout(width=\textcolor{stringliteral}{'40px'}))}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00096}\mbox{\hyperlink{namespaceph__x_a12a62bcfd9cb93eeee86b02291374c44}{00096}}\ icon\_recover\ =\ Button(\ icon=\textcolor{stringliteral}{'fa-\/info-\/circle'},}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tooltip=\textcolor{stringliteral}{'\ If\ .true.\ restart\ from\ an\ interrupted\ run.'}\ \textcolor{stringliteral}{'\(\backslash\)n'}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)n'}\textcolor{stringliteral}{'DEFAULT:\ false'},\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ layout\ =\ Layout(width=\textcolor{stringliteral}{'40px'}))}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00105}\mbox{\hyperlink{namespaceph__x_a3ac01af2b0af371853c85a35a959d5ca}{00105}}\ form\_items\ =\ [}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00106}00106\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00107}00107\ \ \ \ \ HBox([Label(value=\textcolor{stringliteral}{'nq1'}),}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ Box([nq1,\ icon\_nq1])}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00109}00109\ \ \ \ \ \ \ \ \ \ ],\ layout\ =\ form\_item\_layout()),}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00110}00110\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00111}00111\ \ \ \ \ HBox([Label(value=\textcolor{stringliteral}{'nq2'}),\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ Box([nq2,\ icon\_nq2])}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00113}00113\ \ \ \ \ \ \ \ \ \ ],layout=form\_item\_layout()),}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00114}00114\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00115}00115\ \ \ \ \ \ HBox([Label(value=\textcolor{stringliteral}{'nq3'}),\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ Box([nq3,\ icon\_nq3])}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00117}00117\ \ \ \ \ \ \ \ \ \ ],layout=form\_item\_layout()),}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00118}00118\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00119}00119\ \ \ \ \ \ HBox([Label(value=\textcolor{stringliteral}{'Self-\/Consistency\ Threshold'}),\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ Box([self\_consistency\_threshold,\ icon\_self\_consistency\_threshold])}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00121}00121\ \ \ \ \ \ \ \ \ \ ],layout=form\_item\_layout()),}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00122}00122\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00123}00123\ \ \ \ \ \ \ HBox([Label(value=\textcolor{stringliteral}{'Recover'}),\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ Box([recover,\ icon\_recover])}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00125}00125\ \ \ \ \ \ \ \ \ \ ],layout=form\_item\_layout()),\ \ \ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00126}00126\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00127}00127\ \ \ \ \ HBox([Label(value=\textcolor{stringliteral}{'Documentation\ URL:'}),\ documentation\_link],\ layout=Layout())}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00128}00128\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00129}00129\ \ \ \ \ \textcolor{comment}{\#Box([Label(value='nq1'),\ nq1],\ layout=form\_item\_layout()),}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00130}00130\ \ \ \ \ \textcolor{comment}{\#Box([Label(value='nq2'),\ nq2],\ layout=form\_item\_layout()),}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00131}00131\ \ \ \ \ \textcolor{comment}{\#Box([Label(value='nq3'),\ nq3],\ layout=form\_item\_layout()),}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00132}00132\ \ \ \ \ \textcolor{comment}{\#Box([Label(value='Self-\/Consistency\ Threshold'),\ self\_consistency\_threshold],\ layout=form\_item\_layout()),}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00133}00133\ \ \ \ \ \textcolor{comment}{\#Box([Label(value='Recover'),\ recover],\ layout=form\_item\_layout())}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00134}00134\ ]}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00135}00135\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00136}\mbox{\hyperlink{namespaceph__x_a07c5e48d70701ba8fafa7918eb99d8b8}{00136}}\ ph\_x\_box\ =\ Box(form\_items,\ layout=box\_layout(40))}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00138}00138\ ph\_x\_box}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00140}00140\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00141}00141\ \textcolor{comment}{\#\ \%\%\ [markdown]}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00142}00142\ \textcolor{comment}{\#\ \#\#\ NON\ USER\ INPUTS}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00143}00143\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00144}00144\ \textcolor{comment}{\#\ \%\%}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00145}00145\ \textcolor{comment}{\#input\ parameters}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00146}00146\ \textcolor{comment}{\#\&inputph\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00147}\mbox{\hyperlink{namespaceph__x_a629eb3947e59ceee37fcb842fe0d63ac}{00147}}\ search\_sym\ =\ \textcolor{stringliteral}{'.false.'}\ \ \ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00148}\mbox{\hyperlink{namespaceph__x_a7a95ddd28c0fc75dc67aa7d046296319}{00148}}\ ph\_cores\ =\ 20}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00149}\mbox{\hyperlink{namespaceph__x_af96083ae22e69bdb39780d3b780295e8}{00149}}\ ph\_walltime\ =\ \textcolor{stringliteral}{'00:05:00'}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00150}00150\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00151}00151\ \textcolor{comment}{\#\ \%\%\ [markdown]}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00152}00152\ \textcolor{comment}{\#\ \#\#\ Bind\ inputs\ to\ outputs}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00153}00153\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00154}00154\ \textcolor{comment}{\#\ \%\%}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00155}\mbox{\hyperlink{namespaceph__x_a7e3c5adb8191e51939fc4410b155b5f4}{00155}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespaceph__x_a7e3c5adb8191e51939fc4410b155b5f4}{bind\_PH\_X\_inputs}}(self):}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00156}00156\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00157}00157\ \ \ \ \ ph\_inputs\ =\ \{}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00158}00158\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'material\_prefix'}:\ material\_prefix.value,}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00159}00159\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'nq1'}:\ nq1.value,}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00160}00160\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'nq2'}:\ nq2.value,}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00161}00161\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'nq3'}:\ nq3.value,}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00162}00162\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'tr2\_ph'}:\ self\_consistency\_threshold.value,}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00163}00163\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'recover'}:\ recover.value,}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00164}00164\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'search\_sym'}:\ search\_sym}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00165}00165\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00166}00166\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00167}00167\ \ \ \ \ \mbox{\hyperlink{namespaceph__x_a7c32640005a7bf330204548b7edfb23f}{build\_PH\_Input}}(ph\_inputs,\ material\_prefix.value)}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00168}00168\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00169}00169\ \textcolor{comment}{\#\ \%\%}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00170}\mbox{\hyperlink{namespaceph__x_a7c32640005a7bf330204548b7edfb23f}{00170}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespaceph__x_a7c32640005a7bf330204548b7edfb23f}{build\_PH\_Input}}(ph\_inputs,\ material\_prefix):}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00171}00171\ \ \ \ \ print(\textcolor{stringliteral}{'BUILDING\ PH\ INPUT\ FILE'})}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00172}00172\ \ \ \ \ ph\_name\ =\ \textcolor{stringliteral}{'ph-\/\%s.in'}\ \%\ material\_prefix\ \textcolor{comment}{\#assigns\ ph\ input\ file\ to\ variable\ ph\_name\ }}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00173}00173\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00174}00174\ \ \ \ \ ph\_name\ =\ \textcolor{stringliteral}{'ph-\/\%s.in'}\ \%\ material\_prefix\ \textcolor{comment}{\#assigns\ ph\ input\ file\ to\ variable\ ph\_name\ }}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00175}00175\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00176}00176\ \ \ \ \ input\_file\ =\ \textcolor{stringliteral}{'''}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00177}00177\ \textcolor{stringliteral}{\ \ \ \ -\/-\/}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00178}00178\ \textcolor{stringliteral}{\ \ \ \ \&inputph}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00179}00179\ \textcolor{stringliteral}{\ \ \ \ prefix\ =\ '\{material\_prefix\}'}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00180}00180\ \ \ \ \ fildvscf\ =\ \textcolor{stringliteral}{'dvscf'}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00181}00181\ \ \ \ \ ldisp\ =\ .true.}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00182}00182\ \ \ \ \ fildyn\ =\ \textcolor{stringliteral}{'\{material\_prefix\}.dyn'}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00183}00183\ \ \ \ \ nq1\ =\ \{nq1\}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00184}00184\ \ \ \ \ nq2\ =\ \{nq2\}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00185}00185\ \ \ \ \ nq3\ =\ \{nq3\}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00186}00186\ \ \ \ \ tr2\_ph\ =\ \{tr2\_ph\}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00187}00187\ \ \ \ \ recover\ =\ \{recover\}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00188}00188\ \ \ \ \ search\_sym\ =\ \{search\_sym\}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00189}00189\ \ \ \ \ /}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00190}00190\ \ \ \ \ \textcolor{stringliteral}{'''.format(**ph\_inputs)\ \#assigns\ information\ in\ '''}\ \textcolor{stringliteral}{'''\ to\ variable\ inputfile}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00191}00191\ \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00192}00192\ \textcolor{stringliteral}{\ \ \ \ }\textcolor{keyword}{with}\ open(ph\_name,\ \textcolor{stringliteral}{"{}w"{}})\ \textcolor{keyword}{as}\ f:\ \textcolor{comment}{\#opens\ file\ pw\_name}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00193}00193\ \ \ \ \ \ \ \ \ f.write(input\_file)\ \textcolor{comment}{\#writes\ inputfile\ to\ file\ ph}}
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00194}00194\ }
+\DoxyCodeLine{\Hypertarget{ph__x_8py_source_l00195}00195\ }
+
+\end{DoxyCode}

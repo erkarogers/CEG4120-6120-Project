@@ -1,6 +1,36 @@
 # %% [markdown]
 # # DFPT Phonon Step (PH.X)
 
+##
+# @file ph_x.py
+# 
+# @brief PH_X step input widget creation
+# 
+# @page PH_X
+# @section description_ph Description
+# @ref ph_x.py is is a jupyter notebook that contains the input widgets for the PH_X step
+# 
+# @section todo_ph TODO
+# 
+# @section notes_ph Notes
+# @ref Quantum Espresso Input_PH documentation: https://www.quantum-espresso.org/Doc/INPUT_PH.html#idm218
+#
+# @section libraries_ph Libraries/Modules
+# - ipywidgets  : https://ipywidgets.readthedocs.io/en/latest/
+#  - Style      : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20Styling.html#Styling-Widgets
+#  - Box        : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Box
+#  - Layout     : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Layout
+#  - Label      : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Label
+#  - IntText    : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#IntText
+#  - FloatText  : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#FloatText
+#  - Dropdown   : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Dropdown
+# - os          : https://docs.python.org/3/library/os.html
+# - nanohub     : https://nanohub.org/tools/quantumespresso/
+# - styles      : styles.py
+#  - Runs the styles.ipynb notebook 
+# 
+
+
 # %%
 ### Import libraries
 from ipywidgets import Style, Box, Layout, Label, IntText, FloatText, Dropdown
