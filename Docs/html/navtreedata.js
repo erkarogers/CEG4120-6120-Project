@@ -24,7 +24,8 @@
 */
 var NAVTREE =
 [
-  [ "Semi Conductor Simulation GUI", "index.html", [
+  [ "Semiconductor Physics Simulation GUI", "index.html", [
+    [ "Semiconductor Physics Simulation Tool", "index.html", "index" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -42,7 +43,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "d1/d82/namespaceepw__x.html",
-"d8/dbc/namespacepw__x.html#aab7432117d587e4500126569206ba95b"
+"d8/dbc/namespacepw__x.html#a87a5256dfc6d7a2da6dfcd533179ad33"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

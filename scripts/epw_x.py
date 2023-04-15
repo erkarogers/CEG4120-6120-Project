@@ -1,6 +1,39 @@
 # %% [markdown]
 # # EPW Step (EPW.x)
 
+##
+# @file epw_x.py
+# 
+# @brief EPW_X step input widget creation
+# 
+# @page EPW_X
+# @section description_epw Description
+# @ref EPW_X.py is a Jupyter Notebook that creates the input widgets for the EPW step of the simulation tool.  The widgets are created using the ipywidgets library.  The widgets are then displayed in a tabbed format using the AppLayout widget.  The widgets are then bound to the output widget.  The output widget is then displayed in the AppLayout widget.  The AppLayout widget is then displayed in the Jupyter Notebook.
+# 
+# @section todo_epw TODO
+# 
+# @section notes_epw Notes
+# @ref Quantum Espresso EPW documentation: https://docs.epw-code.org/doc/Inputs.html#filkf
+# 
+# @section libraries_epw Libraries/Modules
+# - ipywidgets  : https://ipywidgets.readthedocs.io/en/latest/
+#  - Tab         : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Tab
+#  - Box         : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Box
+#  - VBox        : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#VBox
+#  - GridBox     : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#GridBox
+#  - Layout      : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Layout
+#  - Label       : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Label
+#  - IntText     : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#IntText
+#  - FloatText   : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#FloatText
+#  - Dropdown    : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Dropdown
+#  - Text        : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Text
+#  - Textarea    : https://ipywidgets.readthedocs.io/en/latest/examples/Widget%20List.html#Textarea
+# - os          : https://docs.python.org/3/library/os.html
+# - styles      : styles.ipynb
+# - Runs the styles.ipynb notebook
+# 
+
+
 # %%
 ### Import libraries
 from ipywidgets import Tab, Box, VBox, GridBox, Layout
@@ -24,30 +57,46 @@ documentation_link = HTML(value='<a href="https://docs.epw-code.org/doc/Inputs.h
 # %%
 # Setup
 
-## option for turning on/off reading in kmaps from file
+## 
+# @brief Option for turning on/off reading in kmaps from file
+# @remark Creates the kmaps input dropdown for the EPW.x step
 kmaps = Dropdown(name="kmaps", value=".false.", options={"false": ".false.", "true": ".true."})
 
-## option for turning on/off writing coarse bloch space electron phonon matrix elements (.epb files) to file
+## 
+# @brief Option for turning on/off writing coarse bloch space electron phonon matrix elements (.epb files) to file
+# @remark Creates the epbwrite input dropdown for the EPW.x step
+# 
 epbwrite = Dropdown(name="epbwrite", value=".true.", options={"false": ".false.", "true": ".true."})
     
-## option for turning on/off reading coarse bloch space electron phonon matrix elements (.epb files) from file
+## 
+# @brief Option for turning on/off reading coarse bloch space electron phonon matrix elements (.epb files) from file
+# @remark Creates the epbread input dropdown for the EPW.x step
 epbread = Dropdown(name="epbread", value=".false.", options={"false": ".false.", "true": ".true."})
 
-## option for turning on/off writing coarse wannier space electron phonon matrix elements (.epw files) to file
+## 
+# @brief Option for turning on/off writing coarse wannier space electron phonon matrix elements (.epw files) to file
+# @remark Creates the epwwrite input dropdown for the EPW.x step
 epwwrite = Dropdown(name="epwwrite", value=".true.", options={"false": ".false.", "true": ".true."})
-    
-## epwread option for turning on/off reading coarse wannier space electron phonon matrix elements (.epw files) from file
+
+## 
+# @brief epwread option for turning on/off reading coarse wannier space electron phonon matrix elements (.epw files) from file
+# @remark Creates the epwread input dropdown for the EPW.x step
 epwread = Dropdown(name="epwread", value=".false.", options={"false": ".false.", "true": ".true."})
 
-## option for polar material correction to Wannier interpolation
+## 
+# @brief Option for polar material correction to Wannier interpolation
+# @remark Creates the lpolar input dropdown for the EPW.x step
 lpolar = Dropdown(name="Correct for polar materials",value="false",options=["false", "true"])
 
-## create Wannier conversion 
+## 
+# @brief Create Wannier conversion 
+# @remark Creates the wannierize input dropdown for the EPW.x step
 wannierize = Dropdown(name="Center Wannier Functions",value="true",options=["false", "true"])
 
 
-####
-## Creates the info buttons and adds in the description when you hover your cursor over the button
+## 
+# 
+# Creates the info buttons and adds in the description when you hover your cursor over the button
 
 icon_kmaps = Button( icon='fa-info-circle',
                                 tooltip='Generate the map k+q –> k for folding the rotation matrix U(k+q).' '\n''\n'
@@ -419,30 +468,41 @@ misc_box
 # ## Mesh Sampling
 
 # %%
-# Mesh Sampling
+## 
 
-## kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
+## 
+# @var nkf1
+# kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
 nkf1 = IntText(name="nkf1",cvalue=20, layout=input_layout(30))       
 
-## kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
+## 
+# @var nkf2
+# kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
 nkf2 = IntText(name="nkf2", value=20, layout=input_layout(30))  
 
-## kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
+## 
+# @var nkf3
+# kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
 nkf3 = IntText(name="nkf3", value=20, layout=input_layout(30)) 
 
-## fine mesh kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
+## 
+# @var nqf1
+# fine mesh kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
 nqf1 = IntText(name="nqf1", value=20, layout=input_layout(30)) 
 
-## fine kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
+## 
+# @var nqf2
+# fine kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
 nqf2 = IntText(name="nqf2", value=20, layout=input_layout(30)) 
 
-## fine kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
+## @var nqf3
+# fine kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation
 nqf3 = IntText(name="nqf3", value=20, layout=input_layout(30)) 
 
 
-
-####
-## Creates the info buttons and adds in the description when you hover your cursor over the button
+## 
+# @section tool_tip_button_creation
+# Creates the info (hint) buttons and adds in the description when you hover your cursor over the button
 
 icon_nkf1 = Button( icon='fa-info-circle',
                                 tooltip='Dimensions of the fine electron grid''\n''\n'
@@ -518,6 +578,15 @@ mesh_box
 
 # %%
 ## combine forms into tabs
+# @section combine_forms
+# Combines the forms into tabs
+# @var epw_x_tabs
+# Tabs for the epw.x input file
+# @var tab_contents
+# Contents of the tabs
+# @var children
+# Children of the tabs
+
 epw_x_tabs = Tab()
 tab_contents = [setup_box, wannier_box, misc_box, mesh_box]
 children = [content for content in tab_contents]
@@ -558,6 +627,8 @@ epw_walltime = '00:30:00'
 # ## Bind Inputs to Outputs
 
 # %%
+## binds EPW inputs to outputs
+# @section bind_epw_inputs Inputs for EPW
 def bind_EPW_X_inputs(self):
         
     epw_inputs = {
@@ -611,11 +682,17 @@ def bind_EPW_X_inputs(self):
         
 
 # %%
+## builds EPW input file
+# @section build_epw_input Build EPW input
+# @param epw_inputs, material_prefix
+# 
 def build_EPW_Input(epw_inputs, material_prefix):
     print('BUILDING EPW INPUT FILE')
     #Build epw input file
+    
+    ## @var epw_name
     epw_name = 'epw-%s.in' % material_prefix #assigns epw input file to variable epw_name 
-
+    ## @var input_file
     input_file = '''
     --
     &inputepw

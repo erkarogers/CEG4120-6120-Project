@@ -1,0 +1,181 @@
+\hypertarget{epw__x_8py}{}\doxysection{epw\+\_\+x.\+py File Reference}
+\label{epw__x_8py}\index{epw\_x.py@{epw\_x.py}}
+
+
+EPW\+\_\+X step input widget creation.  
+
+
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceepw__x}{epw\+\_\+x}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceepw__x_aa525d5c1ef7d143ec8a4343ceaa04503}{epw\+\_\+x.\+bind\+\_\+\+EPW\+\_\+\+X\+\_\+inputs}} (self)
+\begin{DoxyCompactList}\small\item\em binds EPW inputs to outputs \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceepw__x_ab896e9370697a079f1dbb4b4d093c031}{epw\+\_\+x.\+build\+\_\+\+EPW\+\_\+\+Input}} (epw\+\_\+inputs, material\+\_\+prefix)
+\begin{DoxyCompactList}\small\item\em builds EPW input file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceepw__x_a3cb2fa9f732acb114ea0185c818e4119}{epw\+\_\+x.\+href}}
+\item 
+\mbox{\hyperlink{namespaceepw__x_ad4de5e6e8e3bcfb97e6246465b4ebb6b}{epw\+\_\+x.\+target}}
+\item 
+HTML \mbox{\hyperlink{namespaceepw__x_a8fe6221b84e2194f9f7c30f9a442a3ea}{epw\+\_\+x.\+documentation\+\_\+link}} = HTML(value=\textquotesingle{}$<$a href=\char`\"{}https\+://docs.\+epw-\/code.\+org/doc/Inputs.\+html\#filkf\char`\"{} target=\char`\"{}\+\_\+blank\char`\"{}$>$INPUT\+\_\+\+EPW.\+html$<$/a$>$\textquotesingle{})
+\item 
+Dropdown \mbox{\hyperlink{namespaceepw__x_a898c9657249c8dd9c97025e0095e06ef}{epw\+\_\+x.\+kmaps}} = Dropdown(name=\char`\"{}kmaps\char`\"{}, value=\char`\"{}.false.\char`\"{}, options=\{\char`\"{}false\char`\"{}\+: \char`\"{}.false.\char`\"{}, \char`\"{}true\char`\"{}\+: \char`\"{}.true.\char`\"{}\})
+\begin{DoxyCompactList}\small\item\em Option for turning on/off reading in kmaps from file. \end{DoxyCompactList}\item 
+Dropdown \mbox{\hyperlink{namespaceepw__x_a8b0d11566e4ca2794b756a9059b333c8}{epw\+\_\+x.\+epbwrite}} = Dropdown(name=\char`\"{}epbwrite\char`\"{}, value=\char`\"{}.true.\char`\"{}, options=\{\char`\"{}false\char`\"{}\+: \char`\"{}.false.\char`\"{}, \char`\"{}true\char`\"{}\+: \char`\"{}.true.\char`\"{}\})
+\begin{DoxyCompactList}\small\item\em Option for turning on/off writing coarse bloch space electron phonon matrix elements (.epb files) to file. \end{DoxyCompactList}\item 
+Dropdown \mbox{\hyperlink{namespaceepw__x_a5520a18bcb4b1875b3d37853f613e69b}{epw\+\_\+x.\+epbread}} = Dropdown(name=\char`\"{}epbread\char`\"{}, value=\char`\"{}.false.\char`\"{}, options=\{\char`\"{}false\char`\"{}\+: \char`\"{}.false.\char`\"{}, \char`\"{}true\char`\"{}\+: \char`\"{}.true.\char`\"{}\})
+\begin{DoxyCompactList}\small\item\em Option for turning on/off reading coarse bloch space electron phonon matrix elements (.epb files) from file. \end{DoxyCompactList}\item 
+Dropdown \mbox{\hyperlink{namespaceepw__x_a1ac9b578b46b47a02a5076e4f953d0b7}{epw\+\_\+x.\+epwwrite}} = Dropdown(name=\char`\"{}epwwrite\char`\"{}, value=\char`\"{}.true.\char`\"{}, options=\{\char`\"{}false\char`\"{}\+: \char`\"{}.false.\char`\"{}, \char`\"{}true\char`\"{}\+: \char`\"{}.true.\char`\"{}\})
+\begin{DoxyCompactList}\small\item\em Option for turning on/off writing coarse wannier space electron phonon matrix elements (.epw files) to file. \end{DoxyCompactList}\item 
+Dropdown \mbox{\hyperlink{namespaceepw__x_a2f241413bf99ebb9667ffd98269315c1}{epw\+\_\+x.\+epwread}} = Dropdown(name=\char`\"{}epwread\char`\"{}, value=\char`\"{}.false.\char`\"{}, options=\{\char`\"{}false\char`\"{}\+: \char`\"{}.false.\char`\"{}, \char`\"{}true\char`\"{}\+: \char`\"{}.true.\char`\"{}\})
+\begin{DoxyCompactList}\small\item\em epwread option for turning on/off reading coarse wannier space electron phonon matrix elements (.epw files) from file \end{DoxyCompactList}\item 
+Dropdown \mbox{\hyperlink{namespaceepw__x_ad8b07025d2c3a55164d015b032165055}{epw\+\_\+x.\+lpolar}} = Dropdown(name=\char`\"{}Correct for polar materials\char`\"{},value=\char`\"{}false\char`\"{},options=\mbox{[}\char`\"{}false\char`\"{}, \char`\"{}true\char`\"{}\mbox{]})
+\begin{DoxyCompactList}\small\item\em Option for polar material correction to Wannier interpolation. \end{DoxyCompactList}\item 
+Dropdown \mbox{\hyperlink{namespaceepw__x_a37f9876568c46ed0d3e2cf1acaa88888}{epw\+\_\+x.\+wannierize}} = Dropdown(name=\char`\"{}Center Wannier Functions\char`\"{},value=\char`\"{}true\char`\"{},options=\mbox{[}\char`\"{}false\char`\"{}, \char`\"{}true\char`\"{}\mbox{]})
+\begin{DoxyCompactList}\small\item\em Create Wannier conversion. \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{namespaceepw__x_a642326d6b3fecec5f75452eec8d0c820}{epw\+\_\+x.\+icon\+\_\+kmaps}}
+\begin{DoxyCompactList}\small\item\em Creates the info buttons and adds in the description when you hover your cursor over the button. \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{namespaceepw__x_a1b91a619523ac9d566e6ed2ebd5037a3}{epw\+\_\+x.\+icon\+\_\+epbwrite}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a020358f2273867ce436e8ff8d072ec27}{epw\+\_\+x.\+icon\+\_\+epbread}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a8904886b673c9ff1e2e34c57e2ee2ba8}{epw\+\_\+x.\+icon\+\_\+epwwrite}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a293920247f350a4234a68b3c27e6a928}{epw\+\_\+x.\+icon\+\_\+epwread}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_adf0c0b5f725b5ee33b5a46a020fa2db9}{epw\+\_\+x.\+icon\+\_\+lpolar}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_af74e2cb944ff706c3f71fa4d7c0c0a44}{epw\+\_\+x.\+icon\+\_\+wannierize}}
+\item 
+list \mbox{\hyperlink{namespaceepw__x_acf15b56e5127c5415bf2dcc56577e8cb}{epw\+\_\+x.\+form\+\_\+items}}
+\item 
+Box \mbox{\hyperlink{namespaceepw__x_af64aee424d8ce37097edcf01cc08c747}{epw\+\_\+x.\+setup\+\_\+box}} = Box(form\+\_\+items, layout=box\+\_\+layout(40))
+\item 
+Int\+Text \mbox{\hyperlink{namespaceepw__x_a848ac1ebc3208284f772ffbaa6e9943f}{epw\+\_\+x.\+num\+\_\+iter}} = Int\+Text(name=\char`\"{}Number of Iterations\char`\"{}, value=1500)
+\begin{DoxyCompactList}\small\item\em number of iterations for creating wannier function representations \end{DoxyCompactList}\item 
+Int\+Text \mbox{\hyperlink{namespaceepw__x_a42fb730a626ec580604790e96994e200}{epw\+\_\+x.\+iprint}} = Int\+Text(name=\char`\"{}Verbosity Level\char`\"{}, value=2)
+\begin{DoxyCompactList}\small\item\em verbosity of EPW output file \end{DoxyCompactList}\item 
+Float\+Text \mbox{\hyperlink{namespaceepw__x_a8fe0bb2b941ce59db53edd1afae66401}{epw\+\_\+x.\+dis\+\_\+win\+\_\+max}} = Float\+Text(name=\char`\"{}Disentaglement Window Max\char`\"{}, value=18.\+0)
+\begin{DoxyCompactList}\small\item\em Maximum value of the disentanglement window. \end{DoxyCompactList}\item 
+Float\+Text \mbox{\hyperlink{namespaceepw__x_ad41b21a1e41d8e4467b52c6ef8597caf}{epw\+\_\+x.\+dis\+\_\+froz\+\_\+max}} = Float\+Text(name=\char`\"{}Window Max for Frozen States\char`\"{},value=8.\+5)
+\begin{DoxyCompactList}\small\item\em Window which includes frozen states for Wannier90. \end{DoxyCompactList}\item 
+Textarea \mbox{\hyperlink{namespaceepw__x_a57c32b8e8d49203b32ab1cd44b59b323}{epw\+\_\+x.\+projections}} = Textarea(name=\char`\"{}Projections?\char`\"{}, value=\char`\"{}proj(1) = \textquotesingle{}random\textquotesingle{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Initial wannier projections, to be passed to Wannier90. \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{namespaceepw__x_a29f722328476671a3a20ca70293d207d}{epw\+\_\+x.\+icon\+\_\+num\+\_\+iter}}
+\begin{DoxyCompactList}\small\item\em Creates the info buttons and adds in the description when you hover your cursor over the button. \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{namespaceepw__x_ad579e41850fb69c1446d0b49721ac3c9}{epw\+\_\+x.\+icon\+\_\+iprint}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a15c1762665798ac066fe2d89cdbda55f}{epw\+\_\+x.\+icon\+\_\+dis\+\_\+win\+\_\+max}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a093ae14a993afe00dfcd081b0b449b3a}{epw\+\_\+x.\+icon\+\_\+dis\+\_\+froz\+\_\+max}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a9662bdf9d238faec042d186a882acd79}{epw\+\_\+x.\+icon\+\_\+projections}}
+\item 
+Box \mbox{\hyperlink{namespaceepw__x_a3c8360875b77c22055eac4183290aeed}{epw\+\_\+x.\+wannier\+\_\+box}} = Box(form\+\_\+items, layout=box\+\_\+layout(40))
+\item 
+Dropdown \mbox{\hyperlink{namespaceepw__x_a47131e48b50045f135543c09cd344db2}{epw\+\_\+x.\+prgtkk}}
+\begin{DoxyCompactList}\small\item\em option to print all electron-\/phonon coupling elements to output file will create a masssive file that will take a long time to write, use caution when setting to .true. \end{DoxyCompactList}\item 
+Dropdown \mbox{\hyperlink{namespaceepw__x_a71a278f580cd77b799e705a2b456dc5d}{epw\+\_\+x.\+lindabs}}
+\begin{DoxyCompactList}\small\item\em option to calculate optical absorption function \end{DoxyCompactList}\item 
+Float\+Text \mbox{\hyperlink{namespaceepw__x_a7e7a06b01d042c9aeedb47f8203496cd}{epw\+\_\+x.\+scissor}} = Float\+Text(name=\char`\"{}Scissor Shift\char`\"{}, value=0)
+\begin{DoxyCompactList}\small\item\em scissor shift to correct for DFT Bandgap narrowing \end{DoxyCompactList}\item 
+Float\+Text \mbox{\hyperlink{namespaceepw__x_a4796bd0a91860fa17fbec655c1c21867}{epw\+\_\+x.\+omegamin}} = Float\+Text(name=\char`\"{}Min Photon Energy\char`\"{}, value=0.\+05 )
+\begin{DoxyCompactList}\small\item\em lowest optical frequency of interest, in eV \end{DoxyCompactList}\item 
+Float\+Text \mbox{\hyperlink{namespaceepw__x_abebeca8a76affb007e4377c7288a7cfc}{epw\+\_\+x.\+omegamax}} = Float\+Text( name=\char`\"{}Max Photon Energy\char`\"{}, value=0.\+05)
+\begin{DoxyCompactList}\small\item\em highest optical frequency of interest, in eV \end{DoxyCompactList}\item 
+Float\+Text \mbox{\hyperlink{namespaceepw__x_a22506665928d39c815fe0ff6a0527942}{epw\+\_\+x.\+omegastep}} = Float\+Text(name=\char`\"{}Steps in Photon Energy\char`\"{}, value=0.\+00)
+\begin{DoxyCompactList}\small\item\em increment for sweeping optical frequencies, in eV \end{DoxyCompactList}\item 
+Float\+Text \mbox{\hyperlink{namespaceepw__x_a847c8e1144d965ecefeb4d5e23fca74b}{epw\+\_\+x.\+n\+\_\+r}} = Float\+Text(name=\char`\"{}Refractive Index\char`\"{}, value=3.\+4)
+\begin{DoxyCompactList}\small\item\em material\textquotesingle{}s index of refraction \end{DoxyCompactList}\item 
+Float\+Text \mbox{\hyperlink{namespaceepw__x_a38efb809e0904ac55417f123cd63c5f1}{epw\+\_\+x.\+fsthick}} = Float\+Text(name=\char`\"{}Band Gap Width\char`\"{}, value=4.\+0)
+\begin{DoxyCompactList}\small\item\em Width of the Fermi surface window to take into account states in the self-\/energy delta functions in eV. \end{DoxyCompactList}\item 
+Float\+Text \mbox{\hyperlink{namespaceepw__x_a511e9ea95cc93a450f49b9b652df70e1}{epw\+\_\+x.\+temps}} = Float\+Text(name=\char`\"{}Temperature (K)\char`\"{}, value=300)
+\begin{DoxyCompactList}\small\item\em system temperature in Kelvin \end{DoxyCompactList}\item 
+Float\+Text \mbox{\hyperlink{namespaceepw__x_a0f873c3a6d1f455e0b51a201a5771fd4}{epw\+\_\+x.\+degaussw}} = Float\+Text(name=\char`\"{}Step Function Broadening Parameter\char`\"{}, value=0.\+005)
+\begin{DoxyCompactList}\small\item\em Smearing in the energy-\/conserving delta functions in eV. \end{DoxyCompactList}\item 
+Float\+Text \mbox{\hyperlink{namespaceepw__x_af4044643145cca5c42d88428abb6d509}{epw\+\_\+x.\+degaussq}} = Float\+Text(name=\char`\"{}User Specific Fermi Energy\char`\"{}, value=0.\+05)
+\item 
+Dropdown \mbox{\hyperlink{namespaceepw__x_a4f16ff3a0fdef79d098bdde1ba250c9c}{epw\+\_\+x.\+efermi\+\_\+read}}
+\begin{DoxyCompactList}\small\item\em option to specify fermi energy, such as from prior nscf step \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{namespaceepw__x_aac2b41a549a7e30b264f7990f4ed7f4b}{epw\+\_\+x.\+icon\+\_\+prgtkk}}
+\begin{DoxyCompactList}\small\item\em Creates the info buttons and adds in the description when you hover your cursor over the button. \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{namespaceepw__x_aa7b0982051ac7ccd561aeaff63f4865e}{epw\+\_\+x.\+icon\+\_\+lindabs}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a4996b6dbd37d341abc7e3f875c56b450}{epw\+\_\+x.\+icon\+\_\+scissor}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_aec927bce0a4ab99db92c00c4a7ff8e22}{epw\+\_\+x.\+icon\+\_\+omegamin}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_ad45904651c9a06d39c6a5853f574d3a9}{epw\+\_\+x.\+icon\+\_\+omegamax}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a2436b7a6a13c96453986687bb59ccb35}{epw\+\_\+x.\+icon\+\_\+omegastep}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_aecd61f924d3abdc4577eda0ddc91b21a}{epw\+\_\+x.\+icon\+\_\+n\+\_\+r}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a2f63c1912169f7e826b60f12cc770a9b}{epw\+\_\+x.\+icon\+\_\+fsthick}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_ad519b4cd6ec8aad771679d39c1a3c253}{epw\+\_\+x.\+icon\+\_\+temps}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_afc267ca7cc58271f3a2a9f8ee121f856}{epw\+\_\+x.\+icon\+\_\+degaussw}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_af76fbe9fadf46c8bd40083cc30c144b3}{epw\+\_\+x.\+icon\+\_\+degaussq}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a821035c63af611758990cf54b475bfda}{epw\+\_\+x.\+icon\+\_\+efermi\+\_\+read}}
+\item 
+Box \mbox{\hyperlink{namespaceepw__x_a81cdd28f5353d511b339e871218bc287}{epw\+\_\+x.\+misc\+\_\+box}} = Box(form\+\_\+items, layout=box\+\_\+layout(35))
+\item 
+Int\+Text \mbox{\hyperlink{namespaceepw__x_ae25336c17102de2099e8cd1a2a6c937d}{epw\+\_\+x.\+nkf1}} = Int\+Text(name=\char`\"{}nkf1\char`\"{},cvalue=20, layout=input\+\_\+layout(30))
+\begin{DoxyCompactList}\small\item\em kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation \end{DoxyCompactList}\item 
+Int\+Text \mbox{\hyperlink{namespaceepw__x_a700ddad784689e69a98781761468d2be}{epw\+\_\+x.\+nkf2}} = Int\+Text(name=\char`\"{}nkf2\char`\"{}, value=20, layout=input\+\_\+layout(30))
+\begin{DoxyCompactList}\small\item\em kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation \end{DoxyCompactList}\item 
+Int\+Text \mbox{\hyperlink{namespaceepw__x_ad8fa8b5e758bb41dcf9f26eb47f0cfd8}{epw\+\_\+x.\+nkf3}} = Int\+Text(name=\char`\"{}nkf3\char`\"{}, value=20, layout=input\+\_\+layout(30))
+\begin{DoxyCompactList}\small\item\em kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation \end{DoxyCompactList}\item 
+Int\+Text \mbox{\hyperlink{namespaceepw__x_a457c03e354c28476662e3b1feb13027b}{epw\+\_\+x.\+nqf1}} = Int\+Text(name=\char`\"{}nqf1\char`\"{}, value=20, layout=input\+\_\+layout(30))
+\begin{DoxyCompactList}\small\item\em fine mesh kpoints in 100 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation \end{DoxyCompactList}\item 
+Int\+Text \mbox{\hyperlink{namespaceepw__x_a80ef98f7bd10cf754767786495f3123b}{epw\+\_\+x.\+nqf2}} = Int\+Text(name=\char`\"{}nqf2\char`\"{}, value=20, layout=input\+\_\+layout(30))
+\begin{DoxyCompactList}\small\item\em fine kpoints in 010 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation \end{DoxyCompactList}\item 
+Int\+Text \mbox{\hyperlink{namespaceepw__x_ae767fa1ffc91e846d915ec80fbc64d30}{epw\+\_\+x.\+nqf3}} = Int\+Text(name=\char`\"{}nqf3\char`\"{}, value=20, layout=input\+\_\+layout(30))
+\begin{DoxyCompactList}\small\item\em fine kpoints in 001 crystal direction, for sampling periodic cell in reciprocal space in the electronic structure part of the final wannier interpolation \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{namespaceepw__x_abb4f6d90f05d0c4e6f6ffbd92b057fc7}{epw\+\_\+x.\+icon\+\_\+nkf1}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a512f7d2c3f390b786d8d89c63c4870da}{epw\+\_\+x.\+icon\+\_\+nkf2}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a5eba8b6348ddaa6a9aac520bc22c4e55}{epw\+\_\+x.\+icon\+\_\+nkf3}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a7510ac34f2f71caab68c628f21e8389b}{epw\+\_\+x.\+icon\+\_\+nqf1}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_ab5067ac20a5a15ed989785cb861b1383}{epw\+\_\+x.\+icon\+\_\+nqf2}}
+\item 
+Button \mbox{\hyperlink{namespaceepw__x_a08a9cc48fbda767b114b665d97563760}{epw\+\_\+x.\+icon\+\_\+nqf3}}
+\item 
+Box \mbox{\hyperlink{namespaceepw__x_a89e8b77990a2781775f41e079d64d988}{epw\+\_\+x.\+mesh\+\_\+box}} = Box(form\+\_\+items, layout=box\+\_\+layout(20))
+\item 
+Tab \mbox{\hyperlink{namespaceepw__x_a2431663e957b713095c463ffbfdae7ce}{epw\+\_\+x.\+epw\+\_\+x\+\_\+tabs}} = Tab()
+\begin{DoxyCompactList}\small\item\em combine forms into tabs \end{DoxyCompactList}\item 
+list \mbox{\hyperlink{namespaceepw__x_ac96f90f4883404d4d767f8697f824f17}{epw\+\_\+x.\+tab\+\_\+contents}} = \mbox{[}setup\+\_\+box, wannier\+\_\+box, misc\+\_\+box, mesh\+\_\+box\mbox{]}
+\begin{DoxyCompactList}\small\item\em Contents of the tabs. \end{DoxyCompactList}\item 
+list \mbox{\hyperlink{namespaceepw__x_a878793c42e08fd89a172014eeafbb417}{epw\+\_\+x.\+children}} = \mbox{[}content for content in tab\+\_\+contents\mbox{]}
+\begin{DoxyCompactList}\small\item\em Children of the tabs. \end{DoxyCompactList}\item 
+str \mbox{\hyperlink{namespaceepw__x_a3dcf0b475ae587123d609fdbac98ae96}{epw\+\_\+x.\+use\+\_\+ws}} = \textquotesingle{}.false.\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em NON USER INPUTS. \end{DoxyCompactList}\item 
+str \mbox{\hyperlink{namespaceepw__x_ab3a44233a8df02393101758bc19c9c81}{epw\+\_\+x.\+w90\+\_\+data}}
+\item 
+int \mbox{\hyperlink{namespaceepw__x_ae4408785f7b486336faab7519c7be7b7}{epw\+\_\+x.\+epw\+\_\+cores}} = 40
+\item 
+str \mbox{\hyperlink{namespaceepw__x_a6d06c75fc93f0cc692ad006c64f62e46}{epw\+\_\+x.\+epw\+\_\+walltime}} = \textquotesingle{}00\+:30\+:00\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+EPW\+\_\+X step input widget creation. 
+
+
+
+Definition in file \mbox{\hyperlink{epw__x_8py_source}{epw\+\_\+x.\+py}}.
+
