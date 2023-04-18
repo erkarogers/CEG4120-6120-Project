@@ -5,6 +5,7 @@ var index =
       [ "Author(s)", "index.html#authors", null ]
     ] ],
     [ "Tool", "db/dcf/_tool.html", [
+      [ "Description", "db/dcf/_tool.html#description_tool", null ],
       [ "TODO", "db/dcf/_tool.html#todo_tool", null ],
       [ "Notes", "db/dcf/_tool.html#notes_tool", null ],
       [ "Libraries/Modules", "db/dcf/_tool.html#libraries_tool", null ]
@@ -28,7 +29,7 @@ var index =
       [ "Libraries/Modules", "de/d41/_p_w__x.html#libraries_pw", null ]
     ] ],
     [ "Styles", "d8/da6/_styles.html", [
-      [ "Description", "d8/da6/_styles.html#description_tool", null ],
+      [ "Description", "d8/da6/_styles.html#description_styles", null ],
       [ "TODO", "d8/da6/_styles.html#todo_styles", null ],
       [ "Notes", "d8/da6/_styles.html#notes_styles", null ],
       [ "Libraries/Modules", "d8/da6/_styles.html#libraries_styles", null ]

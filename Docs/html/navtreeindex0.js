@@ -207,7 +207,7 @@ var NAVTREEINDEX0 =
 "d8/d16/styles_8py.html#ace745d13426eecb269cccb431a9ab01f":[2,0,3,1],
 "d8/d16/styles_8py_source.html":[2,0,3],
 "d8/da6/_styles.html":[0,6],
-"d8/da6/_styles.html#description_tool":[0,6,0],
+"d8/da6/_styles.html#description_styles":[0,6,0],
 "d8/da6/_styles.html#libraries_styles":[0,6,3],
 "d8/da6/_styles.html#notes_styles":[0,6,2],
 "d8/da6/_styles.html#todo_styles":[0,6,1],
