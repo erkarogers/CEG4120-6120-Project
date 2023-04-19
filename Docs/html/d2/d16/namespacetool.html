@@ -101,6 +101,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ae0723badc8b183ad40361a948900a5ca"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#ae0723badc8b183ad40361a948900a5ca">on_simulate_btn_click</a> (self)</td></tr>
 <tr class="memdesc:ae0723badc8b183ad40361a948900a5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the control form to the output.  <br /></td></tr>
 <tr class="separator:ae0723badc8b183ad40361a948900a5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c6065d1ef4eb131259267cc340e2f1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a71c6065d1ef4eb131259267cc340e2f1">bar</a> (progress)</td></tr>
+<tr class="separator:a71c6065d1ef4eb131259267cc340e2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a42badac08790c3a38819bdf0366fd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a35a42badac08790c3a38819bdf0366fd">printStatements</a> (out)</td></tr>
+<tr class="separator:a35a42badac08790c3a38819bdf0366fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a186bb0f3561921c78cfffc3e6a7cd0b7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a186bb0f3561921c78cfffc3e6a7cd0b7">reset_flag</a> ()</td></tr>
+<tr class="separator:a186bb0f3561921c78cfffc3e6a7cd0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -115,27 +121,85 @@ Variables</h2></td></tr>
 <tr class="memitem:ad1ac7d67b2e615d1cf7d390a1dc92930"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#ad1ac7d67b2e615d1cf7d390a1dc92930">abort_btn</a> = Button(description=&quot;Abort&quot;, disabled=True)</td></tr>
 <tr class="memdesc:ad1ac7d67b2e615d1cf7d390a1dc92930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort button creation.  <br /></td></tr>
 <tr class="separator:ad1ac7d67b2e615d1cf7d390a1dc92930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4695a775080ae0fe37c8c224af78659d"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a4695a775080ae0fe37c8c224af78659d">form_items</a></td></tr>
-<tr class="memdesc:a4695a775080ae0fe37c8c224af78659d"><td class="mdescLeft">&#160;</td><td class="mdescRight">form_item layout creation  <br /></td></tr>
-<tr class="separator:a4695a775080ae0fe37c8c224af78659d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad806e76624359faa41e6c69e3404ed27"><td class="memItemLeft" align="right" valign="top">Box&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#ad806e76624359faa41e6c69e3404ed27">simulate_box</a> = Box(<a class="el" href="../../d2/d16/namespacetool.html#a4695a775080ae0fe37c8c224af78659d">form_items</a>, layout=box_layout(40))</td></tr>
+<tr class="memitem:a37d93f8966ceab6245bcad88a75a44a0"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a37d93f8966ceab6245bcad88a75a44a0">form_items</a></td></tr>
+<tr class="memdesc:a37d93f8966ceab6245bcad88a75a44a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">form_item layout creation  <br /></td></tr>
+<tr class="separator:a37d93f8966ceab6245bcad88a75a44a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad806e76624359faa41e6c69e3404ed27"><td class="memItemLeft" align="right" valign="top">Box&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#ad806e76624359faa41e6c69e3404ed27">simulate_box</a> = Box(<a class="el" href="../../d2/d16/namespacetool.html#a37d93f8966ceab6245bcad88a75a44a0">form_items</a>, layout=box_layout(40))</td></tr>
 <tr class="separator:ad806e76624359faa41e6c69e3404ed27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad999ee1381905e4909329e64909fddf8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#ad999ee1381905e4909329e64909fddf8">progressNum</a> = 0</td></tr>
+<tr class="separator:ad999ee1381905e4909329e64909fddf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa69ec7967d2386f30ae8aae1568048"><td class="memItemLeft" align="right" valign="top">threading&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a2fa69ec7967d2386f30ae8aae1568048">thread</a> = threading.Thread(target=<a class="el" href="../../d2/d16/namespacetool.html#a71c6065d1ef4eb131259267cc340e2f1">bar</a>, args=(<a class="el" href="../../d2/d16/namespacetool.html#a00bdad0a1b9aed11bf32312111dba19a">progress_bar</a>,))</td></tr>
+<tr class="separator:a2fa69ec7967d2386f30ae8aae1568048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d5c143c0e3761aec55cb17ac8c6151"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a49d5c143c0e3761aec55cb17ac8c6151">statement1</a> = 'CREATING PW SCF INPUT FILE'</td></tr>
+<tr class="separator:a49d5c143c0e3761aec55cb17ac8c6151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea113980d1d7693ab8487010f65171d9"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#aea113980d1d7693ab8487010f65171d9">statement2</a> = 'STARTED PW SCF SIMULATION'</td></tr>
+<tr class="separator:aea113980d1d7693ab8487010f65171d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2d590ba93dc8c9d9eff0a717c3a0e8"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a9a2d590ba93dc8c9d9eff0a717c3a0e8">statement3</a> = 'CREATING PW NSCF INPUT FILE '</td></tr>
+<tr class="separator:a9a2d590ba93dc8c9d9eff0a717c3a0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61549530d536a2fe082a807067125690"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a61549530d536a2fe082a807067125690">statement4</a> = 'STARTED PW SCF SIMULATION'</td></tr>
+<tr class="separator:a61549530d536a2fe082a807067125690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f5d626d8715592670243839149964e"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a17f5d626d8715592670243839149964e">statement5</a> = 'CREATING PH INPUT FILE'</td></tr>
+<tr class="separator:a17f5d626d8715592670243839149964e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bb8bf0c20ec6b043a4178d9885524ae"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a8bb8bf0c20ec6b043a4178d9885524ae">statement6</a> = 'STARTED PH SIMULATION'</td></tr>
+<tr class="separator:a8bb8bf0c20ec6b043a4178d9885524ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737e247d12925e5c9322132e0653ba5b"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a737e247d12925e5c9322132e0653ba5b">statement7</a> = 'STARTED POST PROCESSING OF PH SIMULATION RESULTS'</td></tr>
+<tr class="separator:a737e247d12925e5c9322132e0653ba5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fac1c4800684fe07c9b4eb97341e0a"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a44fac1c4800684fe07c9b4eb97341e0a">statement8</a> = 'CREATING EPW INPUT FILE'</td></tr>
+<tr class="separator:a44fac1c4800684fe07c9b4eb97341e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0054e28ee7d311cb80478b2c1f0e2abe"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a0054e28ee7d311cb80478b2c1f0e2abe">statement9</a> = 'STARTED EPW SIMULATION'</td></tr>
+<tr class="separator:a0054e28ee7d311cb80478b2c1f0e2abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d13b65ccdd9cc1792156f263b09cff5"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a3d13b65ccdd9cc1792156f263b09cff5">statement10</a> = 'CREATING EPW OUTPUTS'</td></tr>
+<tr class="separator:a3d13b65ccdd9cc1792156f263b09cff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28eb8b4665bceae886ca694e554d2644"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a28eb8b4665bceae886ca694e554d2644">x</a> = 1</td></tr>
+<tr class="separator:a28eb8b4665bceae886ca694e554d2644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaebea7f6a5da3781ff6caa0bb4435b71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#aaebea7f6a5da3781ff6caa0bb4435b71">flag</a> = 0</td></tr>
+<tr class="separator:aaebea7f6a5da3781ff6caa0bb4435b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af209b56d40a5da01279a5866b4ddd518"><td class="memItemLeft" align="right" valign="top">threading&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#af209b56d40a5da01279a5866b4ddd518">thread2</a> = threading.Thread(target=<a class="el" href="../../d2/d16/namespacetool.html#a35a42badac08790c3a38819bdf0366fd">printStatements</a>, args=(out,))</td></tr>
+<tr class="separator:af209b56d40a5da01279a5866b4ddd518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671d1ff24bcbc8d8380bacfa8ec44afd"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a671d1ff24bcbc8d8380bacfa8ec44afd">simulate_btn2</a></td></tr>
+<tr class="separator:a671d1ff24bcbc8d8380bacfa8ec44afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9403c032132bf96e245b0839f8dae011"><td class="memItemLeft" align="right" valign="top">Textarea&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a9403c032132bf96e245b0839f8dae011">results_area</a></td></tr>
+<tr class="separator:a9403c032132bf96e245b0839f8dae011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78851f606e28d1a117a0df91989bad2"><td class="memItemLeft" align="right" valign="top">Box&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#ad78851f606e28d1a117a0df91989bad2">results_box</a> = Box(<a class="el" href="../../d2/d16/namespacetool.html#a37d93f8966ceab6245bcad88a75a44a0">form_items</a>, layout=box_layout(40))</td></tr>
+<tr class="separator:ad78851f606e28d1a117a0df91989bad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adacc56ea015706ba2b9fa9956afe097a"><td class="memItemLeft" align="right" valign="top">Tab&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#adacc56ea015706ba2b9fa9956afe097a">simulate_tabs</a> = Tab()</td></tr>
+<tr class="separator:adacc56ea015706ba2b9fa9956afe097a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3bfac627feea72ac5addb9d4a0031c"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a8e3bfac627feea72ac5addb9d4a0031c">tab_contents</a> = [<a class="el" href="../../d2/d16/namespacetool.html#ad806e76624359faa41e6c69e3404ed27">simulate_box</a>,<a class="el" href="../../d2/d16/namespacetool.html#ad78851f606e28d1a117a0df91989bad2">results_box</a>]</td></tr>
+<tr class="memdesc:a8e3bfac627feea72ac5addb9d4a0031c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tools page tabs contents.  <br /></td></tr>
+<tr class="separator:a8e3bfac627feea72ac5addb9d4a0031c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de5ac89574c69b9f80a0855fe842a1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a1de5ac89574c69b9f80a0855fe842a1c">children</a></td></tr>
+<tr class="separator:a1de5ac89574c69b9f80a0855fe842a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d44b3c528d0a757d4e1208f86fabcfb"><td class="memItemLeft" align="right" valign="top">HTML&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a6d44b3c528d0a757d4e1208f86fabcfb">header</a></td></tr>
 <tr class="memdesc:a6d44b3c528d0a757d4e1208f86fabcfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combine the all tabs.  <br /></td></tr>
 <tr class="separator:a6d44b3c528d0a757d4e1208f86fabcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53789ebf0309a950de162cb48d111b35"><td class="memItemLeft" align="right" valign="top">Tab&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a53789ebf0309a950de162cb48d111b35">tool_tabs</a> = Tab()</td></tr>
 <tr class="memdesc:a53789ebf0309a950de162cb48d111b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tools page tabs creation.  <br /></td></tr>
 <tr class="separator:a53789ebf0309a950de162cb48d111b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac14b2487a0c3118ea91fa5a729f4c0d9"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#ac14b2487a0c3118ea91fa5a729f4c0d9">tab_contents</a> = [pw_x_tabs, ph_x_box, epw_x_tabs, <a class="el" href="../../d2/d16/namespacetool.html#ad806e76624359faa41e6c69e3404ed27">simulate_box</a>]</td></tr>
-<tr class="memdesc:ac14b2487a0c3118ea91fa5a729f4c0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tools page tabs contents.  <br /></td></tr>
-<tr class="separator:ac14b2487a0c3118ea91fa5a729f4c0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1de5ac89574c69b9f80a0855fe842a1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a1de5ac89574c69b9f80a0855fe842a1c">children</a></td></tr>
-<tr class="separator:a1de5ac89574c69b9f80a0855fe842a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addf0ea02cd4dd1ad91343c8643d4bca0"><td class="memItemLeft" align="right" valign="top">AppLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#addf0ea02cd4dd1ad91343c8643d4bca0">app</a> = AppLayout(center=<a class="el" href="../../d2/d16/namespacetool.html#a53789ebf0309a950de162cb48d111b35">tool_tabs</a>, <a class="el" href="../../d2/d16/namespacetool.html#a6d44b3c528d0a757d4e1208f86fabcfb">header</a>=<a class="el" href="../../d2/d16/namespacetool.html#a6d44b3c528d0a757d4e1208f86fabcfb">header</a>, pane_heights=[1, 5, '0'])</td></tr>
 <tr class="memdesc:addf0ea02cd4dd1ad91343c8643d4bca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main tool page layout.  <br /></td></tr>
 <tr class="separator:addf0ea02cd4dd1ad91343c8643d4bca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a71c6065d1ef4eb131259267cc340e2f1" name="a71c6065d1ef4eb131259267cc340e2f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c6065d1ef4eb131259267cc340e2f1">&#9670;&#160;</a></span>bar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def tool.bar </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>progress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00148">148</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
 <a id="ae0723badc8b183ad40361a948900a5ca" name="ae0723badc8b183ad40361a948900a5ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0723badc8b183ad40361a948900a5ca">&#9670;&#160;</a></span>on_simulate_btn_click()</h2>
 
@@ -161,7 +225,56 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00072">72</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00077">77</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a35a42badac08790c3a38819bdf0366fd" name="a35a42badac08790c3a38819bdf0366fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35a42badac08790c3a38819bdf0366fd">&#9670;&#160;</a></span>printStatements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def tool.printStatements </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>out</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00191">191</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d16/namespacetool_a35a42badac08790c3a38819bdf0366fd_cgraph.jpg" border="0" usemap="#ad2/d16/namespacetool_a35a42badac08790c3a38819bdf0366fd_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a186bb0f3561921c78cfffc3e6a7cd0b7" name="a186bb0f3561921c78cfffc3e6a7cd0b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a186bb0f3561921c78cfffc3e6a7cd0b7">&#9670;&#160;</a></span>reset_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def tool.reset_flag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00274">274</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d16/namespacetool_a186bb0f3561921c78cfffc3e6a7cd0b7_icgraph.jpg" border="0" usemap="#ad2/d16/namespacetool_a186bb0f3561921c78cfffc3e6a7cd0b7_icgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
@@ -180,7 +293,7 @@ Variables</h2></td></tr>
 
 <p>Abort button creation. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00118">118</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00126">126</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
 
 </div>
 </div>
@@ -198,7 +311,7 @@ Variables</h2></td></tr>
 
 <p>Main tool page layout. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00175">175</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00366">366</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
 
 </div>
 </div>
@@ -214,7 +327,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00091">91</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00099">99</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
 
 </div>
 </div>
@@ -230,12 +343,28 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00165">165</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00321">321</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
 
 </div>
 </div>
-<a id="a4695a775080ae0fe37c8c224af78659d" name="a4695a775080ae0fe37c8c224af78659d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4695a775080ae0fe37c8c224af78659d">&#9670;&#160;</a></span>form_items</h2>
+<a id="aaebea7f6a5da3781ff6caa0bb4435b71" name="aaebea7f6a5da3781ff6caa0bb4435b71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaebea7f6a5da3781ff6caa0bb4435b71">&#9670;&#160;</a></span>flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tool.flag = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00188">188</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a37d93f8966ceab6245bcad88a75a44a0" name="a37d93f8966ceab6245bcad88a75a44a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d93f8966ceab6245bcad88a75a44a0">&#9670;&#160;</a></span>form_items</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,12 +377,13 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  [</div>
 <div class="line"><span class="lineno">    2</span>    Box([simulate_btn], layout=form_item_layout()),</div>
 <div class="line"><span class="lineno">    3</span>    Box([progress_bar], layout=form_item_layout()),</div>
-<div class="line"><span class="lineno">    4</span>    Box([abort_btn], layout=form_item_layout())</div>
-<div class="line"><span class="lineno">    5</span>]</div>
+<div class="line"><span class="lineno">    4</span>    Box([abort_btn], layout=form_item_layout()),</div>
+<div class="line"><span class="lineno">    5</span>    Box([out], layout=form_item_layout())</div>
+<div class="line"><span class="lineno">    6</span>]</div>
 </div><!-- fragment -->
 <p>form_item layout creation </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00124">124</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00132">132</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
 
 </div>
 </div>
@@ -278,7 +408,7 @@ Variables</h2></td></tr>
 <p>This section combines the all tabs from the tool onto one page</p>
 <p>Header of main tool page </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00147">147</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00338">338</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
 
 </div>
 </div>
@@ -294,9 +424,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  FloatProgress(</div>
-<div class="line"><span class="lineno">    2</span>    value=4.5,</div>
+<div class="line"><span class="lineno">    2</span>    value=0.0,</div>
 <div class="line"><span class="lineno">    3</span>    min=0,</div>
-<div class="line"><span class="lineno">    4</span>    max=10.0,</div>
+<div class="line"><span class="lineno">    4</span>    max=1.0,</div>
 <div class="line"><span class="lineno">    5</span>    bar_style=<span class="stringliteral">&#39;info&#39;</span>,</div>
 <div class="line"><span class="lineno">    6</span>    style={<span class="stringliteral">&#39;bar_color&#39;</span>: <span class="stringliteral">&#39;#0000ff&#39;</span>},</div>
 <div class="line"><span class="lineno">    7</span>    orientation=<span class="stringliteral">&#39;horizontal&#39;</span></div>
@@ -315,7 +445,61 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00106">106</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00114">114</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="ad999ee1381905e4909329e64909fddf8" name="ad999ee1381905e4909329e64909fddf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad999ee1381905e4909329e64909fddf8">&#9670;&#160;</a></span>progressNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tool.progressNum = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00162">162</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a9403c032132bf96e245b0839f8dae011" name="a9403c032132bf96e245b0839f8dae011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9403c032132bf96e245b0839f8dae011">&#9670;&#160;</a></span>results_area</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Textarea tool.results_area</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  Textarea(</div>
+<div class="line"><span class="lineno">    2</span>    value=<span class="stringliteral">&#39;Hello World&#39;</span>,</div>
+<div class="line"><span class="lineno">    3</span>    placeholder=<span class="stringliteral">&#39;Type something&#39;</span>,</div>
+<div class="line"><span class="lineno">    4</span>    description=<span class="stringliteral">&#39;Output:&#39;</span>,</div>
+<div class="line"><span class="lineno">    5</span>    disabled=<span class="keyword">True</span></div>
+<div class="line"><span class="lineno">    6</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00296">296</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="ad78851f606e28d1a117a0df91989bad2" name="ad78851f606e28d1a117a0df91989bad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad78851f606e28d1a117a0df91989bad2">&#9670;&#160;</a></span>results_box</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Box tool.results_box = Box(<a class="el" href="../../d2/d16/namespacetool.html#a37d93f8966ceab6245bcad88a75a44a0">form_items</a>, layout=box_layout(40))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00309">309</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
 
 </div>
 </div>
@@ -326,12 +510,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Box tool.simulate_box = Box(<a class="el" href="../../d2/d16/namespacetool.html#a4695a775080ae0fe37c8c224af78659d">form_items</a>, layout=box_layout(40))</td>
+          <td class="memname">Box tool.simulate_box = Box(<a class="el" href="../../d2/d16/namespacetool.html#a37d93f8966ceab6245bcad88a75a44a0">form_items</a>, layout=box_layout(40))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00130">130</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00139">139</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
 
 </div>
 </div>
@@ -367,18 +551,214 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00087">87</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00095">95</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
 
 </div>
 </div>
-<a id="ac14b2487a0c3118ea91fa5a729f4c0d9" name="ac14b2487a0c3118ea91fa5a729f4c0d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac14b2487a0c3118ea91fa5a729f4c0d9">&#9670;&#160;</a></span>tab_contents</h2>
+<a id="a671d1ff24bcbc8d8380bacfa8ec44afd" name="a671d1ff24bcbc8d8380bacfa8ec44afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671d1ff24bcbc8d8380bacfa8ec44afd">&#9670;&#160;</a></span>simulate_btn2</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">list tool.tab_contents = [pw_x_tabs, ph_x_box, epw_x_tabs, <a class="el" href="../../d2/d16/namespacetool.html#ad806e76624359faa41e6c69e3404ed27">simulate_box</a>]</td>
+          <td class="memname">Button tool.simulate_btn2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line"><span class="lineno">    1</span>=  Button(description=<span class="stringliteral">&quot;Temporary&quot;</span>, </div>
+<div class="line"><span class="lineno">    2</span>                button_style=<span class="stringliteral">&#39;&#39;</span>, <span class="comment"># &#39;success&#39;, &#39;info&#39;, &#39;warning&#39;, &#39;danger&#39; or &#39;&#39;,                    </span></div>
+<div class="line"><span class="lineno">    3</span>                tooltip=<span class="stringliteral">&#39;&#39;</span></div>
+<div class="line"><span class="lineno">    4</span>            )</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00292">292</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="adacc56ea015706ba2b9fa9956afe097a" name="adacc56ea015706ba2b9fa9956afe097a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adacc56ea015706ba2b9fa9956afe097a">&#9670;&#160;</a></span>simulate_tabs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Tab tool.simulate_tabs = Tab()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00319">319</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a49d5c143c0e3761aec55cb17ac8c6151" name="a49d5c143c0e3761aec55cb17ac8c6151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49d5c143c0e3761aec55cb17ac8c6151">&#9670;&#160;</a></span>statement1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str tool.statement1 = 'CREATING PW SCF INPUT FILE'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00171">171</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a3d13b65ccdd9cc1792156f263b09cff5" name="a3d13b65ccdd9cc1792156f263b09cff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d13b65ccdd9cc1792156f263b09cff5">&#9670;&#160;</a></span>statement10</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str tool.statement10 = 'CREATING EPW OUTPUTS'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00180">180</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="aea113980d1d7693ab8487010f65171d9" name="aea113980d1d7693ab8487010f65171d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea113980d1d7693ab8487010f65171d9">&#9670;&#160;</a></span>statement2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str tool.statement2 = 'STARTED PW SCF SIMULATION'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00172">172</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a9a2d590ba93dc8c9d9eff0a717c3a0e8" name="a9a2d590ba93dc8c9d9eff0a717c3a0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a2d590ba93dc8c9d9eff0a717c3a0e8">&#9670;&#160;</a></span>statement3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str tool.statement3 = 'CREATING PW NSCF INPUT FILE '</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00173">173</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a61549530d536a2fe082a807067125690" name="a61549530d536a2fe082a807067125690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61549530d536a2fe082a807067125690">&#9670;&#160;</a></span>statement4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str tool.statement4 = 'STARTED PW SCF SIMULATION'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00174">174</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a17f5d626d8715592670243839149964e" name="a17f5d626d8715592670243839149964e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17f5d626d8715592670243839149964e">&#9670;&#160;</a></span>statement5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str tool.statement5 = 'CREATING PH INPUT FILE'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00175">175</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a8bb8bf0c20ec6b043a4178d9885524ae" name="a8bb8bf0c20ec6b043a4178d9885524ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bb8bf0c20ec6b043a4178d9885524ae">&#9670;&#160;</a></span>statement6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str tool.statement6 = 'STARTED PH SIMULATION'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00176">176</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a737e247d12925e5c9322132e0653ba5b" name="a737e247d12925e5c9322132e0653ba5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a737e247d12925e5c9322132e0653ba5b">&#9670;&#160;</a></span>statement7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str tool.statement7 = 'STARTED POST PROCESSING OF PH SIMULATION RESULTS'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00177">177</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a44fac1c4800684fe07c9b4eb97341e0a" name="a44fac1c4800684fe07c9b4eb97341e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44fac1c4800684fe07c9b4eb97341e0a">&#9670;&#160;</a></span>statement8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str tool.statement8 = 'CREATING EPW INPUT FILE'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00178">178</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a0054e28ee7d311cb80478b2c1f0e2abe" name="a0054e28ee7d311cb80478b2c1f0e2abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0054e28ee7d311cb80478b2c1f0e2abe">&#9670;&#160;</a></span>statement9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">str tool.statement9 = 'STARTED EPW SIMULATION'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00179">179</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a8e3bfac627feea72ac5addb9d4a0031c" name="a8e3bfac627feea72ac5addb9d4a0031c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e3bfac627feea72ac5addb9d4a0031c">&#9670;&#160;</a></span>tab_contents</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list tool.tab_contents = [<a class="el" href="../../d2/d16/namespacetool.html#ad806e76624359faa41e6c69e3404ed27">simulate_box</a>,<a class="el" href="../../d2/d16/namespacetool.html#ad78851f606e28d1a117a0df91989bad2">results_box</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -394,7 +774,39 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00164">164</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00320">320</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a2fa69ec7967d2386f30ae8aae1568048" name="a2fa69ec7967d2386f30ae8aae1568048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa69ec7967d2386f30ae8aae1568048">&#9670;&#160;</a></span>thread</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">threading tool.thread = threading.Thread(target=<a class="el" href="../../d2/d16/namespacetool.html#a71c6065d1ef4eb131259267cc340e2f1">bar</a>, args=(<a class="el" href="../../d2/d16/namespacetool.html#a00bdad0a1b9aed11bf32312111dba19a">progress_bar</a>,))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00163">163</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="af209b56d40a5da01279a5866b4ddd518" name="af209b56d40a5da01279a5866b4ddd518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af209b56d40a5da01279a5866b4ddd518">&#9670;&#160;</a></span>thread2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">threading tool.thread2 = threading.Thread(target=<a class="el" href="../../d2/d16/namespacetool.html#a35a42badac08790c3a38819bdf0366fd">printStatements</a>, args=(out,))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00284">284</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
 
 </div>
 </div>
@@ -412,7 +824,23 @@ Variables</h2></td></tr>
 
 <p>Tools page tabs creation. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00156">156</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00347">347</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
+
+</div>
+</div>
+<a id="a28eb8b4665bceae886ca694e554d2644" name="a28eb8b4665bceae886ca694e554d2644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28eb8b4665bceae886ca694e554d2644">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tool.x = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d6/d20/tool_8py_source.html#l00186">186</a> of file <a class="el" href="../../d6/d20/tool_8py_source.html">tool.py</a>.</p>
 
 </div>
 </div>

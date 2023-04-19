@@ -4,7 +4,13 @@
 \begin{DoxyCompactItemize}
 \item 
 def \mbox{\hyperlink{namespacetool_ae0723badc8b183ad40361a948900a5ca}{on\+\_\+simulate\+\_\+btn\+\_\+click}} (self)
-\begin{DoxyCompactList}\small\item\em Binds the control form to the output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Binds the control form to the output. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetool_a71c6065d1ef4eb131259267cc340e2f1}{bar}} (progress)
+\item 
+def \mbox{\hyperlink{namespacetool_a35a42badac08790c3a38819bdf0366fd}{print\+Statements}} (out)
+\item 
+def \mbox{\hyperlink{namespacetool_a186bb0f3561921c78cfffc3e6a7cd0b7}{reset\+\_\+flag}} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -16,23 +22,71 @@ Float\+Progress \mbox{\hyperlink{namespacetool_a00bdad0a1b9aed11bf32312111dba19a
 \begin{DoxyCompactList}\small\item\em Progress bar creation. \end{DoxyCompactList}\item 
 Button \mbox{\hyperlink{namespacetool_ad1ac7d67b2e615d1cf7d390a1dc92930}{abort\+\_\+btn}} = Button(description=\char`\"{}Abort\char`\"{}, disabled=True)
 \begin{DoxyCompactList}\small\item\em Abort button creation. \end{DoxyCompactList}\item 
-list \mbox{\hyperlink{namespacetool_a4695a775080ae0fe37c8c224af78659d}{form\+\_\+items}}
+list \mbox{\hyperlink{namespacetool_a37d93f8966ceab6245bcad88a75a44a0}{form\+\_\+items}}
 \begin{DoxyCompactList}\small\item\em form\+\_\+item layout creation \end{DoxyCompactList}\item 
-Box \mbox{\hyperlink{namespacetool_ad806e76624359faa41e6c69e3404ed27}{simulate\+\_\+box}} = Box(\mbox{\hyperlink{namespacetool_a4695a775080ae0fe37c8c224af78659d}{form\+\_\+items}}, layout=box\+\_\+layout(40))
+Box \mbox{\hyperlink{namespacetool_ad806e76624359faa41e6c69e3404ed27}{simulate\+\_\+box}} = Box(\mbox{\hyperlink{namespacetool_a37d93f8966ceab6245bcad88a75a44a0}{form\+\_\+items}}, layout=box\+\_\+layout(40))
+\item 
+int \mbox{\hyperlink{namespacetool_ad999ee1381905e4909329e64909fddf8}{progress\+Num}} = 0
+\item 
+threading \mbox{\hyperlink{namespacetool_a2fa69ec7967d2386f30ae8aae1568048}{thread}} = threading.\+Thread(target=\mbox{\hyperlink{namespacetool_a71c6065d1ef4eb131259267cc340e2f1}{bar}}, args=(\mbox{\hyperlink{namespacetool_a00bdad0a1b9aed11bf32312111dba19a}{progress\+\_\+bar}},))
+\item 
+str \mbox{\hyperlink{namespacetool_a49d5c143c0e3761aec55cb17ac8c6151}{statement1}} = \textquotesingle{}CREATING PW SCF INPUT FILE\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_aea113980d1d7693ab8487010f65171d9}{statement2}} = \textquotesingle{}STARTED PW SCF SIMULATION\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a9a2d590ba93dc8c9d9eff0a717c3a0e8}{statement3}} = \textquotesingle{}CREATING PW NSCF INPUT FILE \textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a61549530d536a2fe082a807067125690}{statement4}} = \textquotesingle{}STARTED PW SCF SIMULATION\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a17f5d626d8715592670243839149964e}{statement5}} = \textquotesingle{}CREATING PH INPUT FILE\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a8bb8bf0c20ec6b043a4178d9885524ae}{statement6}} = \textquotesingle{}STARTED PH SIMULATION\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a737e247d12925e5c9322132e0653ba5b}{statement7}} = \textquotesingle{}STARTED POST PROCESSING OF PH SIMULATION RESULTS\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a44fac1c4800684fe07c9b4eb97341e0a}{statement8}} = \textquotesingle{}CREATING EPW INPUT FILE\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a0054e28ee7d311cb80478b2c1f0e2abe}{statement9}} = \textquotesingle{}STARTED EPW SIMULATION\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a3d13b65ccdd9cc1792156f263b09cff5}{statement10}} = \textquotesingle{}CREATING EPW OUTPUTS\textquotesingle{}
+\item 
+int \mbox{\hyperlink{namespacetool_a28eb8b4665bceae886ca694e554d2644}{x}} = 1
+\item 
+int \mbox{\hyperlink{namespacetool_aaebea7f6a5da3781ff6caa0bb4435b71}{flag}} = 0
+\item 
+threading \mbox{\hyperlink{namespacetool_af209b56d40a5da01279a5866b4ddd518}{thread2}} = threading.\+Thread(target=\mbox{\hyperlink{namespacetool_a35a42badac08790c3a38819bdf0366fd}{print\+Statements}}, args=(out,))
+\item 
+Button \mbox{\hyperlink{namespacetool_a671d1ff24bcbc8d8380bacfa8ec44afd}{simulate\+\_\+btn2}}
+\item 
+Textarea \mbox{\hyperlink{namespacetool_a9403c032132bf96e245b0839f8dae011}{results\+\_\+area}}
+\item 
+Box \mbox{\hyperlink{namespacetool_ad78851f606e28d1a117a0df91989bad2}{results\+\_\+box}} = Box(\mbox{\hyperlink{namespacetool_a37d93f8966ceab6245bcad88a75a44a0}{form\+\_\+items}}, layout=box\+\_\+layout(40))
+\item 
+Tab \mbox{\hyperlink{namespacetool_adacc56ea015706ba2b9fa9956afe097a}{simulate\+\_\+tabs}} = Tab()
+\item 
+list \mbox{\hyperlink{namespacetool_a8e3bfac627feea72ac5addb9d4a0031c}{tab\+\_\+contents}} = \mbox{[}\mbox{\hyperlink{namespacetool_ad806e76624359faa41e6c69e3404ed27}{simulate\+\_\+box}},\mbox{\hyperlink{namespacetool_ad78851f606e28d1a117a0df91989bad2}{results\+\_\+box}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tools page tabs contents. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacetool_a1de5ac89574c69b9f80a0855fe842a1c}{children}}
 \item 
 HTML \mbox{\hyperlink{namespacetool_a6d44b3c528d0a757d4e1208f86fabcfb}{header}}
 \begin{DoxyCompactList}\small\item\em Combine the all tabs. \end{DoxyCompactList}\item 
 Tab \mbox{\hyperlink{namespacetool_a53789ebf0309a950de162cb48d111b35}{tool\+\_\+tabs}} = Tab()
 \begin{DoxyCompactList}\small\item\em Tools page tabs creation. \end{DoxyCompactList}\item 
-list \mbox{\hyperlink{namespacetool_ac14b2487a0c3118ea91fa5a729f4c0d9}{tab\+\_\+contents}} = \mbox{[}pw\+\_\+x\+\_\+tabs, ph\+\_\+x\+\_\+box, epw\+\_\+x\+\_\+tabs, \mbox{\hyperlink{namespacetool_ad806e76624359faa41e6c69e3404ed27}{simulate\+\_\+box}}\mbox{]}
-\begin{DoxyCompactList}\small\item\em Tools page tabs contents. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{namespacetool_a1de5ac89574c69b9f80a0855fe842a1c}{children}}
-\item 
 App\+Layout \mbox{\hyperlink{namespacetool_addf0ea02cd4dd1ad91343c8643d4bca0}{app}} = App\+Layout(center=\mbox{\hyperlink{namespacetool_a53789ebf0309a950de162cb48d111b35}{tool\+\_\+tabs}}, \mbox{\hyperlink{namespacetool_a6d44b3c528d0a757d4e1208f86fabcfb}{header}}=\mbox{\hyperlink{namespacetool_a6d44b3c528d0a757d4e1208f86fabcfb}{header}}, pane\+\_\+heights=\mbox{[}1, 5, \textquotesingle{}0\textquotesingle{}\mbox{]})
 \begin{DoxyCompactList}\small\item\em Main tool page layout. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetool_a71c6065d1ef4eb131259267cc340e2f1}\label{namespacetool_a71c6065d1ef4eb131259267cc340e2f1}} 
+\index{tool@{tool}!bar@{bar}}
+\index{bar@{bar}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{bar()}{bar()}}
+{\footnotesize\ttfamily def tool.\+bar (\begin{DoxyParamCaption}\item[{}]{progress }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00148}{148}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
 \mbox{\Hypertarget{namespacetool_ae0723badc8b183ad40361a948900a5ca}\label{namespacetool_ae0723badc8b183ad40361a948900a5ca}} 
 \index{tool@{tool}!on\_simulate\_btn\_click@{on\_simulate\_btn\_click}}
 \index{on\_simulate\_btn\_click@{on\_simulate\_btn\_click}!tool@{tool}}
@@ -53,8 +107,32 @@ None
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{tool_8py_source_l00072}{72}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+Definition at line \mbox{\hyperlink{tool_8py_source_l00077}{77}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
 
+\mbox{\Hypertarget{namespacetool_a35a42badac08790c3a38819bdf0366fd}\label{namespacetool_a35a42badac08790c3a38819bdf0366fd}} 
+\index{tool@{tool}!printStatements@{printStatements}}
+\index{printStatements@{printStatements}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{printStatements()}{printStatements()}}
+{\footnotesize\ttfamily def tool.\+print\+Statements (\begin{DoxyParamCaption}\item[{}]{out }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00191}{191}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+Here is the call graph for this function\+:
+% FIG 0
+\mbox{\Hypertarget{namespacetool_a186bb0f3561921c78cfffc3e6a7cd0b7}\label{namespacetool_a186bb0f3561921c78cfffc3e6a7cd0b7}} 
+\index{tool@{tool}!reset\_flag@{reset\_flag}}
+\index{reset\_flag@{reset\_flag}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{reset\_flag()}{reset\_flag()}}
+{\footnotesize\ttfamily def tool.\+reset\+\_\+flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00274}{274}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+Here is the caller graph for this function\+:
+% FIG 1
 
 
 \doxysubsection{Variable Documentation}
@@ -70,7 +148,7 @@ Abort button creation.
 
 
 
-Definition at line \mbox{\hyperlink{tool_8py_source_l00118}{118}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+Definition at line \mbox{\hyperlink{tool_8py_source_l00126}{126}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
 
 \mbox{\Hypertarget{namespacetool_addf0ea02cd4dd1ad91343c8643d4bca0}\label{namespacetool_addf0ea02cd4dd1ad91343c8643d4bca0}} 
 \index{tool@{tool}!app@{app}}
@@ -84,7 +162,7 @@ Main tool page layout.
 
 
 
-Definition at line \mbox{\hyperlink{tool_8py_source_l00175}{175}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+Definition at line \mbox{\hyperlink{tool_8py_source_l00366}{366}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
 
 \mbox{\Hypertarget{namespacetool_ab721a09824f6d1176bd6e7ac3d2e9398}\label{namespacetool_ab721a09824f6d1176bd6e7ac3d2e9398}} 
 \index{tool@{tool}!button\_color@{button\_color}}
@@ -94,7 +172,7 @@ Definition at line \mbox{\hyperlink{tool_8py_source_l00175}{175}} of file \mbox{
 
 
 
-Definition at line \mbox{\hyperlink{tool_8py_source_l00091}{91}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+Definition at line \mbox{\hyperlink{tool_8py_source_l00099}{99}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
 
 \mbox{\Hypertarget{namespacetool_a1de5ac89574c69b9f80a0855fe842a1c}\label{namespacetool_a1de5ac89574c69b9f80a0855fe842a1c}} 
 \index{tool@{tool}!children@{children}}
@@ -104,9 +182,19 @@ Definition at line \mbox{\hyperlink{tool_8py_source_l00091}{91}} of file \mbox{\
 
 
 
-Definition at line \mbox{\hyperlink{tool_8py_source_l00165}{165}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+Definition at line \mbox{\hyperlink{tool_8py_source_l00321}{321}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
 
-\mbox{\Hypertarget{namespacetool_a4695a775080ae0fe37c8c224af78659d}\label{namespacetool_a4695a775080ae0fe37c8c224af78659d}} 
+\mbox{\Hypertarget{namespacetool_aaebea7f6a5da3781ff6caa0bb4435b71}\label{namespacetool_aaebea7f6a5da3781ff6caa0bb4435b71}} 
+\index{tool@{tool}!flag@{flag}}
+\index{flag@{flag}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{flag}{flag}}
+{\footnotesize\ttfamily int tool.\+flag = 0}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00188}{188}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a37d93f8966ceab6245bcad88a75a44a0}\label{namespacetool_a37d93f8966ceab6245bcad88a75a44a0}} 
 \index{tool@{tool}!form\_items@{form\_items}}
 \index{form\_items@{form\_items}!tool@{tool}}
 \doxysubsubsection{\texorpdfstring{form\_items}{form\_items}}
@@ -117,8 +205,9 @@ Definition at line \mbox{\hyperlink{tool_8py_source_l00165}{165}} of file \mbox{
 \DoxyCodeLine{00001\ =\ \ [}
 \DoxyCodeLine{00002\ \ \ \ \ Box([simulate\_btn],\ layout=form\_item\_layout()),}
 \DoxyCodeLine{00003\ \ \ \ \ Box([progress\_bar],\ layout=form\_item\_layout()),}
-\DoxyCodeLine{00004\ \ \ \ \ Box([abort\_btn],\ layout=form\_item\_layout())}
-\DoxyCodeLine{00005\ ]}
+\DoxyCodeLine{00004\ \ \ \ \ Box([abort\_btn],\ layout=form\_item\_layout()),}
+\DoxyCodeLine{00005\ \ \ \ \ Box([out],\ layout=form\_item\_layout())}
+\DoxyCodeLine{00006\ ]}
 
 \end{DoxyCode}
 
@@ -127,7 +216,7 @@ form\+\_\+item layout creation
 
 
 
-Definition at line \mbox{\hyperlink{tool_8py_source_l00124}{124}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+Definition at line \mbox{\hyperlink{tool_8py_source_l00132}{132}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
 
 \mbox{\Hypertarget{namespacetool_a6d44b3c528d0a757d4e1208f86fabcfb}\label{namespacetool_a6d44b3c528d0a757d4e1208f86fabcfb}} 
 \index{tool@{tool}!header@{header}}
@@ -152,7 +241,7 @@ This section combines the all tabs from the tool onto one page
 
 Header of main tool page 
 
-Definition at line \mbox{\hyperlink{tool_8py_source_l00147}{147}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+Definition at line \mbox{\hyperlink{tool_8py_source_l00338}{338}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
 
 \mbox{\Hypertarget{namespacetool_a00bdad0a1b9aed11bf32312111dba19a}\label{namespacetool_a00bdad0a1b9aed11bf32312111dba19a}} 
 \index{tool@{tool}!progress\_bar@{progress\_bar}}
@@ -163,9 +252,9 @@ Definition at line \mbox{\hyperlink{tool_8py_source_l00147}{147}} of file \mbox{
 {\bfseries Initial value\+:}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00001\ =\ \ FloatProgress(}
-\DoxyCodeLine{00002\ \ \ \ \ value=4.5,}
+\DoxyCodeLine{00002\ \ \ \ \ value=0.0,}
 \DoxyCodeLine{00003\ \ \ \ \ min=0,}
-\DoxyCodeLine{00004\ \ \ \ \ max=10.0,}
+\DoxyCodeLine{00004\ \ \ \ \ max=1.0,}
 \DoxyCodeLine{00005\ \ \ \ \ bar\_style=\textcolor{stringliteral}{'info'},}
 \DoxyCodeLine{00006\ \ \ \ \ style=\{\textcolor{stringliteral}{'bar\_color'}:\ \textcolor{stringliteral}{'\#0000ff'}\},}
 \DoxyCodeLine{00007\ \ \ \ \ orientation=\textcolor{stringliteral}{'horizontal'}}
@@ -193,17 +282,57 @@ Progress bar creation.
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{tool_8py_source_l00106}{106}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+Definition at line \mbox{\hyperlink{tool_8py_source_l00114}{114}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_ad999ee1381905e4909329e64909fddf8}\label{namespacetool_ad999ee1381905e4909329e64909fddf8}} 
+\index{tool@{tool}!progressNum@{progressNum}}
+\index{progressNum@{progressNum}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{progressNum}{progressNum}}
+{\footnotesize\ttfamily int tool.\+progress\+Num = 0}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00162}{162}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a9403c032132bf96e245b0839f8dae011}\label{namespacetool_a9403c032132bf96e245b0839f8dae011}} 
+\index{tool@{tool}!results\_area@{results\_area}}
+\index{results\_area@{results\_area}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{results\_area}{results\_area}}
+{\footnotesize\ttfamily Textarea tool.\+results\+\_\+area}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ Textarea(}
+\DoxyCodeLine{00002\ \ \ \ \ value=\textcolor{stringliteral}{'Hello\ World'},}
+\DoxyCodeLine{00003\ \ \ \ \ placeholder=\textcolor{stringliteral}{'Type\ something'},}
+\DoxyCodeLine{00004\ \ \ \ \ description=\textcolor{stringliteral}{'Output:'},}
+\DoxyCodeLine{00005\ \ \ \ \ disabled=\textcolor{keyword}{True}}
+\DoxyCodeLine{00006\ )}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00296}{296}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_ad78851f606e28d1a117a0df91989bad2}\label{namespacetool_ad78851f606e28d1a117a0df91989bad2}} 
+\index{tool@{tool}!results\_box@{results\_box}}
+\index{results\_box@{results\_box}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{results\_box}{results\_box}}
+{\footnotesize\ttfamily Box tool.\+results\+\_\+box = Box(\mbox{\hyperlink{namespacetool_a37d93f8966ceab6245bcad88a75a44a0}{form\+\_\+items}}, layout=box\+\_\+layout(40))}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00309}{309}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
 
 \mbox{\Hypertarget{namespacetool_ad806e76624359faa41e6c69e3404ed27}\label{namespacetool_ad806e76624359faa41e6c69e3404ed27}} 
 \index{tool@{tool}!simulate\_box@{simulate\_box}}
 \index{simulate\_box@{simulate\_box}!tool@{tool}}
 \doxysubsubsection{\texorpdfstring{simulate\_box}{simulate\_box}}
-{\footnotesize\ttfamily Box tool.\+simulate\+\_\+box = Box(\mbox{\hyperlink{namespacetool_a4695a775080ae0fe37c8c224af78659d}{form\+\_\+items}}, layout=box\+\_\+layout(40))}
+{\footnotesize\ttfamily Box tool.\+simulate\+\_\+box = Box(\mbox{\hyperlink{namespacetool_a37d93f8966ceab6245bcad88a75a44a0}{form\+\_\+items}}, layout=box\+\_\+layout(40))}
 
 
 
-Definition at line \mbox{\hyperlink{tool_8py_source_l00130}{130}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+Definition at line \mbox{\hyperlink{tool_8py_source_l00139}{139}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
 
 \mbox{\Hypertarget{namespacetool_a5d51de985f1ec4c38eb60aea03576acc}\label{namespacetool_a5d51de985f1ec4c38eb60aea03576acc}} 
 \index{tool@{tool}!simulate\_btn@{simulate\_btn}}
@@ -240,13 +369,141 @@ Options\+: \textquotesingle{}success\textquotesingle{}, \textquotesingle{}info\t
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{tool_8py_source_l00087}{87}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+Definition at line \mbox{\hyperlink{tool_8py_source_l00095}{95}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
 
-\mbox{\Hypertarget{namespacetool_ac14b2487a0c3118ea91fa5a729f4c0d9}\label{namespacetool_ac14b2487a0c3118ea91fa5a729f4c0d9}} 
+\mbox{\Hypertarget{namespacetool_a671d1ff24bcbc8d8380bacfa8ec44afd}\label{namespacetool_a671d1ff24bcbc8d8380bacfa8ec44afd}} 
+\index{tool@{tool}!simulate\_btn2@{simulate\_btn2}}
+\index{simulate\_btn2@{simulate\_btn2}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{simulate\_btn2}{simulate\_btn2}}
+{\footnotesize\ttfamily Button tool.\+simulate\+\_\+btn2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ Button(description=\textcolor{stringliteral}{"{}Temporary"{}},\ }
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ button\_style=\textcolor{stringliteral}{''},\ \textcolor{comment}{\#\ 'success',\ 'info',\ 'warning',\ 'danger'\ or\ '',\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ tooltip=\textcolor{stringliteral}{''}}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00292}{292}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_adacc56ea015706ba2b9fa9956afe097a}\label{namespacetool_adacc56ea015706ba2b9fa9956afe097a}} 
+\index{tool@{tool}!simulate\_tabs@{simulate\_tabs}}
+\index{simulate\_tabs@{simulate\_tabs}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{simulate\_tabs}{simulate\_tabs}}
+{\footnotesize\ttfamily Tab tool.\+simulate\+\_\+tabs = Tab()}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00319}{319}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a49d5c143c0e3761aec55cb17ac8c6151}\label{namespacetool_a49d5c143c0e3761aec55cb17ac8c6151}} 
+\index{tool@{tool}!statement1@{statement1}}
+\index{statement1@{statement1}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{statement1}{statement1}}
+{\footnotesize\ttfamily str tool.\+statement1 = \textquotesingle{}CREATING PW SCF INPUT FILE\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00171}{171}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a3d13b65ccdd9cc1792156f263b09cff5}\label{namespacetool_a3d13b65ccdd9cc1792156f263b09cff5}} 
+\index{tool@{tool}!statement10@{statement10}}
+\index{statement10@{statement10}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{statement10}{statement10}}
+{\footnotesize\ttfamily str tool.\+statement10 = \textquotesingle{}CREATING EPW OUTPUTS\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00180}{180}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_aea113980d1d7693ab8487010f65171d9}\label{namespacetool_aea113980d1d7693ab8487010f65171d9}} 
+\index{tool@{tool}!statement2@{statement2}}
+\index{statement2@{statement2}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{statement2}{statement2}}
+{\footnotesize\ttfamily str tool.\+statement2 = \textquotesingle{}STARTED PW SCF SIMULATION\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00172}{172}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a9a2d590ba93dc8c9d9eff0a717c3a0e8}\label{namespacetool_a9a2d590ba93dc8c9d9eff0a717c3a0e8}} 
+\index{tool@{tool}!statement3@{statement3}}
+\index{statement3@{statement3}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{statement3}{statement3}}
+{\footnotesize\ttfamily str tool.\+statement3 = \textquotesingle{}CREATING PW NSCF INPUT FILE \textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00173}{173}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a61549530d536a2fe082a807067125690}\label{namespacetool_a61549530d536a2fe082a807067125690}} 
+\index{tool@{tool}!statement4@{statement4}}
+\index{statement4@{statement4}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{statement4}{statement4}}
+{\footnotesize\ttfamily str tool.\+statement4 = \textquotesingle{}STARTED PW SCF SIMULATION\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00174}{174}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a17f5d626d8715592670243839149964e}\label{namespacetool_a17f5d626d8715592670243839149964e}} 
+\index{tool@{tool}!statement5@{statement5}}
+\index{statement5@{statement5}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{statement5}{statement5}}
+{\footnotesize\ttfamily str tool.\+statement5 = \textquotesingle{}CREATING PH INPUT FILE\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00175}{175}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a8bb8bf0c20ec6b043a4178d9885524ae}\label{namespacetool_a8bb8bf0c20ec6b043a4178d9885524ae}} 
+\index{tool@{tool}!statement6@{statement6}}
+\index{statement6@{statement6}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{statement6}{statement6}}
+{\footnotesize\ttfamily str tool.\+statement6 = \textquotesingle{}STARTED PH SIMULATION\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00176}{176}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a737e247d12925e5c9322132e0653ba5b}\label{namespacetool_a737e247d12925e5c9322132e0653ba5b}} 
+\index{tool@{tool}!statement7@{statement7}}
+\index{statement7@{statement7}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{statement7}{statement7}}
+{\footnotesize\ttfamily str tool.\+statement7 = \textquotesingle{}STARTED POST PROCESSING OF PH SIMULATION RESULTS\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00177}{177}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a44fac1c4800684fe07c9b4eb97341e0a}\label{namespacetool_a44fac1c4800684fe07c9b4eb97341e0a}} 
+\index{tool@{tool}!statement8@{statement8}}
+\index{statement8@{statement8}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{statement8}{statement8}}
+{\footnotesize\ttfamily str tool.\+statement8 = \textquotesingle{}CREATING EPW INPUT FILE\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00178}{178}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a0054e28ee7d311cb80478b2c1f0e2abe}\label{namespacetool_a0054e28ee7d311cb80478b2c1f0e2abe}} 
+\index{tool@{tool}!statement9@{statement9}}
+\index{statement9@{statement9}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{statement9}{statement9}}
+{\footnotesize\ttfamily str tool.\+statement9 = \textquotesingle{}STARTED EPW SIMULATION\textquotesingle{}}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00179}{179}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a8e3bfac627feea72ac5addb9d4a0031c}\label{namespacetool_a8e3bfac627feea72ac5addb9d4a0031c}} 
 \index{tool@{tool}!tab\_contents@{tab\_contents}}
 \index{tab\_contents@{tab\_contents}!tool@{tool}}
 \doxysubsubsection{\texorpdfstring{tab\_contents}{tab\_contents}}
-{\footnotesize\ttfamily list tool.\+tab\+\_\+contents = \mbox{[}pw\+\_\+x\+\_\+tabs, ph\+\_\+x\+\_\+box, epw\+\_\+x\+\_\+tabs, \mbox{\hyperlink{namespacetool_ad806e76624359faa41e6c69e3404ed27}{simulate\+\_\+box}}\mbox{]}}
+{\footnotesize\ttfamily list tool.\+tab\+\_\+contents = \mbox{[}\mbox{\hyperlink{namespacetool_ad806e76624359faa41e6c69e3404ed27}{simulate\+\_\+box}},\mbox{\hyperlink{namespacetool_ad78851f606e28d1a117a0df91989bad2}{results\+\_\+box}}\mbox{]}}
 
 
 
@@ -265,7 +522,27 @@ Tools page tabs contents.
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{tool_8py_source_l00164}{164}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+Definition at line \mbox{\hyperlink{tool_8py_source_l00320}{320}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a2fa69ec7967d2386f30ae8aae1568048}\label{namespacetool_a2fa69ec7967d2386f30ae8aae1568048}} 
+\index{tool@{tool}!thread@{thread}}
+\index{thread@{thread}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{thread}{thread}}
+{\footnotesize\ttfamily threading tool.\+thread = threading.\+Thread(target=\mbox{\hyperlink{namespacetool_a71c6065d1ef4eb131259267cc340e2f1}{bar}}, args=(\mbox{\hyperlink{namespacetool_a00bdad0a1b9aed11bf32312111dba19a}{progress\+\_\+bar}},))}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00163}{163}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_af209b56d40a5da01279a5866b4ddd518}\label{namespacetool_af209b56d40a5da01279a5866b4ddd518}} 
+\index{tool@{tool}!thread2@{thread2}}
+\index{thread2@{thread2}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{thread2}{thread2}}
+{\footnotesize\ttfamily threading tool.\+thread2 = threading.\+Thread(target=\mbox{\hyperlink{namespacetool_a35a42badac08790c3a38819bdf0366fd}{print\+Statements}}, args=(out,))}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00284}{284}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
 
 \mbox{\Hypertarget{namespacetool_a53789ebf0309a950de162cb48d111b35}\label{namespacetool_a53789ebf0309a950de162cb48d111b35}} 
 \index{tool@{tool}!tool\_tabs@{tool\_tabs}}
@@ -279,5 +556,15 @@ Tools page tabs creation.
 
 
 
-Definition at line \mbox{\hyperlink{tool_8py_source_l00156}{156}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+Definition at line \mbox{\hyperlink{tool_8py_source_l00347}{347}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
+
+\mbox{\Hypertarget{namespacetool_a28eb8b4665bceae886ca694e554d2644}\label{namespacetool_a28eb8b4665bceae886ca694e554d2644}} 
+\index{tool@{tool}!x@{x}}
+\index{x@{x}!tool@{tool}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int tool.\+x = 1}
+
+
+
+Definition at line \mbox{\hyperlink{tool_8py_source_l00186}{186}} of file \mbox{\hyperlink{tool_8py_source}{tool.\+py}}.
 

@@ -1,21 +1,11 @@
 var searchData=
 [
-  ['ph_5fcores_0',['ph_cores',['../df/d6e/namespaceph__x.html#a7a95ddd28c0fc75dc67aa7d046296319',1,'ph_x']]],
-  ['ph_5fwalltime_1',['ph_walltime',['../df/d6e/namespaceph__x.html#af96083ae22e69bdb39780d3b780295e8',1,'ph_x']]],
-  ['ph_5fx_2',['ph_x',['../df/d6e/namespaceph__x.html',1,'']]],
-  ['ph_5fx_3',['PH_X',['../dc/d3c/_p_h__x.html',1,'index']]],
-  ['ph_5fx_2epy_4',['ph_x.py',['../d6/dba/ph__x_8py.html',1,'']]],
-  ['ph_5fx_5fbox_5',['ph_x_box',['../df/d6e/namespaceph__x.html#a07c5e48d70701ba8fafa7918eb99d8b8',1,'ph_x']]],
-  ['prgtkk_6',['prgtkk',['../d1/d82/namespaceepw__x.html#a47131e48b50045f135543c09cd344db2',1,'epw_x']]],
-  ['progress_5fbar_7',['progress_bar',['../d2/d16/namespacetool.html#a00bdad0a1b9aed11bf32312111dba19a',1,'tool']]],
-  ['projections_8',['projections',['../d1/d82/namespaceepw__x.html#a57c32b8e8d49203b32ab1cd44b59b323',1,'epw_x']]],
-  ['pseudo_5fdir_9',['pseudo_dir',['../d8/dbc/namespacepw__x.html#a4abd8750cbe8a036edbf3a4fa3c2af99',1,'pw_x']]],
-  ['pseudo_5ffilename_10',['pseudo_filename',['../d8/dbc/namespacepw__x.html#a6099bac66b9f9f04e0add8ff7f399328',1,'pw_x']]],
-  ['psname_11',['psName',['../d8/dbc/namespacepw__x.html#a12601e037d6c513e421ce4d4488e8c5c',1,'pw_x']]],
-  ['pw_5fcores_12',['pw_cores',['../d8/dbc/namespacepw__x.html#a9c6965b0f411108c7863d2b7701a2f7d',1,'pw_x']]],
-  ['pw_5fwalltime_13',['pw_walltime',['../d8/dbc/namespacepw__x.html#a0c45d53f4617412c84e43f5a26a7f6f2',1,'pw_x']]],
-  ['pw_5fx_14',['pw_x',['../d8/dbc/namespacepw__x.html',1,'']]],
-  ['pw_5fx_15',['PW_X',['../de/d41/_p_w__x.html',1,'index']]],
-  ['pw_5fx_2epy_16',['pw_x.py',['../d5/d9f/pw__x_8py.html',1,'']]],
-  ['pw_5fx_5ftabs_17',['pw_x_tabs',['../d8/dbc/namespacepw__x.html#a4675c4eb65d7daa2e1611122af6e5504',1,'pw_x']]]
+  ['offset_5fx_0',['offset_x',['../d8/dbc/namespacepw__x.html#ad9b22452415d79ea6d4abe078a85aca5',1,'pw_x']]],
+  ['offset_5fy_1',['offset_y',['../d8/dbc/namespacepw__x.html#a2a1ef17847712d1344a8cd10893af8f5',1,'pw_x']]],
+  ['offset_5fz_2',['offset_z',['../d8/dbc/namespacepw__x.html#a03e8afecd51592bdf90aeb27f3287e99',1,'pw_x']]],
+  ['omegamax_3',['omegamax',['../d1/d82/namespaceepw__x.html#abebeca8a76affb007e4377c7288a7cfc',1,'epw_x']]],
+  ['omegamin_4',['omegamin',['../d1/d82/namespaceepw__x.html#a4796bd0a91860fa17fbec655c1c21867',1,'epw_x']]],
+  ['omegastep_5',['omegastep',['../d1/d82/namespaceepw__x.html#a22506665928d39c815fe0ff6a0527942',1,'epw_x']]],
+  ['on_5fsimulate_5fbtn_5fclick_6',['on_simulate_btn_click',['../d2/d16/namespacetool.html#ae0723badc8b183ad40361a948900a5ca',1,'tool']]],
+  ['outdir_7',['outdir',['../d8/dbc/namespacepw__x.html#a91f39e49b00feb594a6a8127b1f7294f',1,'pw_x']]]
 ];

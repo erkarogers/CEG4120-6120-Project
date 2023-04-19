@@ -112,6 +112,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ae0723badc8b183ad40361a948900a5ca"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#ae0723badc8b183ad40361a948900a5ca">tool.on_simulate_btn_click</a> (self)</td></tr>
 <tr class="memdesc:ae0723badc8b183ad40361a948900a5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the control form to the output.  <br /></td></tr>
 <tr class="separator:ae0723badc8b183ad40361a948900a5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c6065d1ef4eb131259267cc340e2f1"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a71c6065d1ef4eb131259267cc340e2f1">tool.bar</a> (progress)</td></tr>
+<tr class="separator:a71c6065d1ef4eb131259267cc340e2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a42badac08790c3a38819bdf0366fd"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a35a42badac08790c3a38819bdf0366fd">tool.printStatements</a> (out)</td></tr>
+<tr class="separator:a35a42badac08790c3a38819bdf0366fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a186bb0f3561921c78cfffc3e6a7cd0b7"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a186bb0f3561921c78cfffc3e6a7cd0b7">tool.reset_flag</a> ()</td></tr>
+<tr class="separator:a186bb0f3561921c78cfffc3e6a7cd0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -126,22 +132,60 @@ Variables</h2></td></tr>
 <tr class="memitem:ad1ac7d67b2e615d1cf7d390a1dc92930"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#ad1ac7d67b2e615d1cf7d390a1dc92930">tool.abort_btn</a> = Button(description=&quot;Abort&quot;, disabled=True)</td></tr>
 <tr class="memdesc:ad1ac7d67b2e615d1cf7d390a1dc92930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort button creation.  <br /></td></tr>
 <tr class="separator:ad1ac7d67b2e615d1cf7d390a1dc92930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4695a775080ae0fe37c8c224af78659d"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a4695a775080ae0fe37c8c224af78659d">tool.form_items</a></td></tr>
-<tr class="memdesc:a4695a775080ae0fe37c8c224af78659d"><td class="mdescLeft">&#160;</td><td class="mdescRight">form_item layout creation  <br /></td></tr>
-<tr class="separator:a4695a775080ae0fe37c8c224af78659d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d93f8966ceab6245bcad88a75a44a0"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a37d93f8966ceab6245bcad88a75a44a0">tool.form_items</a></td></tr>
+<tr class="memdesc:a37d93f8966ceab6245bcad88a75a44a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">form_item layout creation  <br /></td></tr>
+<tr class="separator:a37d93f8966ceab6245bcad88a75a44a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad806e76624359faa41e6c69e3404ed27"><td class="memItemLeft" align="right" valign="top">Box&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#ad806e76624359faa41e6c69e3404ed27">tool.simulate_box</a> = Box(form_items, layout=box_layout(40))</td></tr>
 <tr class="separator:ad806e76624359faa41e6c69e3404ed27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad999ee1381905e4909329e64909fddf8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#ad999ee1381905e4909329e64909fddf8">tool.progressNum</a> = 0</td></tr>
+<tr class="separator:ad999ee1381905e4909329e64909fddf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa69ec7967d2386f30ae8aae1568048"><td class="memItemLeft" align="right" valign="top">threading&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a2fa69ec7967d2386f30ae8aae1568048">tool.thread</a> = threading.Thread(target=bar, args=(progress_bar,))</td></tr>
+<tr class="separator:a2fa69ec7967d2386f30ae8aae1568048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d5c143c0e3761aec55cb17ac8c6151"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a49d5c143c0e3761aec55cb17ac8c6151">tool.statement1</a> = 'CREATING PW SCF INPUT FILE'</td></tr>
+<tr class="separator:a49d5c143c0e3761aec55cb17ac8c6151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea113980d1d7693ab8487010f65171d9"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#aea113980d1d7693ab8487010f65171d9">tool.statement2</a> = 'STARTED PW SCF SIMULATION'</td></tr>
+<tr class="separator:aea113980d1d7693ab8487010f65171d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2d590ba93dc8c9d9eff0a717c3a0e8"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a9a2d590ba93dc8c9d9eff0a717c3a0e8">tool.statement3</a> = 'CREATING PW NSCF INPUT FILE '</td></tr>
+<tr class="separator:a9a2d590ba93dc8c9d9eff0a717c3a0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61549530d536a2fe082a807067125690"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a61549530d536a2fe082a807067125690">tool.statement4</a> = 'STARTED PW SCF SIMULATION'</td></tr>
+<tr class="separator:a61549530d536a2fe082a807067125690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f5d626d8715592670243839149964e"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a17f5d626d8715592670243839149964e">tool.statement5</a> = 'CREATING PH INPUT FILE'</td></tr>
+<tr class="separator:a17f5d626d8715592670243839149964e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bb8bf0c20ec6b043a4178d9885524ae"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a8bb8bf0c20ec6b043a4178d9885524ae">tool.statement6</a> = 'STARTED PH SIMULATION'</td></tr>
+<tr class="separator:a8bb8bf0c20ec6b043a4178d9885524ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737e247d12925e5c9322132e0653ba5b"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a737e247d12925e5c9322132e0653ba5b">tool.statement7</a> = 'STARTED POST PROCESSING OF PH SIMULATION RESULTS'</td></tr>
+<tr class="separator:a737e247d12925e5c9322132e0653ba5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fac1c4800684fe07c9b4eb97341e0a"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a44fac1c4800684fe07c9b4eb97341e0a">tool.statement8</a> = 'CREATING EPW INPUT FILE'</td></tr>
+<tr class="separator:a44fac1c4800684fe07c9b4eb97341e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0054e28ee7d311cb80478b2c1f0e2abe"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a0054e28ee7d311cb80478b2c1f0e2abe">tool.statement9</a> = 'STARTED EPW SIMULATION'</td></tr>
+<tr class="separator:a0054e28ee7d311cb80478b2c1f0e2abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d13b65ccdd9cc1792156f263b09cff5"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a3d13b65ccdd9cc1792156f263b09cff5">tool.statement10</a> = 'CREATING EPW OUTPUTS'</td></tr>
+<tr class="separator:a3d13b65ccdd9cc1792156f263b09cff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28eb8b4665bceae886ca694e554d2644"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a28eb8b4665bceae886ca694e554d2644">tool.x</a> = 1</td></tr>
+<tr class="separator:a28eb8b4665bceae886ca694e554d2644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaebea7f6a5da3781ff6caa0bb4435b71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#aaebea7f6a5da3781ff6caa0bb4435b71">tool.flag</a> = 0</td></tr>
+<tr class="separator:aaebea7f6a5da3781ff6caa0bb4435b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af209b56d40a5da01279a5866b4ddd518"><td class="memItemLeft" align="right" valign="top">threading&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#af209b56d40a5da01279a5866b4ddd518">tool.thread2</a> = threading.Thread(target=printStatements, args=(out,))</td></tr>
+<tr class="separator:af209b56d40a5da01279a5866b4ddd518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671d1ff24bcbc8d8380bacfa8ec44afd"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a671d1ff24bcbc8d8380bacfa8ec44afd">tool.simulate_btn2</a></td></tr>
+<tr class="separator:a671d1ff24bcbc8d8380bacfa8ec44afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9403c032132bf96e245b0839f8dae011"><td class="memItemLeft" align="right" valign="top">Textarea&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a9403c032132bf96e245b0839f8dae011">tool.results_area</a></td></tr>
+<tr class="separator:a9403c032132bf96e245b0839f8dae011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78851f606e28d1a117a0df91989bad2"><td class="memItemLeft" align="right" valign="top">Box&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#ad78851f606e28d1a117a0df91989bad2">tool.results_box</a> = Box(form_items, layout=box_layout(40))</td></tr>
+<tr class="separator:ad78851f606e28d1a117a0df91989bad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adacc56ea015706ba2b9fa9956afe097a"><td class="memItemLeft" align="right" valign="top">Tab&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#adacc56ea015706ba2b9fa9956afe097a">tool.simulate_tabs</a> = Tab()</td></tr>
+<tr class="separator:adacc56ea015706ba2b9fa9956afe097a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3bfac627feea72ac5addb9d4a0031c"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a8e3bfac627feea72ac5addb9d4a0031c">tool.tab_contents</a> = [simulate_box,results_box]</td></tr>
+<tr class="memdesc:a8e3bfac627feea72ac5addb9d4a0031c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tools page tabs contents.  <br /></td></tr>
+<tr class="separator:a8e3bfac627feea72ac5addb9d4a0031c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de5ac89574c69b9f80a0855fe842a1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a1de5ac89574c69b9f80a0855fe842a1c">tool.children</a></td></tr>
+<tr class="separator:a1de5ac89574c69b9f80a0855fe842a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d44b3c528d0a757d4e1208f86fabcfb"><td class="memItemLeft" align="right" valign="top">HTML&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a6d44b3c528d0a757d4e1208f86fabcfb">tool.header</a></td></tr>
 <tr class="memdesc:a6d44b3c528d0a757d4e1208f86fabcfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combine the all tabs.  <br /></td></tr>
 <tr class="separator:a6d44b3c528d0a757d4e1208f86fabcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53789ebf0309a950de162cb48d111b35"><td class="memItemLeft" align="right" valign="top">Tab&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a53789ebf0309a950de162cb48d111b35">tool.tool_tabs</a> = Tab()</td></tr>
 <tr class="memdesc:a53789ebf0309a950de162cb48d111b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tools page tabs creation.  <br /></td></tr>
 <tr class="separator:a53789ebf0309a950de162cb48d111b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac14b2487a0c3118ea91fa5a729f4c0d9"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#ac14b2487a0c3118ea91fa5a729f4c0d9">tool.tab_contents</a> = [pw_x_tabs, ph_x_box, epw_x_tabs, simulate_box]</td></tr>
-<tr class="memdesc:ac14b2487a0c3118ea91fa5a729f4c0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tools page tabs contents.  <br /></td></tr>
-<tr class="separator:ac14b2487a0c3118ea91fa5a729f4c0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1de5ac89574c69b9f80a0855fe842a1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#a1de5ac89574c69b9f80a0855fe842a1c">tool.children</a></td></tr>
-<tr class="separator:a1de5ac89574c69b9f80a0855fe842a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addf0ea02cd4dd1ad91343c8643d4bca0"><td class="memItemLeft" align="right" valign="top">AppLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d16/namespacetool.html#addf0ea02cd4dd1ad91343c8643d4bca0">tool.app</a> = AppLayout(center=tool_tabs, header=header, pane_heights=[1, 5, '0'])</td></tr>
 <tr class="memdesc:addf0ea02cd4dd1ad91343c8643d4bca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main tool page layout.  <br /></td></tr>
 <tr class="separator:addf0ea02cd4dd1ad91343c8643d4bca0"><td class="memSeparator" colspan="2">&#160;</td></tr>

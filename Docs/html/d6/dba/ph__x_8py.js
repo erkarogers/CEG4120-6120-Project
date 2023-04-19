@@ -1,10 +1,24 @@
 var ph__x_8py =
 [
     [ "bind_PH_X_inputs", "d6/dba/ph__x_8py.html#a7e3c5adb8191e51939fc4410b155b5f4", null ],
-    [ "build_PH_Input", "d6/dba/ph__x_8py.html#a7c32640005a7bf330204548b7edfb23f", null ],
+    [ "create_ph_file", "d6/dba/ph__x_8py.html#ab2d101c3d6efc6f7caca3a08eca1ea6e", null ],
+    [ "get_nqpt", "d6/dba/ph__x_8py.html#adedf692e6e7888150b457d3b32d67625", null ],
+    [ "get_qpoints", "d6/dba/ph__x_8py.html#a3fd3ba8f446fcad016bbf113bf0a5b97", null ],
+    [ "global_update_5", "d6/dba/ph__x_8py.html#ade9427446702184e21f75364684d8353", null ],
+    [ "global_update_6", "d6/dba/ph__x_8py.html#ac28e34b7dade0c4a679e2d25bb9ae326", null ],
+    [ "global_update_7", "d6/dba/ph__x_8py.html#a7094d25e9bfa85dd2e457f4a9887d57a", null ],
+    [ "hasfc", "d6/dba/ph__x_8py.html#ae9f3ae40c2b54a401e515bb12f976fdb", null ],
+    [ "hasPAW", "d6/dba/ph__x_8py.html#a44b7ebeec7b1229e59b2cb2fddb7344d", null ],
+    [ "hasSOC", "d6/dba/ph__x_8py.html#a63b1cf6c5acd6eb113e30c89f3245b89", null ],
+    [ "hasXML", "d6/dba/ph__x_8py.html#a87ca56961f31665a8659b8a1b63ca3a0", null ],
+    [ "isSEQ", "d6/dba/ph__x_8py.html#ae5b296630807ddb1534885e6bbb009f6", null ],
+    [ "ph_simulation", "d6/dba/ph__x_8py.html#a4f1c57be159bc34a0ce733f5163e7aa9", null ],
+    [ "runPP", "d6/dba/ph__x_8py.html#a80bcb4c5e50abe580352448d71bf1d73", null ],
+    [ "status_5", "d6/dba/ph__x_8py.html#adeada783e47e9695f5da4fcf97122bc8", null ],
+    [ "status_6", "d6/dba/ph__x_8py.html#a1706868a93b7060edc10b5ab34664749", null ],
+    [ "status_7", "d6/dba/ph__x_8py.html#a552b96fd5128a5c9bb30dd0d3d22b7b5", null ],
     [ "documentation_link", "d6/dba/ph__x_8py.html#ab06a97d2134cc78fbdb5b7eba939a6a5", null ],
     [ "form_items", "d6/dba/ph__x_8py.html#a3ac01af2b0af371853c85a35a959d5ca", null ],
-    [ "href", "d6/dba/ph__x_8py.html#a8c8a88ef627842ee07024dffff1b352d", null ],
     [ "icon_nq1", "d6/dba/ph__x_8py.html#a60861702ba7cf1720dad56323d217bf8", null ],
     [ "icon_nq2", "d6/dba/ph__x_8py.html#a63e405e46a6961ecc458f1cb65f05a65", null ],
     [ "icon_nq3", "d6/dba/ph__x_8py.html#a446a4ee67b81a3c727588bf0be638a95", null ],
@@ -16,8 +30,9 @@ var ph__x_8py =
     [ "ph_cores", "d6/dba/ph__x_8py.html#a7a95ddd28c0fc75dc67aa7d046296319", null ],
     [ "ph_walltime", "d6/dba/ph__x_8py.html#af96083ae22e69bdb39780d3b780295e8", null ],
     [ "ph_x_box", "d6/dba/ph__x_8py.html#a07c5e48d70701ba8fafa7918eb99d8b8", null ],
+    [ "qpoint_list_append", "d6/dba/ph__x_8py.html#ab0c0c2acbcb59251e5df20df14063f20", null ],
     [ "recover", "d6/dba/ph__x_8py.html#a319529d1d82f659fba1ec125ad681d62", null ],
     [ "search_sym", "d6/dba/ph__x_8py.html#a629eb3947e59ceee37fcb842fe0d63ac", null ],
     [ "self_consistency_threshold", "d6/dba/ph__x_8py.html#a8a353a0810a6059e0448141fae97bb8f", null ],
-    [ "target", "d6/dba/ph__x_8py.html#ac8af0871e09a3f0aabd80e964194bdd5", null ]
+    [ "try", "d6/dba/ph__x_8py.html#a8070bf3a1289971ed13757ff67bae63f", null ]
 ];

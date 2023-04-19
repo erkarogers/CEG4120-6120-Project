@@ -1,0 +1,13 @@
+digraph "ph_x.hasPAW"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="ph_x.hasPAW",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="ph_x.runPP",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d6e/namespaceph__x.html#a80bcb4c5e50abe580352448d71bf1d73",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="ph_x.bind_PH_X_inputs",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$df/d6e/namespaceph__x.html#a7e3c5adb8191e51939fc4410b155b5f4",tooltip=" "];
+}

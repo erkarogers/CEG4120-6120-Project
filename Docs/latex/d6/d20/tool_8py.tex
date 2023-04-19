@@ -14,7 +14,13 @@ namespace \mbox{\hyperlink{namespacetool}{tool}}
 \begin{DoxyCompactItemize}
 \item 
 def \mbox{\hyperlink{namespacetool_ae0723badc8b183ad40361a948900a5ca}{tool.\+on\+\_\+simulate\+\_\+btn\+\_\+click}} (self)
-\begin{DoxyCompactList}\small\item\em Binds the control form to the output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Binds the control form to the output. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacetool_a71c6065d1ef4eb131259267cc340e2f1}{tool.\+bar}} (progress)
+\item 
+def \mbox{\hyperlink{namespacetool_a35a42badac08790c3a38819bdf0366fd}{tool.\+print\+Statements}} (out)
+\item 
+def \mbox{\hyperlink{namespacetool_a186bb0f3561921c78cfffc3e6a7cd0b7}{tool.\+reset\+\_\+flag}} ()
+\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -26,18 +32,56 @@ Float\+Progress \mbox{\hyperlink{namespacetool_a00bdad0a1b9aed11bf32312111dba19a
 \begin{DoxyCompactList}\small\item\em Progress bar creation. \end{DoxyCompactList}\item 
 Button \mbox{\hyperlink{namespacetool_ad1ac7d67b2e615d1cf7d390a1dc92930}{tool.\+abort\+\_\+btn}} = Button(description=\char`\"{}Abort\char`\"{}, disabled=True)
 \begin{DoxyCompactList}\small\item\em Abort button creation. \end{DoxyCompactList}\item 
-list \mbox{\hyperlink{namespacetool_a4695a775080ae0fe37c8c224af78659d}{tool.\+form\+\_\+items}}
+list \mbox{\hyperlink{namespacetool_a37d93f8966ceab6245bcad88a75a44a0}{tool.\+form\+\_\+items}}
 \begin{DoxyCompactList}\small\item\em form\+\_\+item layout creation \end{DoxyCompactList}\item 
 Box \mbox{\hyperlink{namespacetool_ad806e76624359faa41e6c69e3404ed27}{tool.\+simulate\+\_\+box}} = Box(form\+\_\+items, layout=box\+\_\+layout(40))
+\item 
+int \mbox{\hyperlink{namespacetool_ad999ee1381905e4909329e64909fddf8}{tool.\+progress\+Num}} = 0
+\item 
+threading \mbox{\hyperlink{namespacetool_a2fa69ec7967d2386f30ae8aae1568048}{tool.\+thread}} = threading.\+Thread(target=bar, args=(progress\+\_\+bar,))
+\item 
+str \mbox{\hyperlink{namespacetool_a49d5c143c0e3761aec55cb17ac8c6151}{tool.\+statement1}} = \textquotesingle{}CREATING PW SCF INPUT FILE\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_aea113980d1d7693ab8487010f65171d9}{tool.\+statement2}} = \textquotesingle{}STARTED PW SCF SIMULATION\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a9a2d590ba93dc8c9d9eff0a717c3a0e8}{tool.\+statement3}} = \textquotesingle{}CREATING PW NSCF INPUT FILE \textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a61549530d536a2fe082a807067125690}{tool.\+statement4}} = \textquotesingle{}STARTED PW SCF SIMULATION\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a17f5d626d8715592670243839149964e}{tool.\+statement5}} = \textquotesingle{}CREATING PH INPUT FILE\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a8bb8bf0c20ec6b043a4178d9885524ae}{tool.\+statement6}} = \textquotesingle{}STARTED PH SIMULATION\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a737e247d12925e5c9322132e0653ba5b}{tool.\+statement7}} = \textquotesingle{}STARTED POST PROCESSING OF PH SIMULATION RESULTS\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a44fac1c4800684fe07c9b4eb97341e0a}{tool.\+statement8}} = \textquotesingle{}CREATING EPW INPUT FILE\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a0054e28ee7d311cb80478b2c1f0e2abe}{tool.\+statement9}} = \textquotesingle{}STARTED EPW SIMULATION\textquotesingle{}
+\item 
+str \mbox{\hyperlink{namespacetool_a3d13b65ccdd9cc1792156f263b09cff5}{tool.\+statement10}} = \textquotesingle{}CREATING EPW OUTPUTS\textquotesingle{}
+\item 
+int \mbox{\hyperlink{namespacetool_a28eb8b4665bceae886ca694e554d2644}{tool.\+x}} = 1
+\item 
+int \mbox{\hyperlink{namespacetool_aaebea7f6a5da3781ff6caa0bb4435b71}{tool.\+flag}} = 0
+\item 
+threading \mbox{\hyperlink{namespacetool_af209b56d40a5da01279a5866b4ddd518}{tool.\+thread2}} = threading.\+Thread(target=print\+Statements, args=(out,))
+\item 
+Button \mbox{\hyperlink{namespacetool_a671d1ff24bcbc8d8380bacfa8ec44afd}{tool.\+simulate\+\_\+btn2}}
+\item 
+Textarea \mbox{\hyperlink{namespacetool_a9403c032132bf96e245b0839f8dae011}{tool.\+results\+\_\+area}}
+\item 
+Box \mbox{\hyperlink{namespacetool_ad78851f606e28d1a117a0df91989bad2}{tool.\+results\+\_\+box}} = Box(form\+\_\+items, layout=box\+\_\+layout(40))
+\item 
+Tab \mbox{\hyperlink{namespacetool_adacc56ea015706ba2b9fa9956afe097a}{tool.\+simulate\+\_\+tabs}} = Tab()
+\item 
+list \mbox{\hyperlink{namespacetool_a8e3bfac627feea72ac5addb9d4a0031c}{tool.\+tab\+\_\+contents}} = \mbox{[}simulate\+\_\+box,results\+\_\+box\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tools page tabs contents. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacetool_a1de5ac89574c69b9f80a0855fe842a1c}{tool.\+children}}
 \item 
 HTML \mbox{\hyperlink{namespacetool_a6d44b3c528d0a757d4e1208f86fabcfb}{tool.\+header}}
 \begin{DoxyCompactList}\small\item\em Combine the all tabs. \end{DoxyCompactList}\item 
 Tab \mbox{\hyperlink{namespacetool_a53789ebf0309a950de162cb48d111b35}{tool.\+tool\+\_\+tabs}} = Tab()
 \begin{DoxyCompactList}\small\item\em Tools page tabs creation. \end{DoxyCompactList}\item 
-list \mbox{\hyperlink{namespacetool_ac14b2487a0c3118ea91fa5a729f4c0d9}{tool.\+tab\+\_\+contents}} = \mbox{[}pw\+\_\+x\+\_\+tabs, ph\+\_\+x\+\_\+box, epw\+\_\+x\+\_\+tabs, simulate\+\_\+box\mbox{]}
-\begin{DoxyCompactList}\small\item\em Tools page tabs contents. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{namespacetool_a1de5ac89574c69b9f80a0855fe842a1c}{tool.\+children}}
-\item 
 App\+Layout \mbox{\hyperlink{namespacetool_addf0ea02cd4dd1ad91343c8643d4bca0}{tool.\+app}} = App\+Layout(center=tool\+\_\+tabs, header=header, pane\+\_\+heights=\mbox{[}1, 5, \textquotesingle{}0\textquotesingle{}\mbox{]})
 \begin{DoxyCompactList}\small\item\em Main tool page layout. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
