@@ -1,0 +1,15 @@
+
+    --
+    &inputph
+    prefix = 'df'
+    fildvscf = 'dvscf'
+    ldisp = .true.
+    fildyn = 'df.dyn'
+    nq1 = 3
+    nq2 = 3
+    nq3 = 3
+    tr2_ph = 1e-12
+    recover = false
+    search_sym = .false.
+    /
+    
