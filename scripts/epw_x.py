@@ -37,9 +37,22 @@
 # %%
 ### Import libraries
 from ipywidgets import Tab, Box, VBox, GridBox, Layout
-from ipywidgets import Label, IntText, FloatText, Dropdown, Text, Textarea
+from ipywidgets import HTML, Label, IntText, FloatText, Dropdown, Text, Textarea
 import os
+from simtool import DB
+import hublib.use
+import random
+import os
+import time
+import subprocess
+import math
+import numpy
+from numpy import *
+
 %run styles.ipynb
+
+# %%
+pwd = os.getcwd()
 
 # %% [markdown]
 # ## Documentation Link
@@ -272,7 +285,7 @@ form_items = [
 
 wannier_box = Box(form_items, layout=box_layout(40))
 
-wannier_box
+#wannier_box
 
 
 # %% [markdown]
@@ -461,7 +474,7 @@ form_items = [
 ]
 
 misc_box = Box(form_items, layout=box_layout(35))
-misc_box
+#misc_box
 
 
 # %% [markdown]
@@ -570,7 +583,7 @@ form_items = [
 
 mesh_box = Box(form_items, layout=box_layout(20))
 
-mesh_box
+#mesh_box
 
 
 # %% [markdown]
@@ -597,9 +610,9 @@ epw_x_tabs.set_title(1, "Wannier")
 epw_x_tabs.set_title(2, "Misc")
 epw_x_tabs.set_title(3, "Mesh Sampling")
 
-epw_x_tabs
+#epw_x_tabs
 
-# %%
+# %% [MARKDOWN]
 ## NON USER INPUTS
 
 # %%
@@ -620,8 +633,17 @@ wdata(10) = 'dis_mix_ratio = 1.0'
 wdata(11) = 'use_ws_distance = T'
 '''
 
-epw_cores = 40
-epw_walltime = '00:30:00'
+# %%
+#find fermi level in nscf.out
+fermi_energy = 0.0
+def find_fermi_level(self):
+    outnscf = f'{material_prefix.value}nscf'  
+    with open(f'{pwd}/{outnscf}.stdout') as file:
+        for line in file:
+            j = line.split()
+            if 'highest' in j and 'lowest' in j:
+                fermi_energy = (float(j[len(j)-1])+float(j[len(j)-2]))/2
+                print(fermi_energy)
 
 # %% [markdown]
 # ## Bind Inputs to Outputs
@@ -629,65 +651,75 @@ epw_walltime = '00:30:00'
 # %%
 ## binds EPW inputs to outputs
 # @section bind_epw_inputs Inputs for EPW
-def bind_EPW_X_inputs(self):
-        
+def bind_EPW_X_inputs(self): 
+    find_fermi_level(self)
+    
     epw_inputs = {
-    'material_prefix': material_prefix.value,
-    'atomic_mass': atomic_mass.value,
-    'outdir': outdir.value,
-    'kmaps': kmaps.value,
-    'epbwrite': epbwrite.value,
-    'epbread': epbread.value,
-    'epwwrite': epwwrite.value,
-    'epwread': epwread.value,
-    'lpolar': lpolar.value,
-    'use_ws': use_ws,
-    'nbndsub': nbnd, 
-    'wannierize': wannierize.value,
-    'num_iter': num_iter.value,
-    'iprint': iprint.value,
-    'dis_win_max': dis_win_max.value,
-    'dis_froz_max': dis_froz_max.value,
-    'proj': projections.value,
-    'wdata': w90_data,    
-    'prtgkk': prgtkk.value,
-    'lindabs': lindabs.value,
-    'scissor': scissor.value,
-    'omegamin': omegamin.value,                                                                                                                                                                         
-    'omegamax': omegamax.value,
-    'omegastep': omegastep.value,
-    'n_r': n_r.value,  
-    'fsthick': fsthick.value,
-    'temps': temps.value,
-    'degaussw': degaussw.value,
-    'degaussq': degaussq.value,
-    'efermi_read': efermi_read.value,
-    'fermi_energy': "", #fermi_energy
-    'nk1': kptx.value,
-    'nk2': kpty.value,
-    'nk3': kptz.value,
-    'nq1': nq1.value,
-    'nq2': nq2.value,
-    'nq3': nq3.value,
-    'nkf1': nkf1.value,
-    'nkf2': nkf2.value,
-    'nkf3': nkf3.value,
-    'nqf1': nqf1.value,
-    'nqf2': nqf2.value,
-    'nqf3': nqf2.value,
-    'qpoint_list': "" #qpoint_list_append
+        'material_prefix': material_prefix.value,
+        'atomic_mass': atomic_mass.value,
+        'outdir': os.getcwd(),  #outdir.value,
+        'kmaps': kmaps.value,
+        'epbwrite': epbwrite.value,
+        'epbread': epbread.value,
+        'epwwrite': epwwrite.value,
+        'epwread': epwread.value,
+        'lpolar': lpolar.value,
+        'use_ws': use_ws,
+        'nbndsub': nbnd, 
+        'wannierize': wannierize.value,
+        'num_iter': num_iter.value,
+        'iprint': iprint.value,
+        'dis_win_max': dis_win_max.value,
+        'dis_froz_max': dis_froz_max.value,
+        'proj': projections.value,
+        'wdata': w90_data,    
+        'prtgkk': prgtkk.value,
+        'lindabs': lindabs.value,
+        'scissor': scissor.value,
+        'omegamin': omegamin.value,                                                                                                                                                                         
+        'omegamax': omegamax.value,
+        'omegastep': omegastep.value,
+        'n_r': n_r.value,  
+        'fsthick': fsthick.value,
+        'temps': temps.value,
+        'degaussw': degaussw.value,
+        'degaussq': degaussq.value,
+        'efermi_read': efermi_read.value,
+        'fermi_energy': fermi_energy,
+        'nk1': kptx.value,
+        'nk2': kpty.value,
+        'nk3': kptz.value,
+        'nq1': nq1.value,
+        'nq2': nq2.value,
+        'nq3': nq3.value,
+        'nkf1': nkf1.value,
+        'nkf2': nkf2.value,
+        'nkf3': nkf3.value,
+        'nqf1': nqf1.value,
+        'nqf2': nqf2.value,
+        'nqf3': nqf2.value,
+        'qpoint_list': qpoint_list_append
     }
     
-    build_EPW_Input(epw_inputs, material_prefix.value)
-        
+    create_epw_file(epw_inputs, material_prefix.value)
+    epw_simulation(self)
+    epw_simulation_output(self)
+   
 
 # %%
 ## builds EPW input file
 # @section build_epw_input Build EPW input
 # @param epw_inputs, material_prefix
 # 
-def build_EPW_Input(epw_inputs, material_prefix):
-    print('BUILDING EPW INPUT FILE')
+def create_epw_file(epw_inputs, material_prefix):
+    #print('CREATING EPW INPUT FILE')
+    
+    time.sleep(2)
+    global_update_8()
+    status_8()
+    
+    
+    
     #Build epw input file
     
     ## @var epw_name
@@ -759,9 +791,239 @@ def build_EPW_Input(epw_inputs, material_prefix):
     nqf3 = {nqf3}
     /
     {qpoint_list}
-    '''.format(**epw_inputs) ## assigns information in ''' ''' to variable inputfile
+    '''.format(**epw_inputs) #assigns information in ''' ''' to variable inputfile
 
-    with open(epw_name, "w") as f: ## opens file epw_name
-        f.write(input_file) ## writes inputfile to file epw_na
+    with open(epw_name, "w") as f: #opens file epw_name
+        f.write(input_file) #writes inputfile to file epw_na
+
+# %%
+%use espresso-6.8
+def epw_simulation(self):
+    #print('STARTED EPW SIMULATION')
+    
+    time.sleep(2)
+    global_update_9()
+    status_9()
+    
+    
+    
+    
+    
+    mat_prefix = material_prefix.value
+    epw_name = 'epw-%s.in' % mat_prefix #assigns epw input file to variable epw_name 
+
+    #print(f'STARTED EPW SIMULATION WITH {epw_name}')
+    epw_cores = 40
+    epw_walltime = '00:30:00'
+    cores_per_node = 20
+
+    save_dir = f'{mat_prefix}.save'
+    xml_file = f'{mat_prefix}.xml'
+
+    outepw = f'{mat_prefix}epw'
+    
+    #print(f'STARTED EPW SIMULATION WITH {epw_name}, wall time {epw_walltime}, output file {outepw} and cores per node {cores_per_node}')
+    
+    
+    #!submit -w $epw_walltime -n $epw_cores -N $cores_per_node --runName=$outepw -i $psFile -i $save_dir -i $xml_file -i save espresso-6.6_epw -npool $epw_cores < epw-si.in
+    !submit -w "00:30:00" -n 40 -N 20 --runName=siepw -i $psFile -i $save_dir -i $xml_file -i save espresso-6.6_epw -npool $epw_cores < epw-si.in
+
+# %%
+def epw_simulation_output(self):
+    print('CREATING EPW OUTPUTS')
+    
+    time.sleep(2)
+    global_update_10()
+    status_10()
+    
+    
+    
+    
+    mat_prefix = material_prefix.value
+    outepw = f'{mat_prefix}epw'
+    
+    blockepsi = ""
+    epsi_data = []
+    freq_ONCV = []
+
+    epsix_list = []
+    epsiy_list = []
+    epsiz_list = []
+
+    with open(f'{pwd}/{outepw}.stdout') as file:
+        foundepsi = False
+        blockepsi = ""
+        for line in file:
+            if foundepsi:
+                if line.strip() == 'Values with other broadenings for temperature X are reported in the files epsilon2_indabs_X.dat':   
+                    break
+                else:
+                    blockepsi += line
+            elif line.strip() == 'Photon energy (eV), Imaginary dielectric function along x,y,z':
+                foundepsi = True
+
+    rawepsi = blockepsi.split()
+
+    for i in rawepsi:
+        try:
+            epsi_data.append(float(i))
+        except ValueError:
+            continue
+    np.asarray(epsi_data)
+    
+    print(epsi_data)
+
+    num_freqs = omegamax.value/omegastep.value
+
+    big_array_epsi = np.array_split(epsi_data,(num_freqs)) # provid nw from eps.in, (energy grid [eV]     eps_x  eps_y  eps_z)
+
+    for k in big_array_epsi:
+        freq_ONCV.append(k[0])
+        epsix_list.append(k[1])
+        epsiy_list.append(k[2])
+        epsiz_list.append(k[3])        
+
+    #epsi = epsix #epsiy #epsiz
+
+    h = 4.135667516e-15
+    c = 299792458
+    
+    epsrx_list = []
+    k_extincx_list = []
+    alpha_absx_list = []
+
+
+    for i in freq_ONCV:
+        lambda_wl = h*c/i
+
+        epsix = epsix_list[freq_ONCV.index(i)]
+
+        epsrx = n_r**2 - (epsix**2/(4*n_r**2))
+        epsrx_list.append(epsrx)
+
+        k_extincx = (1/math.sqrt(2))*math.sqrt(-epsrx+math.sqrt(epsrx**2+epsix**2))
+        k_extincx_list.append(k_extincx)
+
+        alpha_absx = (4*math.pi*k_extincx)/(lambda_wl*100)
+        alpha_absx_list.append(alpha_absx)
+
+    epsry_list = []
+    k_extincy_list = []
+    alpha_absy_list = []
+
+
+    for i in freq_ONCV:
+        lambda_wl = h*c/i
+
+        epsiy = epsiy_list[freq_ONCV.index(i)]
+
+        epsry = n_r**2 - (epsiy**2/(4*n_r**2))
+        epsry_list.append(epsry)
+
+        k_extincy = (1/math.sqrt(2))*math.sqrt(-epsry+math.sqrt(epsry**2+epsiy**2))
+        k_extincy_list.append(k_extincy)
+
+        alpha_absy = (4*math.pi*k_extincy)/(lambda_wl*100)
+        alpha_absy_list.append(alpha_absy)
+
+    epsrz_list = []
+    k_extincz_list = []
+    alpha_absz_list = []
+
+
+    for i in freq_ONCV:
+        lambda_wl = h*c/i
+
+        epsiz = epsiz_list[freq_ONCV.index(i)]
+
+        epsrz = n_r**2 - (epsiz**2/(4*n_r**2))
+        epsrz_list.append(epsrz)
+
+        k_extincz = (1/math.sqrt(2))*math.sqrt(-epsrz+math.sqrt(epsrz**2+epsiz**2))
+        k_extincz_list.append(k_extincz)
+
+        alpha_absz = (4*math.pi*k_extincz)/(lambda_wl*100)
+        alpha_absz_list.append(alpha_absz)
+        
+    #Saving defined outputs
+    db = DB(OUTPUTS)  
+        
+    db.save('freq', freq_ONCV)
+    db.save('epsix', epsix_list)
+    db.save('epsiy', epsiy_list)
+    db.save('epsiz', epsiz_list)
+    db.save('epsrx', epsrx_list)
+    db.save('epsry', epsry_list)
+    db.save('epsrz', epsrz_list)
+    db.save('k_extincx',k_extincx_list)
+    db.save('k_extincy',k_extincy_list)
+    db.save('k_extincz',k_extincz_list)
+    db.save('alpha_absx', alpha_absx_list)
+    db.save('alpha_absy', alpha_absy_list)
+    db.save('alpha_absz', alpha_absz_list)
+
+
+# %%
+
+
+# %%
+
+
+# %% [markdown]
+# ### Functions to Update Progress Bar
+
+# %%
+##('CREATING EPW INPUT FILE')
+def global_update_8():
+    global progressNum
+    progressNum=8
+
+    
+
+# %%
+##('STARTED EPW SIMULATION')
+def global_update_9():
+    global progressNum
+    progressNum=9
+
+    
+
+# %%
+##('CREATING EPW OUTPUTS')
+def global_update_10():
+    global progressNum
+    progressNum=10
+
+    
+
+# %% [markdown]
+# ### Functions to Display and Update Status Messages
+
+# %%
+##('CREATING EPW INPUT FILE')
+def status_8():
+    global x
+    x=8
+    global flag
+    flag=1
+    
+
+# %%
+##('STARTED EPW SIMULATION')
+def status_9():
+    global x
+    x=9
+    global flag
+    flag=1
+    
+
+# %%
+##('CREATING EPW OUTPUTS')
+def status_10():
+    global x
+    x=10
+    global flag
+    flag=1
+    
 
 
