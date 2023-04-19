@@ -44,6 +44,7 @@ import numpy as np
 from ipywidgets import Tab, Box, VBox,HBox, GridBox, Layout
 from ipywidgets import HTML, Label, IntText, FloatText, Dropdown, Text, Textarea, Button
 
+import hublib.use
 import os
 %run styles.ipynb
 
@@ -51,8 +52,11 @@ import os
 # ## Documentation Link
 
 # %%
-%%html
-<a href="https://www.quantum-espresso.org/Doc/INPUT_PW.html" target="_blank">INPUT_PW.html</a>
+os
+
+# %% [markdown]
+# Check out the documentation on inputs variables needed for this step with this link:
+# <a href="https://www.quantum-espresso.org/Doc/INPUT_PW.html" target="_blank">INPUT_PW.html</a>
 
 # %%
 documentation_link = HTML(value='<a href="https://www.quantum-espresso.org/Doc/INPUT_PW.html" target="_blank">INPUT_PW.html</a>')
@@ -67,9 +71,9 @@ material_prefix = Text(name="Material Prefix", value="si")
 
 restart_mode = Dropdown(name="Restart Mode", value="from_scratch", options=["from_scratch", "restart"])
 
-pseudo_dir = Text(name="Pseudopotential File Directory", value="./")
+pseudo_dir = Text(name="Pseudopotential File Directory", value=os.getcwd())
 
-outdir = Text(name="Current Directory", value="./")
+outdir = Text(name="Current Directory", value=os.getcwd())
 
 max_runtime = FloatText(name='Max Run Time (Seconds)', value=10000000)
 
@@ -160,7 +164,7 @@ ibrav = Dropdown(name="Bravals-lattice index",
 )
 celldm_1 = FloatText(name="Crystallographic Constant",value=10.2094)
 
-nat = FloatText(name="Number of atoms in the cell system" ,value=1)
+nat = FloatText(name="Number of atoms in the cell system" ,value=2)
 
 ntyp = FloatText(name="Number of Types of Atoms",value=1)
 
@@ -218,7 +222,7 @@ form_items = [
 
 system_box = Box(form_items, layout=box_layout(65))
 
-system_box
+#system_box
 
 # %% [markdown]
 # ## Electrons
@@ -235,12 +239,12 @@ mixing_beta = FloatText(name="Mixing Beta",value=0.70)
 
 con_threshold = FloatText(name="Convergence Threshold",value=1.0e-13)
 
-atom = Text(name="Atom",value="")
+atom = Text(name="Atom",value="Si")
 
 atomic_mass = FloatText(name="Atomic Mass",value=28.0855)
 
 pseudo_filename = Text(name="Pseudopotential File Name",
-                       value='../data/pseudopotentials/sg15_oncv_upf_2jun20/Si_ONCV_PBE-1.2.upf',                 
+                       value='data/pseudopotentials/sg15_oncv_upf_2jun20/Si_ONCV_PBE-1.2.upf',                 
                       )   
 atomic_coord_type = Dropdown(name="Atomic Coordinate Type",
                              options= ['alat','crystal','cartesian'],value= 'alat',
@@ -369,8 +373,7 @@ form_items = [
 ## UI
 electrons_box = Box(form_items, layout=box_layout(60))
 
-
-electrons_box
+#electrons_box
 
 # %% [markdown]
 # ## K Points
@@ -421,12 +424,10 @@ kpoints_box = VBox(
     [
         HBox([Label(value="K Point Type"), kpoint_type], layout=Layout(width='60%')),
         GridBox([left_section, right_section], 
-                           layout=Layout(grid_template_columns="repeat(2,20%)", grid_gap="50px"))
+                           layout=Layout(grid_template_columns="repeat(2,30%)", grid_gap="50px"))
     ])
     
-
-
-kpoints_box
+#kpoints_box
 
 # %% [markdown]
 # ### Combine UI forms for this section
@@ -441,7 +442,7 @@ pw_x_tabs.set_title(1, "System")
 pw_x_tabs.set_title(2, "Electrons")
 pw_x_tabs.set_title(3, "K Points")
 
-pw_x_tabs
+#pw_x_tabs
 
 
 # %% [markdown]
@@ -480,8 +481,11 @@ search_sym = {
 }
 
 pw_cores = 20
+cores_per_node = 20
 pw_walltime = '00:05:00'
 
+# global variable
+scf_inputs={}
 
 # %% [markdown]
 # ### Bind inputs to outputs
@@ -525,16 +529,38 @@ def bind_PW_X_inputs(self):
         cellparam_splits = np.split(cellparam_array,3)
         join_line = [' '.join(i) for i in cellparam_splits]
         cell_parameters = '\n'.join(join_line)
+            
+        #scf_inputs["cellparam_coordinate_type"] = cellparam_coordinate_type
+        #scf_inputs["cell_parameters"] = cell_parameters
+        
+        scf_inputs = {**scf_inputs, 'cellparam_coordinate_type': cellparam_coordinate_type, 'cell_parameters': cell_parameters}
     
-        scf_inputs['cellparam_coordinate_type'] = cellparam_coordinate_type
-        scf_inputs['cell_parameters'] = cell_parameters
     
-    
-    build_PW_Input(scf_inputs, material_prefix.value)    
+    create_pw_file_for_scf(scf_inputs, material_prefix.value)  
+    pw_scf_simulation(self)
+    create_pw_file_for_nscf(scf_inputs, material_prefix.value)
+    pw_nscf_simulation(self)
 
 # %%
-def build_PW_Input(scf_inputs, material_prefix):
-    print('BUILDING PW INPUT FILE')
+
+
+# %%
+
+
+# %%
+
+
+# %%
+
+def create_pw_file_for_scf(scf_inputs, material_prefix):
+    #print('CREATING PW SCF INPUT FILE')
+    #print('now changing progress number')
+    #call function to update progress bar
+    global_update_1()
+    status_1()
+    
+    #print(f'asdlfkjhasd;lfhas;dlfkjhas')
+    
     #Build pw input file
     scf_name = 'scf-%s.in' % material_prefix #assigns pw input file to variable pw_name 
 
@@ -612,8 +638,249 @@ def build_PW_Input(scf_inputs, material_prefix):
 
     with open(scf_name, "w") as f: #opens file pw_name
         f.write(input_file) #writes inputfile to file pw_name
+        
+
+# %%
+%use espresso-6.8
+    
+def pw_scf_simulation(self):
+    #print('STARTED PW SCF SIMULATION')
+    #print('now changing progress number again')
+    #call function to update progress bar
+    import time
+    time.sleep(2)
+    global_update_2()
+    status_2()
+    
+    
+    mat_prefix = material_prefix.value
+
+    save_dir = f'{mat_prefix}.save'
+    xml_file = f'{mat_prefix}.xml'
+    outscf = f'{mat_prefix}scf'   
+    psFile = pseudo_filename.value.lstrip('file://')
+    
+    scf_name = 'scf-%s.in' % mat_prefix #assigns pw input file to variable pw_name 
+    
+    
+    
+    
+    
+    #print(f'STARTED PW SIMULATION WITH {scf_name}, wall time {pw_walltime}, output file asdfsadf and cores per node {cores_per_node}')
+    
+    
+    
+    
+    
+    #Run pw.x simulation
+    
+    !submit  -w $pw_walltime -n $pw_cores -N $cores_per_node --runName=$outscf -i $psFile espresso-6.6_pw < $scf_name 
+    
+
+# %% [markdown]
+# ## DFT NSCF Step (PW.X)
+
+# %%
+#nscf pw.x phase with kmesh.pl
+#Build pw input file
+
+def create_pw_file_for_nscf(scf_inputs, material_prefix):
+    #print('CREATING PW NSCF INPUT FILE')
+    time.sleep(2)
+    global_update_3()
+    status_3()
+    
+    
+    
+    nscf_name = 'nscf-%s.in' % material_prefix #assigns pw input file to variable pw_name 
+
+    if ibrav == 0:
+
+        input_file = '''
+        &control                                                                                                                                                                                     
+        calculation = 'nscf'                                                                                                                                                                         
+        prefix = '{material_prefix}'                                                                                                                                                                                
+
+        restart_mode = '{restart_mode}'                                                                                                                                                               
+        wf_collect = .true.                                                                                                                                                                          
+        verbosity = 'high'                                                                                                                                                                           
+        outdir = './'
+        pseudo_dir = '{pseudo_dir}'
+        /                                                                                                                                                                                            
+        &system                                                                                                                                                                                      
+        ibrav = {ibrav}                                                                                                                                                                                    
+        celldm(1) = {celldm_1}                                                                                                                                                                           
+        nat = {nat}                                                                                                                                                                                      
+        ntyp = {ntyp}                                                                                                                                                                                                                                                                                                                                                                          
+        ecutwfc = {ecutwfc}
+        /                                                                                                                                                                                            
+        &electrons                                                                                                                                                                                   
+        diagonalization = '{diagonalization}'                                                                                                                                                                  
+        mixing_beta = {mixing_beta}                                                                                                                                                                            
+        conv_thr = {conv_thr}                                                                                                                                                                          
+        /                                                                                                                                                                                            
+        ATOMIC_SPECIES                                                                                                                                                                               
+        {atom} {atomic_mass} {psName}                                                                                                                                                              
+        ATOMIC_POSITIONS {coordinate_type}                                                                                                                                                                        
+        {atomic_positions}
+        CELL_PARAMETERS {cellparam_coordinate_type}
+        {cell_parameters}
+        '''.format(**scf_inputs) #assigns information in ''' ''' to variable inputfile
+
+    else:
+        input_file = '''
+        &control                                                                                                                                                                                     
+        calculation = 'nscf'                                                                                                                                                                         
+        prefix = '{material_prefix}'                                                                                                                                                                                
+
+        restart_mode = '{restart_mode}'                                                                                                                                                               
+        wf_collect = .true.                                                                                                                                                                          
+        verbosity = 'high'                                                                                                                                                                           
+        outdir = './'
+        pseudo_dir = '{pseudo_dir}'
+        /                                                                                                                                                                                            
+        &system                                                                                                                                                                                      
+        ibrav = {ibrav}                                                                                                                                                                                    
+        celldm(1) = {celldm_1}                                                                                                                                                                           
+        nat = {nat}                                                                                                                                                                                      
+        ntyp = {ntyp}                                                                                                                                                                                                                                                                                                                                                                          
+        ecutwfc = {ecutwfc}
+        /                                                                                                                                                                                            
+        &electrons                                                                                                                                                                                   
+        diagonalization = '{diagonalization}'                                                                                                                                                                  
+        mixing_beta = {mixing_beta}                                                                                                                                                                            
+        conv_thr = {conv_thr}                                                                                                                                                                          
+        /                                                                                                                                                                                            
+        ATOMIC_SPECIES                                                                                                                                                                               
+        {atom} {atomic_mass} {psName}                                                                                                                                                              
+        ATOMIC_POSITIONS {coordinate_type}                                                                                                                                                                        
+        {atomic_positions}
+        '''.format(**scf_inputs) #assigns information in ''' ''' to variable inputfile
+
+    with open(nscf_name, "w") as f: #opens file pw_name
+        f.write(input_file) #writes inputfile to file pw_na
+
+# %%
+EXTRA_FILES = ["kmesh.pl"]
+
+# %%
+#Run pw.x simulation 
+%use espresso-6.8
+    
+def pw_nscf_simulation(self):
+    #print('STARTED PW SCF SIMULATION')
+    time.sleep(2)
+    global_update_4()
+    status_4()
+    
+    mat_prefix = material_prefix.value
+
+    save_dir = f'{mat_prefix}.save'
+    xml_file = f'{mat_prefix}.xml'
+    
+    outnscf = f'{mat_prefix}nscf'  
+    psFile = pseudo_filename.value.lstrip('file://')
+    
+    nscf_name = 'nscf-%s.in' % mat_prefix #assigns pw input file to variable pw_name 
+    
+    #Run pw.x simulation  
+    kptx_var = kptx.value
+    kpty_var = kpty.value
+    kptz_var = kptz.value
+    
+    !perl kmesh.pl $kptx_var $kpty_var $kptz_var >> $nscf_name
+    
+    if nbnd_flag == 0:
+        
+        !submit -w $pw_walltime -n $pw_cores -N $cores_per_node --runName=$outnscf -i $psFile -i $save_dir -i $xml_file espresso-6.6_pw -npool $pw_cores < $nscf_name
+        
+    if nbnd_flag == 1:
+        scf_inputs['nbnd'] = nbnd
+
+    else:
+        #find appropriate number of bands and eventual Wannier functions for optical calculation, rule of thumb being 2*# of valence bands
+        with open(f'{pwd}/{outnscf}.stdout') as file:
+            for line in file:
+                j = line.split()
+                for i in j:
+                    if i == 'Kohn-Sham':
+                        KSstates = float(j[len(j)-1])
+                        print(KSstates)
+                        nbnd = KSstates*2
+        scf_inputs['nbnd'] = int(nbnd)      
 
 # %%
 
+
+# %% [markdown]
+# ### Functions to Update Progress Bar
+
+# %%
+##('CREATING PW SCF INPUT FILE')
+def global_update_1():
+    global progressNum
+    progressNum=1
+
+    
+
+# %%
+##('STARTED PW SCF SIMULATION')
+def global_update_2():
+    global progressNum
+    progressNum=2
+
+
+# %%
+##('CREATING PW NSCF INPUT FILE')
+def global_update_3():
+    global progressNum
+    progressNum=3
+
+
+# %%
+##('STARTED PW SCF SIMULATION')
+def global_update_4():
+    global progressNum
+    progressNum=4
+
+
+# %% [markdown]
+# ### Functions to Display and Update Status Messages
+
+# %%
+##('CREATING PW SCF INPUT FILE')
+def status_1():
+    global x
+    x=1
+    global flag
+    flag=1
+    
+
+# %%
+##('STARTED PW SCF SIMULATION')
+def status_2():
+    global x
+    x=2
+    global flag
+    flag=1
+    
+
+# %%
+##('CREATING PW NSCF INPUT FILE')
+def status_3():
+    global x
+    x=3
+    global flag
+    flag=1
+    
+
+# %%
+##STARTED PW SCF SIMULATION
+def status_4():
+    global x
+    x=4
+    global flag
+    flag=1
+    
 
 
