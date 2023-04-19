@@ -1,0 +1,79 @@
+
+    --
+    &inputepw
+    prefix = 'df'
+    amass(1) = 28.0855
+    outdir = './'
+    iverbosity = 1
+    dvscf_dir = './save'
+
+    elph = .true.
+    kmaps = .false.
+    epbwrite = .true.
+    epbread = .false.
+    epwwrite = .true.
+    epwread = .false.
+    etf_mem = 1
+
+    lpolar = false
+    use_ws = .false.
+
+    nbndsub = 4
+
+    wannierize = true
+    num_iter = 1500
+    iprint = 2
+    dis_win_max = 18.0
+    dis_froz_max= 8.5
+    proj(1) = 'random'
+    
+wdata(1) = 'bands_plot = .true.'
+wdata(2) = 'begin kpoint_path'
+wdata(3) = 'L 0.50 0.00 0.00 G 0.00 0.00 0.00'
+wdata(4) = 'G 0.00 0.00 0.00 X 0.50 0.50 0.00'
+wdata(5) = 'end kpoint_path'
+wdata(6) = 'bands_plot_format = gnuplot'
+wdata(7) = 'guiding_centres = .true.'
+wdata(8) = 'dis_num_iter = 500'
+wdata(9) = 'num_print_cycles = 10'
+wdata(10) = 'dis_mix_ratio = 1.0'
+wdata(11) = 'use_ws_distance = T'
+
+
+    elecselfen = .false.
+    phonselfen = .false.
+    a2f = .false.
+    prtgkk = .false.
+
+    efermi_read = .true.
+    fermi_energy = 
+
+    lindabs = .true.
+    scissor = 0.0                                                                                                                                                                           
+    omegamin = 0.05                                                                                                                                                                            
+    omegamax = 0.05                                                                                                                                                                         
+    omegastep= 0.0                                                                                                                                                                         
+    n_r = 3.4
+
+
+    fsthick = 4.0
+    temps = 300.0
+    degaussw = 0.005
+    degaussq = 0.05
+
+    nk1 = 6
+    nk2 = 6
+    nk3 = 6
+    nq1 = 3
+    nq2 = 3
+    nq3 = 3
+
+    nkf1 = 0
+    nkf2 = 20
+    nkf3 = 20
+    nqf1 = 20
+    nqf2 = 20
+    nqf3 = 20
+    /
+    
+    

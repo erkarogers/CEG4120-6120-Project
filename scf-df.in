@@ -1,0 +1,37 @@
+
+        &control                                                                                                                                                                                     
+        calculation = 'scf'                                                                                                                                                                         
+        prefix = 'df'                                                                                                                                                                                
+
+        restart_mode = 'from_scratch'                                                                                                                                                               
+        wf_collect = .true.                                                                                                                                                                          
+        verbosity = 'high'                                                                                                                                                                           
+        outdir = './'
+        max_seconds = 10000000.0
+        etot_conv_thr = 0.0001
+        pseudo_dir = './'
+        /                                                                                                                                                                                            
+        &system                                                                                                                                                                                      
+        ibrav = 0                                                                                                                                                                                    
+        celldm(1) = 10.2094                                                                                                                                                                           
+        nat = 1.0                                                                                                                                                                                      
+        ntyp = 1.0                                                                                                                                                                                                                                                                                                                                                                          
+        ecutwfc = 25.0 
+        nosym = .false.
+        /                                                                                                                                                                                            
+        &electrons                                                                                                                                                                                   
+        diagonalization = 'david'                                                                                                                                                                  
+        mixing_beta = 0.7                                                                                                                                                                            
+        conv_thr = 1e-13                                                                                                                                                                          
+        /                                                                                                                                                                                            
+        ATOMIC_SPECIES                                                                                                                                                                               
+         28.0855 Si_ONCV_PBE-1.2.upf                                                                                                                                                            
+        ATOMIC_POSITIONS alat                                                                                                                                                                        
+        Si 0.0 0.0 0.0 Si 0.25 0.25 0.25
+        K_POINTS automatic                                                                                                                                                                           
+        6 6 6 0 0 0
+        CELL_PARAMETERS alat
+        0.0 0.0 0.0
+0.25 0.25 0.25
+0.5 0.5 0.5
+        
